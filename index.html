@@ -228,7 +228,7 @@
             <h2>SẢN XUẤT TẠI ÚC, CỦA NGƯỜI ÚC</h2>
             <p class="text-justify">
               Ocean Road Dairy là nhãn hiệu thương mại đã đăng ký, được sở hữu
-              100% bởi Ocean Dairy Pty Ltd. Chúng tôi cam kết chỉ sử dụng nguyên
+              100% bởi Ocean Dairy Pty Ltd.Chúng tôi cam kết chỉ sử dụng nguyên
               liệu có nguồn gốc tươi ngon nhất, chất lượng cao, và đạt chứng
               nhận hữu cơ. Bellamy’s luôn nỗ lực tìm kiếm các nguyên liệu từ các
               nông trại tại Úc, và Úc luôn là lựa chọn hàng đầu của chúng tôi,
@@ -252,7 +252,7 @@
         <div class="container">
           <div class="flex flex-col items-center space-y-5 mb-16">
             <h2 class="lg:w-2/3 text-center">
-              Chúng tôi chỉ sử dụng sữa bò đạt chứng nhận hữu cơ Trang trại hữu
+              Chúng tôi chỉ sử dụng sữa bò đạt chứng nhận hữu cơTrang trại hữu
               cơ, Bò nuôi hữu cơ
             </h2>
             <button
@@ -643,7 +643,15 @@
 
       <!-- Start Section 9 -->
       <section>
-        <div class="container"></div>
+        <div class="container">
+          <h2 class="text-center">THÔNG TIN HỮU ÍCH</h2>
+          <a
+            href="#"
+            title="THÔNG TIN HỮU ÍCH"
+            class="block text-end text-ct-blue hover:text-red-600"
+            >Xem tất cả</a
+          >
+        </div>
       </section>
       <!-- End Section 9 -->
 
@@ -726,9 +734,92 @@
       <!-- End Section 11 -->
 
       <!-- Start Section 12 -->
+      <section
+        class="bg-center bg-cover"
+        style="background-image: url(public/bg-nhan-xet-cam-nhan-cua-ba-me.png)"
+      >
+        <div class="container">
+          <div class="flex flex-col lg:flex-row -mx-3">
+            <div class="lg:basis-2/5 p-3">
+              <h2 class="text-white">Nhận xét và Cảm nhận của ba mẹ</h2>
+              <p class="text-white mt-5">
+                Những lời đánh giá chân thật từ khách hàng đã sử dụng Ocean Road
+                là niềm tin đối với đội ngũ chúng tôi tiếp tục xây dựng niềm tin
+                và nỗ lực vươn lên cao xa hơn.
+              </p>
+            </div>
+            <div class="lg:basis-3/5 p-3">
+              <div class="flex items-center relative py-10">
+                <div class="basis-2/5 z-[2] px-2">
+                  <img
+                    src="public/nhan_xet_cua_me_thuy_minh.png"
+                    alt="nhan_xet_cua_nguoi_tieu_dung"
+                  />
+                </div>
+                <div class="basis-3/5 text-sm z-[2] px-2">
+                  <p>
+                    Không có gì tuyệt vời hơn khi biết rằng con trẻ của mình
+                    đang uống sữa Ocean Road Dairies. Chất lượng và dinh dưỡng
+                    của sản phẩm này thực sự xuất sắc. Chúng tôi cảm thấy tự tin
+                    rằng con trẻ của chúng tôi đang nhận được những dưỡng chất
+                    tốt nhất từ sữa hữu cơ này
+                  </p>
+                  <h6 class="mt-5 mb-2 font-bold text-ct-blue">Mẹ Thùy Minh</h6>
+                  <span class="text-xs">Nội trợ</span>
+                </div>
+                <div
+                  class="absolute inset-y-0 right-0 w-5/6 rounded-l-full rounded-r-[25rem] bg-bg-layout z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
+                  style="background-image: url('public/layout-bay-co.png')"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- End Section 12 -->
 
       <!-- Start Section 13 -->
+      <section>
+        <div
+          class="container flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-10"
+        >
+          <div class="lg:basis-1/2">
+            <h2 class="text-center">ĐĂNG KÝ NHẬN THÔNG TIN TƯ VẤN</h2>
+            <form action="" class="flex flex-col mt-10 space-y-5">
+              <input
+                class="border border-solid border-[#6F6F6F] py-2 px-5 rounded-full"
+                type="text"
+                placeholder="Họ và tên"
+                required
+              />
+              <input
+                type="email"
+                class="border border-solid border-[#6F6F6F] py-2 px-5 rounded-full"
+                placeholder="Email"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                title="Vui lòng nhập một địa chỉ email hợp lệ dạng : user@example.com"
+                required
+              />
+              <input
+                type="tel"
+                class="border border-solid border-[#6F6F6F] py-2 px-5 rounded-full"
+                placeholder="Số điện thoại"
+                pattern="[0-9]{10,12}"
+                title="Số điện thoại từ 10 đến 12 chữ số"
+                required
+              />
+              <input
+                type="submit"
+                value="Đăng ký ngay"
+                class="bg-ct-blue text-white text-xl font-medium uppercase py-2 px-5 rounded-full hover:bg-white hover:text-ct-blue cursor-pointer transition-all duration-500 ease-in-out border border-ct-blue"
+              />
+            </form>
+          </div>
+          <div class="lg:basis-1/2">
+            <img src="public/anh-form-dang-ky.png" alt="anh-form-dang-ky" />
+          </div>
+        </div>
+      </section>
       <!-- End Section 13 -->
     </main>
 
@@ -748,6 +839,7 @@
               href="https://www.facebook.com/oceanroaddairies"
               class="size-6 sm:size-10 rounded-full flex items-center justify-center bg-white hover:bg-ct-blue hover:text-white"
               title="facebook"
+              target="_blank"
             >
               <i class="fab fa-facebook-f"></i>
             </a>
@@ -896,9 +988,9 @@
           </div>
           <div class="space-y-2">
             <p>OCEAN ROAD DAIRIES</p>
-            <div class="flex space-x-4">
+            <div class="flex space-x-4 text-xs items-center">
               <a
-                class="block text-ct-blue bg-white hover:bg-ct-blue hover:text-white px-2 rounded-md text-xs"
+                class="block text-ct-blue bg-white hover:bg-ct-blue hover:text-white px-2 py-1 rounded-md"
                 href="https://www.facebook.com/oceanroaddairies"
                 title="Like Page"
               >
