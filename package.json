@@ -1,0 +1,14 @@
+{
+  "name": "ocean-road",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "npx tailwindcss -i ./input.css -o ./style.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
