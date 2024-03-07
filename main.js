@@ -77,3 +77,32 @@ var logo_brand_auto_play_reverse = new Swiper(".logo-brand-auto-play-reverse", {
     },
   },
 })
+
+var silde_danh_gia = new Swiper(".silde-danh-gia", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+})
+
+var slide_thong_tin_huu_ich = new Swiper(".slide-thong-tin-huu-ich", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  slidesPerView: 1,
+  breakpoints: {
+    450: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+  },
+})
+
+var slide_cong_thuc_tu_sua = new Swiper(".slide-cong-thuc-tu-sua", {
+  navigation: {
+    nextEl: ".button-next-slide",
+    prevEl: ".button-prev-slide",
+  },
+  spaceBetween: 30,
+})

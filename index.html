@@ -82,6 +82,7 @@
       <div class="header__moblie">
         <div class="btn-toggle">
           <a href="#"><i class="fas fa-bars text-2xl"></i></a>
+          <a href="#"><i class="fas fa-bars text-2xl opacity-0"></i></a>
         </div>
         <a href="#">
           <img
@@ -138,11 +139,11 @@
     <main>
       <!-- Start Section 1 -->
       <section
-        class="bg-cover h-90dvh bg-no-repeat bg-center"
+        class="bg-cover bg-no-repeat bg-center"
         style="background-image: url('public/bg-slider-trang-chu.png')"
       >
         <div
-          class="container flex flex-col items-center justify-end h-full space-y-20"
+          class="container flex flex-col items-center justify-end h-full space-y-20 mt-[10rem]"
         >
           <h1>Chất lựa chọn số 1 cho sức khỏe và phát triển của bé yêu</h1>
           <div class="flex items-end justify-center">
@@ -353,33 +354,103 @@
       <!-- Start Section 5  -->
       <section>
         <div class="container flex lg:space-x-5 lg:flex-row flex-col-reverse">
-          <div class="basis-1/2 mt-5 lg:mt-0">
-            <!-- <img
-              src="public/cows.png"
-              width="880"
-              height="474"
-              alt="image-dan-bo"
-            /> -->
-            <!-- <div class="swiper-container">
-              <div class="swiper mySwiper">
+          <div class="lg:w-1/2 mt-5 lg:mt-0 mb-10">
+            <div class="swiper-container">
+              <div class="swiper slide-cong-thuc-tu-sua z-[1]">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">Slide 1</div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
-                  <div class="swiper-slide">Slide 4</div>
-                  <div class="swiper-slide">Slide 5</div>
-                  <div class="swiper-slide">Slide 6</div>
-                  <div class="swiper-slide">Slide 7</div>
-                  <div class="swiper-slide">Slide 8</div>
-                  <div class="swiper-slide">Slide 9</div>
+                  <div class="swiper-slide">
+                    <img
+                      src="public/cows.png"
+                      width="880"
+                      height="474"
+                      alt="image-dan-bo"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="public/cows.png"
+                      width="880"
+                      height="474"
+                      alt="image-dan-bo"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="public/cows.png"
+                      width="880"
+                      height="474"
+                      alt="image-dan-bo"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="public/cows.png"
+                      width="880"
+                      height="474"
+                      alt="image-dan-bo"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="public/cows.png"
+                      width="880"
+                      height="474"
+                      alt="image-dan-bo"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="public/cows.png"
+                      width="880"
+                      height="474"
+                      alt="image-dan-bo"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="public/cows.png"
+                      width="880"
+                      height="474"
+                      alt="image-dan-bo"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="public/cows.png"
+                      width="880"
+                      height="474"
+                      alt="image-dan-bo"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="public/cows.png"
+                      width="880"
+                      height="474"
+                      alt="image-dan-bo"
+                    />
+                  </div>
                 </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div> -->
+              <div
+                class="flex items-center bg-ct-blue text-white px-5 py-3 md:py-5 md:px-8 rounded-r-full absolute bottom-0 left-0 translate-y-1/2 z-[2]"
+              >
+                <div
+                  class="button-prev-slide size-10 flex items-center justify-center rounded-full border hover:bg-ct-brown"
+                >
+                  <i class="fas fa-chevron-left text-2xl"></i>
+                </div>
+                <div
+                  class="button-next-slide ml-5 mr-10 md:mr-20 size-10 flex items-center justify-center rounded-full border hover:bg-ct-brown"
+                >
+                  <i class="fas fa-chevron-right text-2xl"></i>
+                </div>
+                <p>Trước / Sau</p>
+              </div>
+            </div>
           </div>
           <div
-            class="basis-1/2 flex flex-col justify-center items-start *:my-2"
+            class="lg:basis-1/2 flex flex-col justify-center items-start *:my-2"
           >
             <h2>Công thức từ sữa tươi - chứa đạm quý A2</h2>
             <p class="text-justify">
@@ -607,7 +678,7 @@
           <h2 class="text-center">Sản phẩm của chúng tôi</h2>
           <div class="flex md:flex-row flex-col justify-center mt-5">
             <div class="flex flex-col items-center my-2 md:m-5">
-              <div class="bg-white rounded-xl">
+              <div class="grow bg-white rounded-xl">
                 <img src="public/sp-sua-1.png" alt="hop-sua" />
               </div>
               <p class="text-2xl font-bold text-ct-blue">Loại 1</p>
@@ -615,7 +686,7 @@
               <span class="text-ct-brown">0-6 Tháng</span>
             </div>
             <div class="flex flex-col items-center my-2 md:m-5">
-              <div class="bg-white rounded-xl">
+              <div class="grow bg-white rounded-xl">
                 <img src="public/sp-sua-2.png" alt="hop-sua" />
               </div>
               <p class="text-2xl font-bold text-ct-blue">Loại 2</p>
@@ -623,7 +694,7 @@
               <span class="text-ct-brown">6-12 Tháng</span>
             </div>
             <div class="flex flex-col items-center my-2 md:m-5">
-              <div class="bg-white rounded-xl px-5">
+              <div class="grow bg-white rounded-xl px-5">
                 <img src="public/sp-sua-3.png" alt="hop-sua" />
               </div>
               <p class="text-2xl font-bold text-ct-blue">Loại 3</p>
@@ -651,6 +722,236 @@
             class="block text-end text-ct-blue hover:text-red-600"
             >Xem tất cả</a
           >
+          <div class="flex flex-col lg:flex-row -mx-3">
+            <div class="lg:basis-1/2 p-3">
+              <div class="*:w-full rounded-t-xl overflow-hidden">
+                <img
+                  src="public/anh-thong-tin-huu-ich.png"
+                  alt="Cân đối giữa công việc và đám trẻ ở nhà trong mùa Covid"
+                />
+              </div>
+              <div class="p-5 bg-bg-layout space-y-3 rounded-b-xl">
+                <h6 class="text-ct-blue font-extrabold text-xl">
+                  Cân đối giữa công việc và đám trẻ ở nhà trong mùa Covid
+                </h6>
+                <p class="font-light">
+                  Đầu tiên: Với tác động của Covid-19 đối với các bậc cha mẹ
+                  đang đi làm, thách thức là làm cách nào để họ có thể giúp con
+                  mình học tập và phát triển một cách hiệu quả trong khi giải
+                  quyết công việc toàn thời gian ở nhà?
+                </p>
+              </div>
+            </div>
+            <div class="lg:w-1/2 p-3">
+              <div class="swiper slide-thong-tin-huu-ich">
+                <div class="swiper-wrapper mb-5">
+                  <div class="swiper-slide" style="align-items: start">
+                    <div class="rounded-xl overflow-hidden">
+                      <div class="">
+                        <img
+                          src="public/img-slide-thong-tin-huu-ich-1.png"
+                          alt="thong-tin-huu-ich"
+                        />
+                      </div>
+                      <div class="text-start p-5 bg-bg-layout space-y-2">
+                        <p class="text-black/70 text-xs font-light">
+                          SEP 14, 2021
+                        </p>
+                        <p class="text-ct-blue line-clamp-2">
+                          Ba mẹ làm thế nào để đối phó với sự mệt mỏi trong tình
+                          hình dịch covid?
+                        </p>
+                        <a
+                          href="#"
+                          title="Chi tiết"
+                          class="text-xs font-light underline underline-offset-4 hover:text-red-500"
+                          >Xem thêm</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="align-items: start">
+                    <div class="rounded-xl overflow-hidden">
+                      <div class="">
+                        <img
+                          src="public/img-slide-thong-tin-huu-ich-2.png"
+                          alt="thong-tin-huu-ich"
+                        />
+                      </div>
+                      <div class="text-start p-5 bg-bg-layout space-y-2">
+                        <p class="text-black/70 text-xs font-light">
+                          SEP 14, 2021
+                        </p>
+                        <p class="text-ct-blue line-clamp-2">
+                          Ocean Road Daries đã thành công trong việc sản xuất
+                          dinh dưỡng hữu cơ như nào?
+                        </p>
+                        <a
+                          href="#"
+                          title="Chi tiết"
+                          class="text-xs font-light underline underline-offset-4 hover:text-red-500"
+                          >Xem thêm</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="align-items: start">
+                    <div class="rounded-xl overflow-hidden">
+                      <div class="">
+                        <img
+                          src="public/img-slide-thong-tin-huu-ich-1.png"
+                          alt="thong-tin-huu-ich"
+                        />
+                      </div>
+                      <div class="text-start p-5 bg-bg-layout space-y-2">
+                        <p class="text-black/70 text-xs font-light">
+                          SEP 14, 2021
+                        </p>
+                        <p class="text-ct-blue line-clamp-2">
+                          Ba mẹ làm thế nào để đối phó với sự mệt mỏi trong tình
+                          hình dịch covid?
+                        </p>
+                        <a
+                          href="#"
+                          title="Chi tiết"
+                          class="text-xs font-light underline underline-offset-4 hover:text-red-500"
+                          >Xem thêm</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="align-items: start">
+                    <div class="rounded-xl overflow-hidden">
+                      <div class="">
+                        <img
+                          src="public/img-slide-thong-tin-huu-ich-2.png"
+                          alt="thong-tin-huu-ich"
+                        />
+                      </div>
+                      <div class="text-start p-5 bg-bg-layout space-y-2">
+                        <p class="text-black/70 text-xs font-light">
+                          SEP 14, 2021
+                        </p>
+                        <p class="text-ct-blue line-clamp-2">
+                          Ocean Road Daries đã thành công trong việc sản xuất
+                          dinh dưỡng hữu cơ như nào?
+                        </p>
+                        <a
+                          href="#"
+                          title="Chi tiết"
+                          class="text-xs font-light underline underline-offset-4 hover:text-red-500"
+                          >Xem thêm</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="align-items: start">
+                    <div class="rounded-xl overflow-hidden">
+                      <div class="">
+                        <img
+                          src="public/img-slide-thong-tin-huu-ich-1.png"
+                          alt="thong-tin-huu-ich"
+                        />
+                      </div>
+                      <div class="text-start p-5 bg-bg-layout space-y-2">
+                        <p class="text-black/70 text-xs font-light">
+                          SEP 14, 2021
+                        </p>
+                        <p class="text-ct-blue line-clamp-2">
+                          Ba mẹ làm thế nào để đối phó với sự mệt mỏi trong tình
+                          hình dịch covid?
+                        </p>
+                        <a
+                          href="#"
+                          title="Chi tiết"
+                          class="text-xs font-light underline underline-offset-4 hover:text-red-500"
+                          >Xem thêm</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="align-items: start">
+                    <div class="rounded-xl overflow-hidden">
+                      <div class="">
+                        <img
+                          src="public/img-slide-thong-tin-huu-ich-2.png"
+                          alt="thong-tin-huu-ich"
+                        />
+                      </div>
+                      <div class="text-start p-5 bg-bg-layout space-y-2">
+                        <p class="text-black/70 text-xs font-light">
+                          SEP 14, 2021
+                        </p>
+                        <p class="text-ct-blue line-clamp-2">
+                          Ocean Road Daries đã thành công trong việc sản xuất
+                          dinh dưỡng hữu cơ như nào?
+                        </p>
+                        <a
+                          href="#"
+                          title="Chi tiết"
+                          class="text-xs font-light underline underline-offset-4 hover:text-red-500"
+                          >Xem thêm</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="align-items: start">
+                    <div class="rounded-xl overflow-hidden">
+                      <div class="">
+                        <img
+                          src="public/img-slide-thong-tin-huu-ich-1.png"
+                          alt="thong-tin-huu-ich"
+                        />
+                      </div>
+                      <div class="text-start p-5 bg-bg-layout space-y-2">
+                        <p class="text-black/70 text-xs font-light">
+                          SEP 14, 2021
+                        </p>
+                        <p class="text-ct-blue line-clamp-2">
+                          Ba mẹ làm thế nào để đối phó với sự mệt mỏi trong tình
+                          hình dịch covid?
+                        </p>
+                        <a
+                          href="#"
+                          title="Chi tiết"
+                          class="text-xs font-light underline underline-offset-4 hover:text-red-500"
+                          >Xem thêm</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="align-items: start">
+                    <div class="rounded-xl overflow-hidden">
+                      <div class="">
+                        <img
+                          src="public/img-slide-thong-tin-huu-ich-2.png"
+                          alt="thong-tin-huu-ich"
+                        />
+                      </div>
+                      <div class="text-start p-5 bg-bg-layout space-y-2">
+                        <p class="text-black/70 text-xs font-light">
+                          SEP 14, 2021
+                        </p>
+                        <p class="text-ct-blue line-clamp-2">
+                          Ocean Road Daries đã thành công trong việc sản xuất
+                          dinh dưỡng hữu cơ như nào?
+                        </p>
+                        <a
+                          href="#"
+                          title="Chi tiết"
+                          class="text-xs font-light underline underline-offset-4 hover:text-red-500"
+                          >Xem thêm</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-pagination translate-y-3 lg:-translate-y-20"
+                ></div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- End Section 9 -->
@@ -748,29 +1049,272 @@
                 và nỗ lực vươn lên cao xa hơn.
               </p>
             </div>
-            <div class="lg:basis-3/5 p-3">
-              <div class="flex items-center relative py-10">
-                <div class="basis-2/5 z-[2] px-2">
-                  <img
-                    src="public/nhan_xet_cua_me_thuy_minh.png"
-                    alt="nhan_xet_cua_nguoi_tieu_dung"
-                  />
+            <div class="lg:w-3/5 p-3">
+              <div class="swiper silde-danh-gia">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="flex items-center relative py-5 sm:py-10">
+                      <div class="basis-2/5 z-[2] px-2">
+                        <img
+                          src="public/nhan_xet_cua_me_thuy_minh.png"
+                          alt="nhan_xet_cua_nguoi_tieu_dung"
+                        />
+                      </div>
+                      <div class="basis-3/5 text-start text-sm z-[2] px-2">
+                        <p>
+                          Không có gì tuyệt vời hơn khi biết rằng con trẻ của
+                          mình đang uống sữa Ocean Road Dairies. Chất lượng và
+                          dinh dưỡng của sản phẩm này thực sự xuất sắc. Chúng
+                          tôi cảm thấy tự tin rằng con trẻ của chúng tôi đang
+                          nhận được những dưỡng chất tốt nhất từ sữa hữu cơ này
+                        </p>
+                        <h6 class="mt-5 mb-2 font-bold text-ct-blue">
+                          Mẹ Thùy Minh
+                        </h6>
+                        <span class="text-xs">Nội trợ</span>
+                      </div>
+                      <div
+                        class="absolute inset-y-0 right-0 w-11/12 sm:w-5/6 rounded-l-full rounded-r-[25rem] bg-bg-layout z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
+                        style="
+                          background-image: url('public/layout-bay-co.png');
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="flex items-center relative py-5 sm:py-10">
+                      <div class="basis-2/5 z-[2] px-2">
+                        <img
+                          src="public/nhan_xet_cua_me_thuy_minh.png"
+                          alt="nhan_xet_cua_nguoi_tieu_dung"
+                        />
+                      </div>
+                      <div class="basis-3/5 text-start text-sm z-[2] px-2">
+                        <p>
+                          Không có gì tuyệt vời hơn khi biết rằng con trẻ của
+                          mình đang uống sữa Ocean Road Dairies. Chất lượng và
+                          dinh dưỡng của sản phẩm này thực sự xuất sắc. Chúng
+                          tôi cảm thấy tự tin rằng con trẻ của chúng tôi đang
+                          nhận được những dưỡng chất tốt nhất từ sữa hữu cơ này
+                        </p>
+                        <h6 class="mt-5 mb-2 font-bold text-ct-blue">
+                          Mẹ Thùy Minh
+                        </h6>
+                        <span class="text-xs">Nội trợ</span>
+                      </div>
+                      <div
+                        class="absolute inset-y-0 right-0 w-11/12 sm:w-5/6 rounded-l-full rounded-r-[25rem] bg-bg-layout z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
+                        style="
+                          background-image: url('public/layout-bay-co.png');
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="flex items-center relative py-5 sm:py-10">
+                      <div class="basis-2/5 z-[2] px-2">
+                        <img
+                          src="public/nhan_xet_cua_me_thuy_minh.png"
+                          alt="nhan_xet_cua_nguoi_tieu_dung"
+                        />
+                      </div>
+                      <div class="basis-3/5 text-start text-sm z-[2] px-2">
+                        <p>
+                          Không có gì tuyệt vời hơn khi biết rằng con trẻ của
+                          mình đang uống sữa Ocean Road Dairies. Chất lượng và
+                          dinh dưỡng của sản phẩm này thực sự xuất sắc. Chúng
+                          tôi cảm thấy tự tin rằng con trẻ của chúng tôi đang
+                          nhận được những dưỡng chất tốt nhất từ sữa hữu cơ này
+                        </p>
+                        <h6 class="mt-5 mb-2 font-bold text-ct-blue">
+                          Mẹ Thùy Minh
+                        </h6>
+                        <span class="text-xs">Nội trợ</span>
+                      </div>
+                      <div
+                        class="absolute inset-y-0 right-0 w-11/12 sm:w-5/6 rounded-l-full rounded-r-[25rem] bg-bg-layout z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
+                        style="
+                          background-image: url('public/layout-bay-co.png');
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="flex items-center relative py-5 sm:py-10">
+                      <div class="basis-2/5 z-[2] px-2">
+                        <img
+                          src="public/nhan_xet_cua_me_thuy_minh.png"
+                          alt="nhan_xet_cua_nguoi_tieu_dung"
+                        />
+                      </div>
+                      <div class="basis-3/5 text-start text-sm z-[2] px-2">
+                        <p>
+                          Không có gì tuyệt vời hơn khi biết rằng con trẻ của
+                          mình đang uống sữa Ocean Road Dairies. Chất lượng và
+                          dinh dưỡng của sản phẩm này thực sự xuất sắc. Chúng
+                          tôi cảm thấy tự tin rằng con trẻ của chúng tôi đang
+                          nhận được những dưỡng chất tốt nhất từ sữa hữu cơ này
+                        </p>
+                        <h6 class="mt-5 mb-2 font-bold text-ct-blue">
+                          Mẹ Thùy Minh
+                        </h6>
+                        <span class="text-xs">Nội trợ</span>
+                      </div>
+                      <div
+                        class="absolute inset-y-0 right-0 w-11/12 sm:w-5/6 rounded-l-full rounded-r-[25rem] bg-bg-layout z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
+                        style="
+                          background-image: url('public/layout-bay-co.png');
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="flex items-center relative py-5 sm:py-10">
+                      <div class="basis-2/5 z-[2] px-2">
+                        <img
+                          src="public/nhan_xet_cua_me_thuy_minh.png"
+                          alt="nhan_xet_cua_nguoi_tieu_dung"
+                        />
+                      </div>
+                      <div class="basis-3/5 text-start text-sm z-[2] px-2">
+                        <p>
+                          Không có gì tuyệt vời hơn khi biết rằng con trẻ của
+                          mình đang uống sữa Ocean Road Dairies. Chất lượng và
+                          dinh dưỡng của sản phẩm này thực sự xuất sắc. Chúng
+                          tôi cảm thấy tự tin rằng con trẻ của chúng tôi đang
+                          nhận được những dưỡng chất tốt nhất từ sữa hữu cơ này
+                        </p>
+                        <h6 class="mt-5 mb-2 font-bold text-ct-blue">
+                          Mẹ Thùy Minh
+                        </h6>
+                        <span class="text-xs">Nội trợ</span>
+                      </div>
+                      <div
+                        class="absolute inset-y-0 right-0 w-11/12 sm:w-5/6 rounded-l-full rounded-r-[25rem] bg-bg-layout z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
+                        style="
+                          background-image: url('public/layout-bay-co.png');
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="flex items-center relative py-5 sm:py-10">
+                      <div class="basis-2/5 z-[2] px-2">
+                        <img
+                          src="public/nhan_xet_cua_me_thuy_minh.png"
+                          alt="nhan_xet_cua_nguoi_tieu_dung"
+                        />
+                      </div>
+                      <div class="basis-3/5 text-start text-sm z-[2] px-2">
+                        <p>
+                          Không có gì tuyệt vời hơn khi biết rằng con trẻ của
+                          mình đang uống sữa Ocean Road Dairies. Chất lượng và
+                          dinh dưỡng của sản phẩm này thực sự xuất sắc. Chúng
+                          tôi cảm thấy tự tin rằng con trẻ của chúng tôi đang
+                          nhận được những dưỡng chất tốt nhất từ sữa hữu cơ này
+                        </p>
+                        <h6 class="mt-5 mb-2 font-bold text-ct-blue">
+                          Mẹ Thùy Minh
+                        </h6>
+                        <span class="text-xs">Nội trợ</span>
+                      </div>
+                      <div
+                        class="absolute inset-y-0 right-0 w-11/12 sm:w-5/6 rounded-l-full rounded-r-[25rem] bg-bg-layout z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
+                        style="
+                          background-image: url('public/layout-bay-co.png');
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="flex items-center relative py-5 sm:py-10">
+                      <div class="basis-2/5 z-[2] px-2">
+                        <img
+                          src="public/nhan_xet_cua_me_thuy_minh.png"
+                          alt="nhan_xet_cua_nguoi_tieu_dung"
+                        />
+                      </div>
+                      <div class="basis-3/5 text-start text-sm z-[2] px-2">
+                        <p>
+                          Không có gì tuyệt vời hơn khi biết rằng con trẻ của
+                          mình đang uống sữa Ocean Road Dairies. Chất lượng và
+                          dinh dưỡng của sản phẩm này thực sự xuất sắc. Chúng
+                          tôi cảm thấy tự tin rằng con trẻ của chúng tôi đang
+                          nhận được những dưỡng chất tốt nhất từ sữa hữu cơ này
+                        </p>
+                        <h6 class="mt-5 mb-2 font-bold text-ct-blue">
+                          Mẹ Thùy Minh
+                        </h6>
+                        <span class="text-xs">Nội trợ</span>
+                      </div>
+                      <div
+                        class="absolute inset-y-0 right-0 w-11/12 sm:w-5/6 rounded-l-full rounded-r-[25rem] bg-bg-layout z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
+                        style="
+                          background-image: url('public/layout-bay-co.png');
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="flex items-center relative py-5 sm:py-10">
+                      <div class="basis-2/5 z-[2] px-2">
+                        <img
+                          src="public/nhan_xet_cua_me_thuy_minh.png"
+                          alt="nhan_xet_cua_nguoi_tieu_dung"
+                        />
+                      </div>
+                      <div class="basis-3/5 text-start text-sm z-[2] px-2">
+                        <p>
+                          Không có gì tuyệt vời hơn khi biết rằng con trẻ của
+                          mình đang uống sữa Ocean Road Dairies. Chất lượng và
+                          dinh dưỡng của sản phẩm này thực sự xuất sắc. Chúng
+                          tôi cảm thấy tự tin rằng con trẻ của chúng tôi đang
+                          nhận được những dưỡng chất tốt nhất từ sữa hữu cơ này
+                        </p>
+                        <h6 class="mt-5 mb-2 font-bold text-ct-blue">
+                          Mẹ Thùy Minh
+                        </h6>
+                        <span class="text-xs">Nội trợ</span>
+                      </div>
+                      <div
+                        class="absolute inset-y-0 right-0 w-11/12 sm:w-5/6 rounded-l-full rounded-r-[25rem] bg-bg-layout z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
+                        style="
+                          background-image: url('public/layout-bay-co.png');
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="flex items-center relative py-5 sm:py-10">
+                      <div class="basis-2/5 z-[2] px-2">
+                        <img
+                          src="public/nhan_xet_cua_me_thuy_minh.png"
+                          alt="nhan_xet_cua_nguoi_tieu_dung"
+                        />
+                      </div>
+                      <div class="basis-3/5 text-start text-sm z-[2] px-2">
+                        <p>
+                          Không có gì tuyệt vời hơn khi biết rằng con trẻ của
+                          mình đang uống sữa Ocean Road Dairies. Chất lượng và
+                          dinh dưỡng của sản phẩm này thực sự xuất sắc. Chúng
+                          tôi cảm thấy tự tin rằng con trẻ của chúng tôi đang
+                          nhận được những dưỡng chất tốt nhất từ sữa hữu cơ này
+                        </p>
+                        <h6 class="mt-5 mb-2 font-bold text-ct-blue">
+                          Mẹ Thùy Minh
+                        </h6>
+                        <span class="text-xs">Nội trợ</span>
+                      </div>
+                      <div
+                        class="absolute inset-y-0 right-0 w-11/12 sm:w-5/6 rounded-l-full rounded-r-[25rem] bg-bg-layout z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
+                        style="
+                          background-image: url('public/layout-bay-co.png');
+                        "
+                      ></div>
+                    </div>
+                  </div>
                 </div>
-                <div class="basis-3/5 text-sm z-[2] px-2">
-                  <p>
-                    Không có gì tuyệt vời hơn khi biết rằng con trẻ của mình
-                    đang uống sữa Ocean Road Dairies. Chất lượng và dinh dưỡng
-                    của sản phẩm này thực sự xuất sắc. Chúng tôi cảm thấy tự tin
-                    rằng con trẻ của chúng tôi đang nhận được những dưỡng chất
-                    tốt nhất từ sữa hữu cơ này
-                  </p>
-                  <h6 class="mt-5 mb-2 font-bold text-ct-blue">Mẹ Thùy Minh</h6>
-                  <span class="text-xs">Nội trợ</span>
-                </div>
-                <div
-                  class="absolute inset-y-0 right-0 w-5/6 rounded-l-full rounded-r-[25rem] bg-bg-layout z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
-                  style="background-image: url('public/layout-bay-co.png')"
-                ></div>
+                <div class="swiper-pagination"></div>
               </div>
             </div>
           </div>
