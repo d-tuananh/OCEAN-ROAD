@@ -17,7 +17,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="styles/trang_chu.css" />
   </head>
   <body>
     <header
@@ -32,10 +32,13 @@
             Đây là sản phẩm đầu tiên trên thế giới kết hợp sữa hữu cơ và đạm A2.
           </p>
           <div class="space-x-2 text-lg hidden 2xl:block">
-            <a href="#">
+            <a href="https://www.facebook.com/oceanroaddairies" target="_blank">
               <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="#">
+            <a
+              href="https://www.instagram.com/oceanroaddairies?fbclid=IwAR1e4VRzcUDlySXMdUEzCawoKfl_aqRAJADzRGoF-ut4kS1-htZ1bOGFig4"
+              target="_blank"
+            >
               <i class="fab fa-instagram"></i>
             </a>
           </div>
@@ -56,7 +59,7 @@
           </ul>
         </div>
         <div class="logo">
-          <a href="#">
+          <a href="/">
             <img
               src="public/logo-header.png"
               width="189"
@@ -68,18 +71,22 @@
         <div class="menu-right">
           <ul>
             <li>
-              <a href="#"
+              <a href="pages/page-san-pham.html"
                 ><span>SẢN PHẨM</span> <i class="fas fa-chevron-down"></i
               ></a>
             </li>
-            <li><a href="#">Tại sao chọn hữu cơ?</a></li>
             <li>
-              <a href="#"
+              <a href="pages/page-ocean-road-dairies.html"
+                >Tại sao chọn hữu cơ?</a
+              >
+            </li>
+            <li>
+              <a href="pages/page-tin-tuc.html"
                 ><span>TIN TỨC</span> <i class="fas fa-chevron-down"></i
               ></a>
             </li>
-            <li><a href="#">HỎI ĐÁP</a></li>
-            <li><a href="#">LIÊN HỆ</a></li>
+            <li><a href="pages/page-hoi-dap.html">HỎI ĐÁP</a></li>
+            <li><a href="pages/page-lien-he.html">LIÊN HỆ</a></li>
           </ul>
         </div>
       </div>
@@ -99,10 +106,13 @@
           />
         </a>
         <div class="space-x-2 text-lg">
-          <a href="#">
+          <a href="https://www.facebook.com/oceanroaddairies" target="_blank">
             <i class="fab fa-facebook-f text-2xl"></i>
           </a>
-          <a href="#">
+          <a
+            href="https://www.instagram.com/oceanroaddairies?fbclid=IwAR1e4VRzcUDlySXMdUEzCawoKfl_aqRAJADzRGoF-ut4kS1-htZ1bOGFig4"
+            target="_blank"
+          >
             <i class="fab fa-instagram text-2xl"></i>
           </a>
         </div>
@@ -111,7 +121,7 @@
       <div class="menu__moblie -translate-x-full">
         <ul>
           <div class="flex justify-between items-center">
-            <a href="#">
+            <a href="/">
               <img src="public/logo-header.png" alt="" />
             </a>
             <i class="far fa-caret-square-left text-4xl"></i>
@@ -125,18 +135,22 @@
           <li><a href="#">ĐẠM QUÝ A2</a></li>
           <li><a href="#"> Công thức từ sữa tươi</a></li>
           <li>
-            <a href="#"
+            <a href="pages/page-san-pham.html"
               ><span>SẢN PHẨM</span> <i class="fas fa-chevron-down"></i
             ></a>
           </li>
-          <li><a href="#">Tại sao chọn hữu cơ?</a></li>
           <li>
-            <a href="#"
+            <a href="pages/page-ocean-road-dairies.html"
+              >Tại sao chọn hữu cơ?</a
+            >
+          </li>
+          <li>
+            <a href="pages/page-tin-tuc.html"
               ><span>TIN TỨC</span> <i class="fas fa-chevron-down"></i
             ></a>
           </li>
-          <li><a href="#">HỎI ĐÁP</a></li>
-          <li><a href="#">LIÊN HỆ</a></li>
+          <li><a href="pages/page-hoi-dap.html">HỎI ĐÁP</a></li>
+          <li><a href="pages/page-lien-he.html">LIÊN HỆ</a></li>
         </ul>
       </div>
       <div class="bg-over-menu translate-x-full"></div>
@@ -259,15 +273,16 @@
         <div class="container">
           <div class="flex flex-col items-center space-y-5 mb-16">
             <h2 class="lg:w-2/3 text-center">
-              Chúng tôi chỉ sử dụng sữa bò đạt chứng nhận hữu cơTrang trại hữu
+              Chúng tôi chỉ sử dụng sữa bò đạt chứng nhận hữu cơ Trang trại hữu
               cơ, Bò nuôi hữu cơ
             </h2>
-            <button
-              class="bg-ct-brown text-white py-3 px-5 rounded-full hover:bg-ct-blue"
+            <a
+              class="bg-ct-brown text-white py-3 px-5 rounded-full hover:bg-ct-blue block"
+              href="pages/page-ocean-road-dairies.html"
             >
               <span>Tại sao chọn hữu cơ</span>
               <i class="fas fa-long-arrow-alt-right text-xl"></i>
-            </button>
+            </a>
           </div>
           <div class="flex space-x-5 lg:flex-row flex-col">
             <div class="basis-1/2">
@@ -683,30 +698,42 @@
         <div class="container z-10 relative">
           <h2 class="text-center">Sản phẩm của chúng tôi</h2>
           <div class="flex md:flex-row flex-col justify-center mt-5">
-            <div class="flex flex-col items-center my-2 md:m-5">
+            <a
+              href="pages/page-chi-tiet-san-pham.html"
+              title="chi-tiet-san-pham"
+              class="flex flex-col items-center my-2 md:m-5"
+            >
               <div class="grow bg-white rounded-xl">
                 <img src="public/sp-sua-1.png" alt="hop-sua" />
               </div>
               <p class="text-2xl font-bold text-ct-blue">Loại 1</p>
               <span class="text-ct-brown">Sữa cho trẻ sơ sinh</span>
               <span class="text-ct-brown">0-6 Tháng</span>
-            </div>
-            <div class="flex flex-col items-center my-2 md:m-5">
+            </a>
+            <a
+              href="pages/page-chi-tiet-san-pham.html"
+              title="chi-tiet-san-pham"
+              class="flex flex-col items-center my-2 md:m-5"
+            >
               <div class="grow bg-white rounded-xl">
                 <img src="public/sp-sua-2.png" alt="hop-sua" />
               </div>
               <p class="text-2xl font-bold text-ct-blue">Loại 2</p>
               <span class="text-ct-brown">Sữa theo dõi cùng trẻ</span>
               <span class="text-ct-brown">6-12 Tháng</span>
-            </div>
-            <div class="flex flex-col items-center my-2 md:m-5">
+            </a>
+            <a
+              href="pages/page-chi-tiet-san-pham.html"
+              title="chi-tiet-san-pham"
+              class="flex flex-col items-center my-2 md:m-5"
+            >
               <div class="grow bg-white rounded-xl px-5">
                 <img src="public/sp-sua-3.png" alt="hop-sua" />
               </div>
               <p class="text-2xl font-bold text-ct-blue">Loại 3</p>
               <span class="text-ct-brown">Sữa cho trẻ tập đi</span>
               <span class="text-ct-brown">1 năm</span>
-            </div>
+            </a>
           </div>
         </div>
         <div class="absolute bottom-0 right-0 w-fit">
@@ -723,7 +750,7 @@
         <div class="container">
           <h2 class="text-center">THÔNG TIN HỮU ÍCH</h2>
           <a
-            href="#"
+            href="pages/page-tin-tuc.html"
             title="THÔNG TIN HỮU ÍCH"
             class="block text-end text-ct-blue hover:text-red-600"
             >Xem tất cả</a
@@ -1381,9 +1408,9 @@
         <div
           class="flex md:flex-row flex-col justify-between items-center space-y-3 md:space-y-0"
         >
-          <div class="">
+          <a class="block" href="/" title="Trang chủ">
             <img src="public/logo-ocean-footer.png" alt="logo-web" />
-          </div>
+          </a>
           <div class="flex space-x-4 items-end">
             <a
               href="https://www.facebook.com/oceanroaddairies"
@@ -1394,21 +1421,24 @@
               <i class="fab fa-facebook-f"></i>
             </a>
             <a
-              href=""
+              href="https://www.facebook.com/oceanroaddairies"
+              target="_blank"
               class="size-6 sm:size-10 rounded-full flex items-center justify-center bg-white hover:bg-ct-blue hover:text-white"
               title="shopee"
             >
               <i class="fab fa-shopify"></i>
             </a>
             <a
-              href=""
+              href="https://www.youtube.com/@australiandairynutritional4746"
+              target="_blank"
               class="size-6 sm:size-10 rounded-full flex items-center justify-center bg-white hover:bg-ct-blue hover:text-white"
               title="youtube"
             >
               <i class="fab fa-youtube"></i>
             </a>
             <a
-              href=""
+              href="https://www.facebook.com/oceanroaddairies"
+              target="_blank"
               class="size-6 sm:size-10 rounded-full flex items-center justify-center bg-white hover:bg-ct-blue hover:text-white"
               title="tiktok"
             >
@@ -1465,19 +1495,28 @@
               <a href="#" class="hover:text-blue-800" title="Đạm quý A2"
                 >Đạm quý A2</a
               >
-              <a href="#" class="hover:text-blue-800" title="Sản phẩm"
+              <a
+                href="pages/page-san-pham.html"
+                class="hover:text-blue-800"
+                title="Sản phẩm"
                 >Sản phẩm</a
               >
               <a
-                href="#"
+                href="pages/page-ocean-road-dairies.html"
                 class="hover:text-blue-800"
                 title="Tại sao chọn sữa hữu cơ?"
                 >Tại sao chọn sữa hữu cơ?</a
               >
-              <a href="#" class="hover:text-blue-800" title="Liên hệ"
+              <a
+                href="pages/page-lien-he.html"
+                class="hover:text-blue-800"
+                title="Liên hệ"
                 >Liên hệ</a
               >
-              <a href="#" class="hover:text-blue-800" title="Tin Tức"
+              <a
+                href="pages/page-tin-tuc.html"
+                class="hover:text-blue-800"
+                title="Tin Tức"
                 >Tin Tức</a
               >
             </div>
@@ -1486,19 +1525,19 @@
             >
               <h4 class="">Sản phẩm</h4>
               <a
-                href="#"
+                href="pages/page-chi-tiet-san-pham.html"
                 class="hover:text-blue-800"
                 title="Stage 1 Infant Formula"
                 >Stage 1 Infant Formula</a
               >
               <a
-                href="#"
+                href="pages/page-chi-tiet-san-pham.html"
                 class="hover:text-blue-800"
                 title="Stage 2 Follow-On Formula"
                 >Stage 2 Follow-On Formula</a
               >
               <a
-                href="#"
+                href="pages/page-chi-tiet-san-pham.html"
                 class="hover:text-blue-800"
                 title="Stage 3 Toddler Milk"
                 >Stage 3 Toddler Milk</a
