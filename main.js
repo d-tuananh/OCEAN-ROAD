@@ -106,3 +106,33 @@ var slide_cong_thuc_tu_sua = new Swiper(".slide-cong-thuc-tu-sua", {
   },
   spaceBetween: 30,
 })
+
+var swiper = new Swiper(".image-slide", {
+  spaceBetween: 10,
+  slidesPerView: "auto",
+  freeMode: true,
+  watchSlidesProgress: true,
+})
+var swiper2 = new Swiper(".image-preview", {
+  spaceBetween: 10,
+  thumbs: {
+    swiper: swiper,
+  },
+})
+
+// Toggle modal image
+const btnModalClose = document.querySelector(".close-modal-image")
+const modalImage = document.querySelector(".modal-image-chi-tiet-sp")
+const btnModalOpen = document.querySelectorAll(".open-modal-image")
+const imageModal = document.querySelector(".modal-image-chi-tiet-sp img")
+console.log(btnModalClose, modalImage, btnModalClose, imageModal)
+function onModalImage(url) {
+  imageModal.src = url
+}
+const btnModal = [btnModalClose, ...btnModalOpen]
+btnModal.forEach((ben) => {
+  ben.addEventListener("click", (e) => {
+    e.preventDefault()
+    modalImage.classList.toggle("scale-0")
+  })
+})
