@@ -1068,6 +1068,11 @@ header i:hover,
   margin-bottom: auto;
 }
 
+.my-1{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .mb-16{
   margin-bottom: 4rem;
 }
@@ -2006,6 +2011,14 @@ i.fa-minus {
     margin-right: -1.25rem;
   }
 
+  .sm\:mb-2{
+    margin-bottom: 0.5rem;
+  }
+
+  .sm\:mt-5{
+    margin-top: 1.25rem;
+  }
+
   .sm\:size-10{
     width: 2.5rem;
     height: 2.5rem;
@@ -2030,6 +2043,14 @@ i.fa-minus {
 
   .sm\:basis-1\/2{
     flex-basis: 50%;
+  }
+
+  .sm\:basis-2\/5{
+    flex-basis: 40%;
+  }
+
+  .sm\:basis-3\/5{
+    flex-basis: 60%;
   }
 
   .sm\:space-y-5 > :not([hidden]) ~ :not([hidden]){
