@@ -85,6 +85,18 @@
   .form-lien-he div {
     @apply flex flex-col space-y-2;
   }
+
+  .accordion {
+    @apply mb-3;
+  }
+
+  .accordion__title {
+    @apply bg-ct-blue/5 rounded-full py-2 px-5 flex justify-between items-center cursor-pointer text-lg font-extrabold text-ct-blue mb-2;
+  }
+
+  .accordion__text {
+    @apply overflow-hidden max-h-0 duration-1000 transition-all ease-in-out shadow-item-hoi-dap px-5 rounded-xl;
+  }
 }
 
 .swiper {
@@ -109,4 +121,20 @@
 
 .ct-flex-1 {
   flex: 1;
+}
+
+.accordion .accordion__title:has(input:checked) + .accordion__text {
+  max-height: 20rem;
+}
+
+.accordion .accordion__title:has(input:checked) i.fa-minus {
+  display: block;
+}
+
+.accordion .accordion__title:has(input:checked) i.fa-plus {
+  display: none;
+}
+
+i.fa-minus {
+  display: none;
 }
