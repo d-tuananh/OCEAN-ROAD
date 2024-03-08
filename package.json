@@ -4,10 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "build-css-trang-chu": "npx tailwindcss -i src/trang_chu.css -o styles/trang_chu.css --watch",
-    "build-css-trang-san-pham": "npx tailwindcss -i src/trang_san_pham.css -o styles/trang_san_pham.css --watch",
-    "build-css-trang_chi_tiet_san_pham": "npx tailwindcss -i src/trang_chi_tiet_san_pham.css -o styles/trang_chi_tiet_san_pham.css --watch",
-    "build-css-trang-ocean-road-dairies": "npx tailwindcss -i src/trang_ocean_road_dairies.css -o styles/trang_ocean_road_dairies.css --watch"
+    "build-css": "npx tailwindcss -i src/input.css -o styles/main.css --watch"
   },
   "author": "",
   "license": "ISC",
