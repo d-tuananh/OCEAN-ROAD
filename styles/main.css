@@ -1153,24 +1153,14 @@ header i:hover,
   height: 1.5rem;
 }
 
-.size-\[25rem\]{
-  width: 25rem;
-  height: 25rem;
-}
-
-.size-5{
-  width: 1.25rem;
-  height: 1.25rem;
-}
-
-.size-28{
-  width: 7rem;
-  height: 7rem;
-}
-
 .size-8{
   width: 2rem;
   height: 2rem;
+}
+
+.size-\[25rem\]{
+  width: 25rem;
+  height: 25rem;
 }
 
 .h-1{
@@ -1544,24 +1534,14 @@ header i:hover,
   background-color: rgb(255 235 187 / var(--tw-bg-opacity));
 }
 
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-slate-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
-
-.bg-slate-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
 .bg-slate-200{
   --tw-bg-opacity: 1;
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-ct-layout{
@@ -1949,6 +1929,16 @@ i.fa-minus {
 
 .\*\:rounded-2xl > *{
   border-radius: 1rem;
+}
+
+.\*\:rounded-l-full > *{
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
+.\*\:rounded-r-full > *{
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
 }
 
 .\*\:object-cover > *{
