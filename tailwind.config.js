@@ -30,6 +30,10 @@ module.exports = {
         "ct-layout":
           "linear-gradient(90deg, rgba(0, 0, 0, 0.55) 0.7%, rgba(102, 102, 102, 0.00) 100.38%)",
       },
+      width: {},
+      maxWidth: {
+        "screen-1920": "1920px",
+      },
     },
   },
   plugins: [],

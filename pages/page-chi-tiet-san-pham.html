@@ -533,9 +533,11 @@
       </div>
 
       <!-- Start Section 6  -->
-      <section>
-        <div class="container flex lg:space-x-5 lg:flex-row flex-col-reverse">
-          <div class="lg:w-1/2 mt-5 lg:mt-0 mb-10">
+      <section class="relative flex flex-col-reverse">
+        <div
+          class="lg:absolute inset-y-14 lg:max-w-screen-1920 w-full lg:right-1/2 lg:translate-x-1/2"
+        >
+          <div class="pr-5 *:h-full lg:w-1/2 h-full *:w-full mr-auto">
             <img
               src="../public/cows.png"
               width="880"
@@ -543,8 +545,10 @@
               alt="image-dan-bo"
             />
           </div>
+        </div>
+        <div class="container pb-5 lg:py-20">
           <div
-            class="lg:basis-1/2 flex flex-col justify-center items-start *:my-2"
+            class="lg:w-1/2 flex flex-col justify-center items-start *:my-2 ml-auto lg:pl-5"
           >
             <h2>Công thức từ sữa tươi - chứa đạm quý A2</h2>
             <p class="text-justify">
@@ -917,11 +921,9 @@
       <!-- End Section 12 -->
 
       <!-- Start Section 13 -->
-      <section>
-        <div
-          class="container flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-10"
-        >
-          <div class="lg:basis-1/2">
+      <section class="relative flex flex-col">
+        <div class="container">
+          <div class="lg:w-1/2 lg:pr-5 py-10">
             <h2 class="text-center">ĐĂNG KÝ NHẬN THÔNG TIN TƯ VẤN</h2>
             <form action="" class="flex flex-col mt-10 space-y-5">
               <input
@@ -953,7 +955,11 @@
               />
             </form>
           </div>
-          <div class="lg:basis-1/2">
+        </div>
+        <div
+          class="lg:absolute inset-y-14 lg:max-w-screen-1920 w-full lg:left-1/2 lg:-translate-x-1/2"
+        >
+          <div class="pl-5 *:h-full lg:w-1/2 h-full *:w-full ml-auto">
             <img src="../public/anh-form-dang-ky.png" alt="anh-form-dang-ky" />
           </div>
         </div>

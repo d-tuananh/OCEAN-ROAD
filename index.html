@@ -170,44 +170,17 @@
           >
             Chất lựa chọn số 1 cho sức khỏe và phát triển của bé yêu
           </h1>
-          <div class="flex items-end justify-center">
-            <div class="translate-x-16">
-              <img
-                src="public/milk-bottle-2.png"
-                width="319"
-                height="392"
-                alt="milk-bottle"
-              />
-            </div>
-            <div class="">
-              <img
-                src="public/milk-bottle-1.png"
-                width="357"
-                height="445"
-                alt="milk-bottle"
-              />
-            </div>
-            <div class="-translate-x-16">
-              <img
-                src="public/milk-bottle-3.png"
-                width="273"
-                height="393"
-                alt="milk-bottle"
-              />
-            </div>
+          <div>
+            <img src="public/3-hop-sua.png" alt="3-hop-sua" />
           </div>
         </div>
       </section>
       <!-- End Section 1 -->
 
       <!-- Start Section 2  -->
-      <section class="bg-bg-layout">
-        <div
-          class="container flex space-y-5 lg:space-y-0 lg:space-x-5 lg:flex-row flex-col"
-        >
-          <div
-            class="basis-1/2 flex flex-col justify-center items-start *:my-2"
-          >
+      <section class="bg-bg-layout relative flex flex-col">
+        <div class="container mb-5 lg:my-20">
+          <div class="lg:w-1/2 flex flex-col justify-center items-start *:my-2">
             <h2>ocean road dairies</h2>
             <p class="uppercase font-bold text-xl md:text-2xl text-ct-brown">
               SẢN PHẨM TIÊN PHONG VÀ KHÁC BIỆT
@@ -224,7 +197,11 @@
               <i class="fas fa-long-arrow-alt-right text-xl"></i>
             </button>
           </div>
-          <div class="basis-1/2">
+        </div>
+        <div
+          class="lg:absolute inset-y-14 lg:max-w-screen-1920 w-full lg:left-1/2 lg:-translate-x-1/2"
+        >
+          <div class="pl-5 *:h-full lg:w-1/2 h-full *:w-full ml-auto">
             <img
               src="public/cow-farm.png"
               width="894"
@@ -237,9 +214,11 @@
       <!-- End Section 2  -->
 
       <!-- Start Section 3  -->
-      <section>
-        <div class="container flex lg:space-x-5 lg:flex-row flex-col-reverse">
-          <div class="basis-1/2 mt-5 lg:mt-0">
+      <section class="relative flex flex-col-reverse">
+        <div
+          class="lg:absolute inset-y-14 lg:max-w-screen-1920 w-full lg:right-1/2 lg:translate-x-1/2"
+        >
+          <div class="pr-5 *:h-full lg:w-1/2 h-full *:w-full mr-auto">
             <img
               src="public/map-trang-trai.png"
               width="917"
@@ -247,8 +226,10 @@
               alt="map-trang-trai"
             />
           </div>
+        </div>
+        <div class="container pb-5 lg:py-20">
           <div
-            class="basis-1/2 flex flex-col justify-center items-start *:my-2"
+            class="ml-auto lg:w-1/2 flex flex-col justify-center items-start *:my-2"
           >
             <h2>SẢN XUẤT TẠI ÚC, CỦA NGƯỜI ÚC</h2>
             <p class="text-justify">
@@ -377,105 +358,125 @@
       <!-- End Section 4  -->
 
       <!-- Start Section 5  -->
-      <section>
-        <div class="container flex lg:space-x-5 lg:flex-row flex-col-reverse">
-          <div class="lg:w-1/2 mt-5 lg:mt-0 mb-10">
-            <div class="swiper-container">
-              <div class="swiper slide-cong-thuc-tu-sua z-[1]">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img
-                      src="public/cows.png"
-                      width="880"
-                      height="474"
-                      alt="image-dan-bo"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="public/cows.png"
-                      width="880"
-                      height="474"
-                      alt="image-dan-bo"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="public/cows.png"
-                      width="880"
-                      height="474"
-                      alt="image-dan-bo"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="public/cows.png"
-                      width="880"
-                      height="474"
-                      alt="image-dan-bo"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="public/cows.png"
-                      width="880"
-                      height="474"
-                      alt="image-dan-bo"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="public/cows.png"
-                      width="880"
-                      height="474"
-                      alt="image-dan-bo"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="public/cows.png"
-                      width="880"
-                      height="474"
-                      alt="image-dan-bo"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="public/cows.png"
-                      width="880"
-                      height="474"
-                      alt="image-dan-bo"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="public/cows.png"
-                      width="880"
-                      height="474"
-                      alt="image-dan-bo"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div
-                class="flex items-center bg-ct-blue text-white px-5 py-3 md:py-5 md:px-8 rounded-r-full absolute bottom-0 left-0 translate-y-1/2 z-[2]"
-              >
+      <section class="relative flex flex-col-reverse">
+        <div
+          class="lg:absolute inset-y-14 lg:max-w-screen-1920 w-full lg:right-1/2 lg:translate-x-1/2 mb-5"
+        >
+          <div class="swiper-container lg:w-1/2 mr-auto h-full pr-5">
+            <div class="swiper slide-cong-thuc-tu-sua z-[1]">
+              <div class="swiper-wrapper">
                 <div
-                  class="button-prev-slide size-10 flex items-center justify-center rounded-full border hover:bg-ct-brown"
+                  class="swiper-slide *:w-full rounded-r-full overflow-hidden"
                 >
-                  <i class="fas fa-chevron-left text-2xl"></i>
+                  <img
+                    src="public/cows.png"
+                    width="880"
+                    height="474"
+                    alt="image-dan-bo"
+                  />
                 </div>
                 <div
-                  class="button-next-slide ml-5 mr-10 md:mr-20 size-10 flex items-center justify-center rounded-full border hover:bg-ct-brown"
+                  class="swiper-slide *:w-full rounded-r-full overflow-hidden"
                 >
-                  <i class="fas fa-chevron-right text-2xl"></i>
+                  <img
+                    src="public/cows.png"
+                    width="880"
+                    height="474"
+                    alt="image-dan-bo"
+                  />
                 </div>
-                <p>Trước / Sau</p>
+                <div
+                  class="swiper-slide *:w-full rounded-r-full overflow-hidden"
+                >
+                  <img
+                    src="public/cows.png"
+                    width="880"
+                    height="474"
+                    alt="image-dan-bo"
+                  />
+                </div>
+                <div
+                  class="swiper-slide *:w-full rounded-r-full overflow-hidden"
+                >
+                  <img
+                    src="public/cows.png"
+                    width="880"
+                    height="474"
+                    alt="image-dan-bo"
+                  />
+                </div>
+                <div
+                  class="swiper-slide *:w-full rounded-r-full overflow-hidden"
+                >
+                  <img
+                    src="public/cows.png"
+                    width="880"
+                    height="474"
+                    alt="image-dan-bo"
+                  />
+                </div>
+                <div
+                  class="swiper-slide *:w-full rounded-r-full overflow-hidden"
+                >
+                  <img
+                    src="public/cows.png"
+                    width="880"
+                    height="474"
+                    alt="image-dan-bo"
+                  />
+                </div>
+                <div
+                  class="swiper-slide *:w-full rounded-r-full overflow-hidden"
+                >
+                  <img
+                    src="public/cows.png"
+                    width="880"
+                    height="474"
+                    alt="image-dan-bo"
+                  />
+                </div>
+                <div
+                  class="swiper-slide *:w-full rounded-r-full overflow-hidden"
+                >
+                  <img
+                    src="public/cows.png"
+                    width="880"
+                    height="474"
+                    alt="image-dan-bo"
+                  />
+                </div>
+                <div
+                  class="swiper-slide *:w-full rounded-r-full overflow-hidden"
+                >
+                  <img
+                    src="public/cows.png"
+                    width="880"
+                    height="474"
+                    alt="image-dan-bo"
+                  />
+                </div>
               </div>
             </div>
+            <div
+              class="flex items-center bg-ct-blue text-white px-5 py-3 md:py-5 md:px-8 rounded-r-full absolute bottom-0 left-0 translate-y-1/2 z-[2]"
+            >
+              <div
+                class="button-prev-slide size-10 flex items-center justify-center rounded-full border hover:bg-ct-brown"
+              >
+                <i class="fas fa-chevron-left text-2xl"></i>
+              </div>
+              <div
+                class="button-next-slide ml-5 mr-10 md:mr-20 size-10 flex items-center justify-center rounded-full border hover:bg-ct-brown"
+              >
+                <i class="fas fa-chevron-right text-2xl"></i>
+              </div>
+              <p>Trước / Sau</p>
+            </div>
           </div>
+        </div>
+        <div class="container">
           <div
-            class="lg:basis-1/2 flex flex-col justify-center items-start *:my-2"
+            class="ml-auto lg:w-1/2 flex flex-col justify-center items-start *:my-2 lg:py-20 pb-5 lg:pl-5"
           >
             <h2>Công thức từ sữa tươi - chứa đạm quý A2</h2>
             <p class="text-justify">
@@ -1360,11 +1361,9 @@
       <!-- End Section 12 -->
 
       <!-- Start Section 13 -->
-      <section>
-        <div
-          class="container flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-10"
-        >
-          <div class="lg:basis-1/2">
+      <section class="relative flex flex-col">
+        <div class="container">
+          <div class="lg:w-1/2 lg:pr-5 py-10">
             <h2 class="text-center">ĐĂNG KÝ NHẬN THÔNG TIN TƯ VẤN</h2>
             <form action="" class="flex flex-col mt-10 space-y-5">
               <input
@@ -1396,7 +1395,11 @@
               />
             </form>
           </div>
-          <div class="lg:basis-1/2">
+        </div>
+        <div
+          class="lg:absolute inset-y-14 lg:max-w-screen-1920 w-full lg:left-1/2 lg:-translate-x-1/2"
+        >
+          <div class="pl-5 *:h-full lg:w-1/2 h-full *:w-full ml-auto">
             <img src="public/anh-form-dang-ky.png" alt="anh-form-dang-ky" />
           </div>
         </div>

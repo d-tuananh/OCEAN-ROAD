@@ -23,6 +23,9 @@
   footer a {
     @apply transition-all duration-500 ease-in-out;
   }
+  main {
+    @apply mt-10;
+  }
 }
 
 @layer components {
@@ -102,4 +105,8 @@
 
 .image-slide .swiper-slide {
   opacity: 0.7;
+}
+
+.ct-flex-1 {
+  flex: 1;
 }
