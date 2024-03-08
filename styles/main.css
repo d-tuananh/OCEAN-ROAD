@@ -898,6 +898,25 @@ header i:hover,
   background-color: rgb(170 146 89 / var(--tw-bg-opacity));
 }
 
+.form-lien-he label{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(43 94 138 / var(--tw-text-opacity));
+}
+
+.form-lien-he div{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-lien-he div > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
 .fixed{
   position: fixed;
 }
@@ -964,6 +983,10 @@ header i:hover,
   z-index: 2;
 }
 
+.m-2{
+  margin: 0.5rem;
+}
+
 .-mx-2{
   margin-left: -0.5rem;
   margin-right: -0.5rem;
@@ -997,6 +1020,11 @@ header i:hover,
 .my-auto{
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .mb-10{
@@ -1041,6 +1069,10 @@ header i:hover,
 
 .mt-\[10rem\]{
   margin-top: 10rem;
+}
+
+.ml-\[20\%\]{
+  margin-left: 20%;
 }
 
 .line-clamp-2{
@@ -1110,6 +1142,10 @@ header i:hover,
   height: 100%;
 }
 
+.h-\[20rem\]{
+  height: 20rem;
+}
+
 .w-1\/2{
   width: 50%;
 }
@@ -1162,6 +1198,10 @@ header i:hover,
 
 .basis-3\/5{
   flex-basis: 60%;
+}
+
+.basis-full{
+  flex-basis: 100%;
 }
 
 .-translate-x-16{
@@ -1486,6 +1526,10 @@ header i:hover,
 
 .p-5{
   padding: 1.25rem;
+}
+
+.p-2{
+  padding: 0.5rem;
 }
 
 .px-2{
@@ -1814,6 +1858,10 @@ header i:hover,
     margin-right: -1.25rem;
   }
 
+  .sm\:ml-0{
+    margin-left: 0px;
+  }
+
   .sm\:size-10{
     width: 2.5rem;
     height: 2.5rem;
@@ -1830,6 +1878,14 @@ header i:hover,
   .sm\:w-fit{
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .sm\:w-1\/2{
+    width: 50%;
+  }
+
+  .sm\:basis-1\/2{
+    flex-basis: 50%;
   }
 
   .sm\:space-y-5 > :not([hidden]) ~ :not([hidden]){
@@ -1943,6 +1999,10 @@ header i:hover,
     margin-top: 0px;
   }
 
+  .lg\:h-full{
+    height: 100%;
+  }
+
   .lg\:w-1\/2{
     width: 50%;
   }
@@ -1965,6 +2025,11 @@ header i:hover,
 
   .lg\:w-3\/5{
     width: 60%;
+  }
+
+  .lg\:w-fit{
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .lg\:basis-1\/2{
