@@ -8,9 +8,6 @@
   body {
     @apply text-sm sm:text-base leading-tight font-normal font-Roboto;
   }
-  h1 {
-    @apply font-DancingScript font-medium text-6xl md:text-7xl text-ct-blue text-center;
-  }
   h2 {
     @apply text-3xl md:text-[2rem] font-bold uppercase text-ct-blue;
   }
@@ -73,6 +70,10 @@
   .line-right {
     @apply w-[6rem] lg:w-[3rem] xl:w-[7rem] 2xl:w-[15rem] border-b-2 border-dashed border-ct-blue relative after:block after:w-[5rem] lg:after:w-[7rem] after:border-b-2 after:border-dashed after:border-ct-blue after:absolute lg:after:-translate-x-[6.2rem] after:-translate-x-[4.2rem] after:translate-y-7 after:left-0 after:-rotate-45 lg:after:translate-y-10 before:block before:size-2 lg:before:size-3 before:rounded-full before:bg-[#DEBA1E] before:-translate-x-16 lg:before:-translate-x-[6rem] before:absolute before:left-0 before:translate-y-14 lg:before:translate-y-20;
   } */
+
+  .thong-tin-sp-active {
+    @apply bg-ct-blue text-white relative after:absolute after:block after:inset-x-0 after:bottom-0 after:h-1 after:bg-ct-brown after:translate-y-1/2;
+  }
 }
 
 .swiper {
@@ -85,4 +86,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.image-slide .swiper-slide-thumb-active {
+  opacity: 1 !important;
+}
+
+.image-slide .swiper-slide {
+  opacity: 0.7;
 }
