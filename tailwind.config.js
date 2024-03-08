@@ -19,6 +19,7 @@ module.exports = {
       },
       boxShadow: {
         header: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+        "item-hoi-dap": "0px 9px 14.8px 0px rgba(0, 0, 0, 0.05)",
       },
       height: {
         "90dvh": "90dvh",
