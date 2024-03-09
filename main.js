@@ -45,6 +45,15 @@ if (document.querySelector(".banner-slide")) {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+      renderBullet: function (index, className) {
+        return (
+          '<span class="' +
+          className +
+          '">' +
+          '<svg xmlns="http://www.w3.org/2000/svg" width="11" height="13" viewBox="0 0 11 13" fill="none"><path d="M0.117907 10.377C-0.520707 6.22598 1.55953 4.13536 3.3574 3.29124C4.13967 2.92396 4.92411 2.52159 5.56185 1.93838C7.58356 0.0895368 9.92895 -1.03443 10.6179 1.37695C11.6179 4.87695 1.11791 16.877 0.117907 10.377Z" fill="#2B5E8A"/></svg>' +
+          "</span>"
+        )
+      },
     },
   })
 }
@@ -129,6 +138,15 @@ if (document.querySelector(".silde-danh-gia")) {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+      renderBullet: function (index, className) {
+        return (
+          '<span class="' +
+          className +
+          '">' +
+          '<svg xmlns="http://www.w3.org/2000/svg" width="11" height="13" viewBox="0 0 11 13" fill="none"><path d="M0.117907 10.377C-0.520707 6.22598 1.55953 4.13536 3.3574 3.29124C4.13967 2.92396 4.92411 2.52159 5.56185 1.93838C7.58356 0.0895368 9.92895 -1.03443 10.6179 1.37695C11.6179 4.87695 1.11791 16.877 0.117907 10.377Z" fill="#2B5E8A"/></svg>' +
+          "</span>"
+        )
+      },
     },
   })
 }
@@ -138,6 +156,15 @@ if (document.querySelector(".slide-thong-tin-huu-ich")) {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+      renderBullet: function (index, className) {
+        return (
+          '<span class="' +
+          className +
+          '">' +
+          '<svg xmlns="http://www.w3.org/2000/svg" width="11" height="13" viewBox="0 0 11 13" fill="none"><path d="M0.117907 10.377C-0.520707 6.22598 1.55953 4.13536 3.3574 3.29124C4.13967 2.92396 4.92411 2.52159 5.56185 1.93838C7.58356 0.0895368 9.92895 -1.03443 10.6179 1.37695C11.6179 4.87695 1.11791 16.877 0.117907 10.377Z" fill="#2B5E8A"/></svg>' +
+          "</span>"
+        )
+      },
     },
     slidesPerView: 1,
     breakpoints: {
