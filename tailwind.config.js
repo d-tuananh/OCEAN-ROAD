@@ -33,7 +33,7 @@ module.exports = {
       },
       width: {},
       maxWidth: {
-        "screen-1920": "1920px",
+        "screen-1920": "var(--max-width)",
       },
     },
   },

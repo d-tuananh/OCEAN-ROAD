@@ -4,9 +4,26 @@
 @tailwind components;
 @tailwind utilities;
 
+/* :root {
+  --max-width: 2500px;
+  --color-Blue: #2b5e8a;
+  --color-Brown: #aa9259;
+  --color-layout: #f2eee5;
+  --color-yellow: #ffebbb;
+
+  --tw-shadow-header: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --tw-shadow-item-hoi-dap: 0px 9px 14.8px 0px rgba(0, 0, 0, 0.05);
+
+  --background-layout: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.55) 0.7%,
+    rgba(102, 102, 102, 0) 100.38%
+  );
+} */
+
 @layer base {
   body {
-    @apply text-sm sm:text-base leading-tight font-normal font-Roboto;
+    @apply text-sm sm:text-base leading-snug font-normal;
   }
   h2 {
     @apply text-3xl md:text-[2rem] font-bold uppercase text-ct-blue;
@@ -139,7 +156,7 @@ i.fa-minus {
   display: none;
 }
 
-.img_settings img {
+.img_settings > img {
   width: 100%;
   height: 100%;
   object-fit: cover;

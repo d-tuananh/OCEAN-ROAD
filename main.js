@@ -40,6 +40,15 @@ arrBtnToggleMenuMoblie.forEach((i) =>
   })
 )
 
+if (document.querySelector(".banner-slide")) {
+  var banner_slide = new Swiper(".banner-slide", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  })
+}
+
 if (document.querySelector(".slide-auto-play")) {
   var slide_auto_play = new Swiper(".slide-auto-play", {
     slidesPerView: 2,
