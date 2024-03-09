@@ -1,3 +1,27 @@
+const popup = document.querySelector(".popup")
+const btnClosePopup = document.querySelectorAll(".btn-close-popup")
+
+const allBtnClosePopup = [...btnClosePopup]
+
+function openPopup() {
+  setTimeout(() => {
+    popup.classList.remove("hidden")
+    popup.classList.add("flex")
+    document.body.style.overflow = "hidden"
+  }, 1000)
+}
+
+openPopup()
+
+allBtnClosePopup.forEach((i) =>
+  i.addEventListener("click", (e) => {
+    e.preventDefault()
+    popup.classList.remove("flex")
+    popup.classList.add("hidden")
+    document.body.style.overflow = "auto"
+  })
+)
+
 const btnToggle = document.querySelector(".btn-toggle")
 const btnCloseMenu = document.querySelector(
   ".menu__moblie ul i.fa-caret-square-left"
@@ -33,6 +57,7 @@ var slide_auto_play = new Swiper(".slide-auto-play", {
       slidesPerView: 7,
     },
   },
+  allowTouchMove: false,
 })
 
 var logo_brand_auto_play = new Swiper(".logo-brand-auto-play", {
@@ -54,6 +79,7 @@ var logo_brand_auto_play = new Swiper(".logo-brand-auto-play", {
       slidesPerView: 7,
     },
   },
+  allowTouchMove: false,
 })
 
 var logo_brand_auto_play_reverse = new Swiper(".logo-brand-auto-play-reverse", {
