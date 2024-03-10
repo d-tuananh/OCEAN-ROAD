@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "BT Beau Sans";
+  src: url("../fonts/BT BeauSans/BT-BeauSans-ExtraBold.woff2") format("woff2"),
+    url("../fonts/BT BeauSans/BT-BeauSans-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BT Beau Sans";
+  src: url("../fonts/BT BeauSans/BT-BeauSans-BoldItalic.woff2") format("woff2"),
+    url("../fonts/BT BeauSans/BT-BeauSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BT Beau Sans";
+  src: url("../fonts/BT BeauSans/BT-BeauSans-Bold.woff2") format("woff2"),
+    url("../fonts/BT BeauSans/BT-BeauSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BT Beau Sans";
+  src: url("../fonts/BT BeauSans/BT-BeauSans-Light.woff2") format("woff2"),
+    url("../fonts/BT BeauSans/BT-BeauSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BT Beau Sans";
+  src: url("../fonts/BT BeauSans/BT-BeauSans-Italic.woff2") format("woff2"),
+    url("../fonts/BT BeauSans/BT-BeauSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BT Beau Sans Extra";
+  src: url("../fonts/BT BeauSans/BT-BeauSans-ExtraBoldItalic.woff2")
+      format("woff2"),
+    url("../fonts/BT BeauSans/BT-BeauSans-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BT Beau Sans";
+  src: url("../fonts/BT BeauSans/BT-BeauSans-Medium.woff2") format("woff2"),
+    url("../fonts/BT BeauSans/BT-BeauSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BT Beau Sans";
+  src: url("../fonts/BT BeauSans/BT-BeauSans-Regular.woff2") format("woff2"),
+    url("../fonts/BT BeauSans/BT-BeauSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BT Beau Sans";
+  src: url("../fonts/BT BeauSans/BT-BeauSans-LightItalic.woff2") format("woff2"),
+    url("../fonts/BT BeauSans/BT-BeauSans-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BT Beau Sans";
+  src: url("../fonts/BT BeauSans/BT-BeauSans-MediumItalic.woff2")
+      format("woff2"),
+    url("../fonts/BT BeauSans/BT-BeauSans-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFU Souvenir";
+  src: url("../fonts/SFUSouvenirBold/SFUSouvenirBold.woff2") format("woff2"),
+    url("../fonts/SFUSouvenirBold/SFUSouvenirBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue eText Pro";
+  src: url("../fonts/helvetica-neue-etext-pro/HelveticaNeueeTextPro-Roman.woff2")
+      format("woff2"),
+    url("../fonts/helvetica-neue-etext-pro/HelveticaNeueeTextPro-Roman.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue eText Pro";
+  src: url("../fonts/helvetica-neue-etext-pro/HelveticaNeueeTextPro-Light.woff2")
+      format("woff2"),
+    url("../fonts/helvetica-neue-etext-pro/HelveticaNeueeTextPro-Light.woff")
+      format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue eText Pro";
+  src: url("../fonts/helvetica-neue-etext-pro/HelveticaNeueeTextPro-LtIt.woff2")
+      format("woff2"),
+    url("../fonts/helvetica-neue-etext-pro/HelveticaNeueeTextPro-LtIt.woff")
+      format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue eText Pro";
+  src: url("../fonts/helvetica-neue-etext-pro/HelveticaNeueeTextPro-Md.woff2")
+      format("woff2"),
+    url("../fonts/helvetica-neue-etext-pro/HelveticaNeueeTextPro-Md.woff")
+      format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue eText Pro";
+  src: url("../fonts/helvetica-neue-etext-pro/HelveticaNeueeTextPro-Italic.woff2")
+      format("woff2"),
+    url("../fonts/helvetica-neue-etext-pro/HelveticaNeueeTextPro-Italic.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue eText Pro";
+  src: url("../fonts/helvetica-neue-etext-pro/HelveticaNeueeText-MdIt.woff2")
+      format("woff2"),
+    url("../fonts/helvetica-neue-etext-pro/HelveticaNeueeText-MdIt.woff")
+      format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue eText Pro";
+  src: url("../fonts/helvetica-neue-etext-pro/HelveticaNeueeTextPro-Bold.woff2")
+      format("woff2"),
+    url("../fonts/helvetica-neue-etext-pro/HelveticaNeueeTextPro-Bold.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue eText Pro";
+  src: url("../fonts/helvetica-neue-etext-pro/HelveticaNeueeTextPro-BoldIt.woff2")
+      format("woff2"),
+    url("../fonts/helvetica-neue-etext-pro/HelveticaNeueeTextPro-BoldIt.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}

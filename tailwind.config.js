@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       fontFamily: {
         DancingScript: ["Dancing Script"],
+        HelveticaNeueeTextPro: ["Helvetica Neue eText Pro", "sans-serif"],
+        SFUSouvenir: ["SFU Souvenir"],
+        BTBeauSans: ["BT Beau Sans"],
         Roboto: ["Roboto"],
       },
       container: {
@@ -21,19 +24,9 @@ module.exports = {
         header: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
         "item-hoi-dap": "0px 9px 14.8px 0px rgba(0, 0, 0, 0.05)",
       },
-      height: {
-        "90dvh": "90dvh",
-      },
-      dropShadow: {
-        cow: "0 -6mm 2mm #978f7d",
-      },
       backgroundImage: {
         "ct-layout":
           "linear-gradient(90deg, rgba(0, 0, 0, 0.55) 0.7%, rgba(102, 102, 102, 0.00) 100.38%)",
-      },
-      width: {},
-      maxWidth: {
-        "screen-1920": "var(--max-width)",
       },
     },
   },
