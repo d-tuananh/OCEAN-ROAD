@@ -77,7 +77,7 @@
   }
 
   .form-lien-he label {
-    @apply text-sm font-bold text-ct-blue;
+    @apply text-[10px] sm:text-[14px] font-bold text-[#454545];
   }
 
   .form-lien-he div {
