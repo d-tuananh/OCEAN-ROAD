@@ -211,15 +211,17 @@
         <div class="container">
           <div class="flex -mx-3 flex-col lg:flex-row">
             <div class="lg:w-2/5 p-3 w-full min-h-full">
-              <div class="xl:ml-24 min-h-full flex flex-col space-y-3">
-                <div class="swiper image-preview h-full grow">
+              <div class="xl:ml-28 flex flex-col space-y-3 h-full">
+                <div
+                  class="swiper image-preview lg:min-h-[550px] xl:min-h-[500px]"
+                >
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div
-                        class="border-[3px] border-solid border-ct-brown rounded-xl w-full max-h-[500px]"
+                        class="border-[3px] border-solid border-ct-brown rounded-xl w-full h-full flex items-center justify-center"
                       >
                         <div
-                          class="w-[20rem] mx-auto open-modal-image h-full"
+                          class="open-modal-image *:w-1/2 *:h-fit *:object-cover *:mx-auto"
                           onclick="onModalImage('../../imgs/mat-trc-sp.png')"
                         >
                           <img
@@ -231,10 +233,10 @@
                     </div>
                     <div class="swiper-slide">
                       <div
-                        class="border-[3px] border-solid border-ct-brown rounded-xl w-full max-h-[500px]"
+                        class="border-[3px] border-solid border-ct-brown rounded-xl w-full h-full flex items-center justify-center"
                       >
                         <div
-                          class="w-[20rem] mx-auto open-modal-image h-full"
+                          class="open-modal-image *:w-1/2 *:h-fit *:object-cover *:mx-auto"
                           onclick="onModalImage('../../imgs/mat-sau-sp.png')"
                         >
                           <img
@@ -246,10 +248,10 @@
                     </div>
                     <div class="swiper-slide">
                       <div
-                        class="border-[3px] border-solid border-ct-brown rounded-xl w-full max-h-[500px]"
+                        class="border-[3px] border-solid border-ct-brown rounded-xl w-full h-full flex items-center justify-center"
                       >
                         <div
-                          class="w-[20rem] mx-auto open-modal-image h-full"
+                          class="open-modal-image *:w-1/2 *:h-fit *:object-cover *:mx-auto"
                           onclick="onModalImage('../../imgs/thong-tin-sp.png')"
                         >
                           <img
@@ -261,22 +263,19 @@
                     </div>
                   </div>
                 </div>
-                <div
-                  thumbsSlider=""
-                  class="swiper max-w-fit image-slide h-fit ml-0"
-                >
+                <div thumbsSlider="" class="swiper image-slide">
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide max-w-fit border">
+                    <div class="swiper-slide max-w-fit border rounded-xl">
                       <div class="w-[7rem] h-[8rem] p-2">
                         <img src="../../imgs/mat-trc-sp.png" alt="mat-trc-sp" />
                       </div>
                     </div>
-                    <div class="swiper-slide max-w-fit border">
+                    <div class="swiper-slide max-w-fit border rounded-xl">
                       <div class="w-[7rem] h-[8rem] p-2">
                         <img src="../../imgs/mat-sau-sp.png" alt="mat-sau-sp" />
                       </div>
                     </div>
-                    <div class="swiper-slide max-w-fit border">
+                    <div class="swiper-slide max-w-fit border rounded-xl">
                       <div class="w-[7rem] h-[8rem] p-2">
                         <img
                           src="../../imgs/thong-tin-sp.png"
@@ -288,7 +287,7 @@
                 </div>
               </div>
             </div>
-            <div class="lg:basis-3/5 p-3 space-y-3">
+            <div class="lg:basis-3/5 p-3 space-y-3 grow">
               <h3
                 class="text-ct-brown text-[24px] sm:text-[35px] font-extrabold text-center lg:text-start"
               >
@@ -368,14 +367,29 @@
                   >
                 </p>
               </div>
+              <div class="w-full h-[1px] bg-black/15"></div>
               <div class="flex -mx-1 *:p-1 flex-wrap">
-                <img src="../../imgs/icon madin in Aus.png" alt="" />
-                <img src="../../imgs/icon madin in Aus (1).png" alt="" />
-                <img src="../../imgs/icon madin in Aus (2).png" alt="" />
-                <img src="../../imgs/icon madin in Aus (1).png" alt="" />
-                <img src="../../imgs/icon-organic-A2-protein.png" alt="" />
-                <img src="../../imgs/icon madin in Aus (2).png" alt="" />
-                <img src="../../imgs/icon-organic-A2-protein.png" alt="" />
+                <div class="size-20 xl:size-24">
+                  <img src="../../imgs/icon madin in Aus.png" alt="" />
+                </div>
+                <div class="size-20 xl:size-24">
+                  <img src="../../imgs/icon madin in Aus (1).png" alt="" />
+                </div>
+                <div class="size-20 xl:size-24">
+                  <img src="../../imgs/icon madin in Aus (2).png" alt="" />
+                </div>
+                <div class="size-20 xl:size-24">
+                  <img src="../../imgs/icon madin in Aus (1).png" alt="" />
+                </div>
+                <div class="size-20 xl:size-24">
+                  <img src="../../imgs/icon-organic-A2-protein.png" alt="" />
+                </div>
+                <div class="size-20 xl:size-24">
+                  <img src="../../imgs/icon madin in Aus (2).png" alt="" />
+                </div>
+                <div class="size-20 xl:size-24">
+                  <img src="../../imgs/icon-organic-A2-protein.png" alt="" />
+                </div>
               </div>
               <a
                 class="block text-center sm:inline-block px-10 py-3 bg-ct-blue rounded-full border border-ct-blue hover:bg-white text-white hover:text-ct-blue uppercase text-sm font-bold transition-all duration-500 ease-in-out"
@@ -504,92 +518,114 @@
 
       <div class="swiper slide-auto-play bg-ct-blue">
         <div class="swiper-wrapper">
-          <div class="swiper-slide bg-ct-blue text-white py-2 text-sm">
-            <div class="flex items-center space-x-2 w-full *:line-clamp-1">
-              <div class="w-fit">
-                <img src="../../imgs/Banner_image.png" alt="Banner_image" />
+          <div class="swiper-slide w-fit">
+            <div class="bg-ct-blue text-white py-2 text-sm w-fit">
+              <div class="flex items-center space-x-2 w-full *:line-clamp-1">
+                <div class="w-fit">
+                  <img src="../../imgs/Banner_image.png" alt="Banner_image" />
+                </div>
+                <p>Chứa đạm quý A2</p>
               </div>
-              <p>Chứa đạm quý A2</p>
             </div>
           </div>
-          <div class="swiper-slide bg-ct-blue text-white py-2 text-sm">
-            <div class="flex items-center space-x-2 w-full *:line-clamp-1">
-              <div class="w-fit">
-                <img src="../../imgs/Banner_image.png" alt="Banner_image" />
+          <div class="swiper-slide w-fit">
+            <div class="bg-ct-blue text-white py-2 text-sm w-fit">
+              <div class="flex items-center space-x-2 w-full *:line-clamp-1">
+                <div class="w-fit">
+                  <img src="../../imgs/Banner_image.png" alt="Banner_image" />
+                </div>
+                <p>Chứng nhận hữu cơ NASAA</p>
               </div>
-              <p>Chứng nhận hữu cơ NASAA</p>
             </div>
           </div>
-          <div class="swiper-slide bg-ct-blue text-white py-2 text-sm">
-            <div class="flex items-center space-x-2 w-full *:line-clamp-1">
-              <div class="w-fit">
-                <img src="../../imgs/Banner_image.png" alt="Banner_image" />
+          <div class="swiper-slide w-fit">
+            <div class="bg-ct-blue text-white py-2 text-sm w-fit">
+              <div class="flex items-center space-x-2 w-full *:line-clamp-1">
+                <div class="w-fit">
+                  <img src="../../imgs/Banner_image.png" alt="Banner_image" />
+                </div>
+                <p>Không có thành phần GMO</p>
               </div>
-              <p>Không có thành phần GMO</p>
             </div>
           </div>
-          <div class="swiper-slide bg-ct-blue text-white py-2 text-sm">
-            <div class="flex items-center space-x-2 w-full *:line-clamp-1">
-              <div class="w-fit">
-                <img src="../../imgs/Banner_image.png" alt="Banner_image" />
+          <div class="swiper-slide w-fit">
+            <div class="bg-ct-blue text-white py-2 text-sm w-fit">
+              <div class="flex items-center space-x-2 w-full *:line-clamp-1">
+                <div class="w-fit">
+                  <img src="../../imgs/Banner_image.png" alt="Banner_image" />
+                </div>
+                <p>Không thuốc thực vật tổng hợp</p>
               </div>
-              <p>Không thuốc thực vật tổng hợp</p>
             </div>
           </div>
-          <div class="swiper-slide bg-ct-blue text-white py-2 text-sm">
-            <div class="flex items-center space-x-2 w-full *:line-clamp-1">
-              <div class="w-fit">
-                <img src="../../imgs/Banner_image.png" alt="Banner_image" />
+          <div class="swiper-slide w-fit">
+            <div class="bg-ct-blue text-white py-2 text-sm w-fit">
+              <div class="flex items-center space-x-2 w-full *:line-clamp-1">
+                <div class="w-fit">
+                  <img src="../../imgs/Banner_image.png" alt="Banner_image" />
+                </div>
+                <p>Không có hương vị nhân tạo</p>
               </div>
-              <p>Không có hương vị nhân tạo</p>
             </div>
           </div>
-          <div class="swiper-slide bg-ct-blue text-white py-2 text-sm">
-            <div class="flex items-center space-x-2 w-full *:line-clamp-1">
-              <div class="w-fit">
-                <img src="../../imgs/Banner_image.png" alt="Banner_image" />
+          <div class="swiper-slide w-fit">
+            <div class="bg-ct-blue text-white py-2 text-sm w-fit">
+              <div class="flex items-center space-x-2 w-full *:line-clamp-1">
+                <div class="w-fit">
+                  <img src="../../imgs/Banner_image.png" alt="Banner_image" />
+                </div>
+                <p>Không có màu nhân tạo</p>
               </div>
-              <p>Không có màu nhân tạo</p>
             </div>
           </div>
-          <div class="swiper-slide bg-ct-blue text-white py-2 text-sm">
-            <div class="flex items-center space-x-2 w-full *:line-clamp-1">
-              <div class="w-fit">
-                <img src="../../imgs/Banner_image.png" alt="Banner_image" />
+          <div class="swiper-slide w-fit">
+            <div class="bg-ct-blue text-white py-2 text-sm w-fit">
+              <div class="flex items-center space-x-2 w-full *:line-clamp-1">
+                <div class="w-fit">
+                  <img src="../../imgs/Banner_image.png" alt="Banner_image" />
+                </div>
+                <p>Không chất bảo quản</p>
               </div>
-              <p>Không chất bảo quản</p>
             </div>
           </div>
-          <div class="swiper-slide bg-ct-blue text-white py-2 text-sm">
-            <div class="flex items-center space-x-2 w-full *:line-clamp-1">
-              <div class="w-fit">
-                <img src="../../imgs/Banner_image.png" alt="Banner_image" />
+          <div class="swiper-slide w-fit">
+            <div class="bg-ct-blue text-white py-2 text-sm w-fit">
+              <div class="flex items-center space-x-2 w-full *:line-clamp-1">
+                <div class="w-fit">
+                  <img src="../../imgs/Banner_image.png" alt="Banner_image" />
+                </div>
+                <p>Không chứa dầu cọ</p>
               </div>
-              <p>Không chứa dầu cọ</p>
             </div>
           </div>
-          <div class="swiper-slide bg-ct-blue text-white py-2 text-sm">
-            <div class="flex items-center space-x-2 w-full *:line-clamp-1">
-              <div class="w-fit">
-                <img src="../../imgs/Banner_image.png" alt="Banner_image" />
+          <div class="swiper-slide w-fit">
+            <div class="bg-ct-blue text-white py-2 text-sm w-fit">
+              <div class="flex items-center space-x-2 w-full *:line-clamp-1">
+                <div class="w-fit">
+                  <img src="../../imgs/Banner_image.png" alt="Banner_image" />
+                </div>
+                <p>Không chứa dầu đậu nành</p>
               </div>
-              <p>Không chứa dầu đậu nành</p>
             </div>
           </div>
-          <div class="swiper-slide bg-ct-blue text-white py-2 text-sm">
-            <div class="flex items-center space-x-2 w-full *:line-clamp-1">
-              <div class="w-fit">
-                <img src="../../imgs/Banner_image.png" alt="Banner_image" />
+          <div class="swiper-slide w-fit">
+            <div class="bg-ct-blue text-white py-2 text-sm w-fit">
+              <div class="flex items-center space-x-2 w-full *:line-clamp-1">
+                <div class="w-fit">
+                  <img src="../../imgs/Banner_image.png" alt="Banner_image" />
+                </div>
+                <p>Không thuốc thực vật tổng hợp</p>
               </div>
-              <p>Không thuốc thực vật tổng hợp</p>
             </div>
           </div>
-          <div class="swiper-slide bg-ct-blue text-white py-2 text-sm">
-            <div class="flex items-center space-x-2 w-full *:line-clamp-1">
-              <div class="w-fit">
-                <img src="../../imgs/Banner_image.png" alt="Banner_image" />
+          <div class="swiper-slide w-fit">
+            <div class="bg-ct-blue text-white py-2 text-sm w-fit">
+              <div class="flex items-center space-x-2 w-full *:line-clamp-1">
+                <div class="w-fit">
+                  <img src="../../imgs/Banner_image.png" alt="Banner_image" />
+                </div>
+                <p>Không có màu nhân tạo</p>
               </div>
-              <p>Không có màu nhân tạo</p>
             </div>
           </div>
         </div>

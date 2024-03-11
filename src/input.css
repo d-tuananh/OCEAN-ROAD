@@ -93,7 +93,7 @@
   }
 
   .accordion__text {
-    @apply overflow-hidden max-h-0 duration-500 transition-all ease-linear shadow-item-hoi-dap px-5 rounded-xl;
+    @apply overflow-hidden max-h-0 duration-700 transition-all ease-linear shadow-item-hoi-dap px-5 rounded-xl;
   }
 }
 

@@ -64,24 +64,14 @@ if (document.querySelector(".banner-slide")) {
 
 if (document.querySelector(".slide-auto-play")) {
   var slide_auto_play = new Swiper(".slide-auto-play", {
-    slidesPerView: 2,
+    slidesPerView: "auto",
+    spaceBetween: 30,
     autoplay: {
       delay: 0,
-      disableOnInteraction: true,
+      disableOnInteraction: false,
     },
     loop: true,
-    speed: 2000,
-    breakpoints: {
-      450: {
-        slidesPerView: 3,
-      },
-      768: {
-        slidesPerView: 5,
-      },
-      1024: {
-        slidesPerView: 7,
-      },
-    },
+    speed: 2500,
     allowTouchMove: false,
   })
 }
