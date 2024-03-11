@@ -48,10 +48,10 @@
       <div class="menu">
         <div class="menu-left">
           <ul>
-            <li>
+            <li class="group">
               <a href="#"
                 ><span>OCEAN ROAD DAIRIES</span>
-                <i class="fas fa-chevron-down"></i
+                <i class="fas fa-chevron-down group-hover:rotate-180"></i
               ></a>
             </li>
             <li><a href="#">ĐẠM QUÝ A2</a></li>
@@ -70,9 +70,10 @@
         </div>
         <div class="menu-right">
           <ul>
-            <li>
+            <li class="group">
               <a href="pages/page-san-pham.html"
-                ><span>SẢN PHẨM</span> <i class="fas fa-chevron-down"></i
+                ><span>SẢN PHẨM</span>
+                <i class="fas fa-chevron-down group-hover:rotate-180"></i
               ></a>
             </li>
             <li>
@@ -80,9 +81,10 @@
                 >Tại sao chọn hữu cơ?</a
               >
             </li>
-            <li>
+            <li class="group">
               <a href="pages/page-tin-tuc.html"
-                ><span>TIN TỨC</span> <i class="fas fa-chevron-down"></i
+                ><span>TIN TỨC</span>
+                <i class="fas fa-chevron-down group-hover:rotate-180"></i
               ></a>
             </li>
             <li><a href="pages/page-hoi-dap.html">HỎI ĐÁP</a></li>
@@ -120,11 +122,10 @@
 
       <div class="menu__moblie -translate-x-full">
         <ul>
-          <div class="flex justify-between items-center">
-            <a href="/">
-              <img src="imgs/logo-header.png" alt="" />
-            </a>
-            <i class="far fa-caret-square-left text-4xl"></i>
+          <div class="flex justify-end items-center">
+            <i
+              class="fas fa-times text-5xl p-2 hover:scale-110 transition-transform duration-500 ease-in-out"
+            ></i>
           </div>
           <li>
             <a href="#"
@@ -153,7 +154,7 @@
           <li><a href="pages/page-lien-he.html">LIÊN HỆ</a></li>
         </ul>
       </div>
-      <div class="bg-over-menu translate-x-full"></div>
+      <div class="bg-over-menu hidden"></div>
     </header>
 
     <main>
@@ -1196,7 +1197,7 @@
           <a
             href="pages/page-tin-tuc.html"
             title="THÔNG TIN HỮU ÍCH"
-            class="block lg:hidden text-center font-medium text-ct-blue hover:text-red-600"
+            class="block lg:hidden text-center font-medium text-ct-blue hover:text-red-600 underline underline-offset-2"
             >Xem tất cả</a
           >
         </div>
@@ -1309,16 +1310,20 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div
-                    class="w-full h-full flex items-center justify-start relative py-10 overflow-x-hidden"
+                    class="w-full h-full flex items-center justify-start relative py-7 md:py-10 overflow-x-hidden"
                   >
-                    <div class="z-[2] px-2 img_settings">
+                    <div class="sm:px-2 img_settings">
                       <img
                         src="imgs/nhan_xet_cua_me_thuy_minh.png"
                         alt="nhan_xet_cua_nguoi_tieu_dung"
                       />
                     </div>
-                    <div class="text-start text-sm z-[2] px-2 max-w-[500px]">
-                      <p class="line-clamp-6 text-[10px] lg:text-[14px]">
+                    <div
+                      class="text-start text-sm pl-1 pr-2 sm:px-2 max-w-[500px] w-full"
+                    >
+                      <p
+                        class="text-[#000] text-[10px] text-justify lg:text-[14px]"
+                      >
                         Không có gì tuyệt vời hơn khi biết rằng con trẻ của mình
                         đang uống sữa Ocean Road Dairies. Chất lượng và dinh
                         dưỡng của sản phẩm này thực sự xuất sắc. Chúng tôi cảm
@@ -1333,23 +1338,27 @@
                       <span class="text-[8px] lg:text-[12px]">Nội trợ</span>
                     </div>
                     <div
-                      class="absolute inset-0 translate-x-[10rem] rounded-l-full rounded-r-[25rem] bg-bg-layout z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
+                      class="absolute inset-0 translate-x-[2rem] sm:translate-x-[5rem] 2xl:translate-x-[8rem] rounded-l-full rounded-r-[25rem] bg-bg-layout -z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
                       style="background-image: url('imgs/layout-bay-co.png')"
                     ></div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div
-                    class="w-full h-full flex items-center justify-start relative py-10 overflow-x-hidden"
+                    class="w-full h-full flex items-center justify-start relative py-7 md:py-10 overflow-x-hidden"
                   >
-                    <div class="z-[2] px-2 img_settings">
+                    <div class="sm:px-2 img_settings">
                       <img
                         src="imgs/nhan_xet_cua_me_thuy_minh.png"
                         alt="nhan_xet_cua_nguoi_tieu_dung"
                       />
                     </div>
-                    <div class="text-start text-sm z-[2] px-2 max-w-[500px]">
-                      <p class="line-clamp-6 text-[10px] lg:text-[14px]">
+                    <div
+                      class="text-start text-sm pl-1 pr-2 sm:px-2 max-w-[500px] w-full"
+                    >
+                      <p
+                        class="text-[#000] text-[10px] text-justify lg:text-[14px]"
+                      >
                         Không có gì tuyệt vời hơn khi biết rằng con trẻ của mình
                         đang uống sữa Ocean Road Dairies. Chất lượng và dinh
                         dưỡng của sản phẩm này thực sự xuất sắc. Chúng tôi cảm
@@ -1364,23 +1373,27 @@
                       <span class="text-[8px] lg:text-[12px]">Nội trợ</span>
                     </div>
                     <div
-                      class="absolute inset-0 translate-x-[10rem] rounded-l-full rounded-r-[25rem] bg-bg-layout z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
+                      class="absolute inset-0 translate-x-[2rem] sm:translate-x-[5rem] 2xl:translate-x-[8rem] rounded-l-full rounded-r-[25rem] bg-bg-layout -z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
                       style="background-image: url('imgs/layout-bay-co.png')"
                     ></div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div
-                    class="w-full h-full flex items-center justify-start relative py-10 overflow-x-hidden"
+                    class="w-full h-full flex items-center justify-start relative py-7 md:py-10 overflow-x-hidden"
                   >
-                    <div class="z-[2] px-2 img_settings">
+                    <div class="sm:px-2 img_settings">
                       <img
                         src="imgs/nhan_xet_cua_me_thuy_minh.png"
                         alt="nhan_xet_cua_nguoi_tieu_dung"
                       />
                     </div>
-                    <div class="text-start text-sm z-[2] px-2 max-w-[500px]">
-                      <p class="line-clamp-6 text-[10px] lg:text-[14px]">
+                    <div
+                      class="text-start text-sm pl-1 pr-2 sm:px-2 max-w-[500px] w-full"
+                    >
+                      <p
+                        class="text-[#000] text-[10px] text-justify lg:text-[14px]"
+                      >
                         Không có gì tuyệt vời hơn khi biết rằng con trẻ của mình
                         đang uống sữa Ocean Road Dairies. Chất lượng và dinh
                         dưỡng của sản phẩm này thực sự xuất sắc. Chúng tôi cảm
@@ -1395,23 +1408,27 @@
                       <span class="text-[8px] lg:text-[12px]">Nội trợ</span>
                     </div>
                     <div
-                      class="absolute inset-0 translate-x-[10rem] rounded-l-full rounded-r-[25rem] bg-bg-layout z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
+                      class="absolute inset-0 translate-x-[2rem] sm:translate-x-[5rem] 2xl:translate-x-[8rem] rounded-l-full rounded-r-[25rem] bg-bg-layout -z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
                       style="background-image: url('imgs/layout-bay-co.png')"
                     ></div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div
-                    class="w-full h-full flex items-center justify-start relative py-10 overflow-x-hidden"
+                    class="w-full h-full flex items-center justify-start relative py-7 md:py-10 overflow-x-hidden"
                   >
-                    <div class="z-[2] px-2 img_settings">
+                    <div class="sm:px-2 img_settings">
                       <img
                         src="imgs/nhan_xet_cua_me_thuy_minh.png"
                         alt="nhan_xet_cua_nguoi_tieu_dung"
                       />
                     </div>
-                    <div class="text-start text-sm z-[2] px-2 max-w-[500px]">
-                      <p class="line-clamp-6 text-[10px] lg:text-[14px]">
+                    <div
+                      class="text-start text-sm pl-1 pr-2 sm:px-2 max-w-[500px] w-full"
+                    >
+                      <p
+                        class="text-[#000] text-[10px] text-justify lg:text-[14px]"
+                      >
                         Không có gì tuyệt vời hơn khi biết rằng con trẻ của mình
                         đang uống sữa Ocean Road Dairies. Chất lượng và dinh
                         dưỡng của sản phẩm này thực sự xuất sắc. Chúng tôi cảm
@@ -1426,23 +1443,27 @@
                       <span class="text-[8px] lg:text-[12px]">Nội trợ</span>
                     </div>
                     <div
-                      class="absolute inset-0 translate-x-[10rem] rounded-l-full rounded-r-[25rem] bg-bg-layout z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
+                      class="absolute inset-0 translate-x-[2rem] sm:translate-x-[5rem] 2xl:translate-x-[8rem] rounded-l-full rounded-r-[25rem] bg-bg-layout -z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
                       style="background-image: url('imgs/layout-bay-co.png')"
                     ></div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div
-                    class="w-full h-full flex items-center justify-start relative py-10 overflow-x-hidden"
+                    class="w-full h-full flex items-center justify-start relative py-7 md:py-10 overflow-x-hidden"
                   >
-                    <div class="z-[2] px-2 img_settings">
+                    <div class="sm:px-2 img_settings">
                       <img
                         src="imgs/nhan_xet_cua_me_thuy_minh.png"
                         alt="nhan_xet_cua_nguoi_tieu_dung"
                       />
                     </div>
-                    <div class="text-start text-sm z-[2] px-2 max-w-[500px]">
-                      <p class="line-clamp-6 text-[10px] lg:text-[14px]">
+                    <div
+                      class="text-start text-sm pl-1 pr-2 sm:px-2 max-w-[500px] w-full"
+                    >
+                      <p
+                        class="text-[#000] text-[10px] text-justify lg:text-[14px]"
+                      >
                         Không có gì tuyệt vời hơn khi biết rằng con trẻ của mình
                         đang uống sữa Ocean Road Dairies. Chất lượng và dinh
                         dưỡng của sản phẩm này thực sự xuất sắc. Chúng tôi cảm
@@ -1457,13 +1478,15 @@
                       <span class="text-[8px] lg:text-[12px]">Nội trợ</span>
                     </div>
                     <div
-                      class="absolute inset-0 translate-x-[10rem] rounded-l-full rounded-r-[25rem] bg-bg-layout z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
+                      class="absolute inset-0 translate-x-[2rem] sm:translate-x-[5rem] 2xl:translate-x-[8rem] rounded-l-full rounded-r-[25rem] bg-bg-layout -z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
                       style="background-image: url('imgs/layout-bay-co.png')"
                     ></div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
+              <div
+                class="swiper-pagination translate-x-[5rem] 2xl:-translate-y-[3rem]"
+              ></div>
             </div>
           </div>
         </div>

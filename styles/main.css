@@ -1043,53 +1043,37 @@ header i:hover,
   top: 0px;
   bottom: 0px;
   left: 0px;
+  z-index: 10;
   width: 100%;
+  max-width: 400px;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  font-family: Helvetica Neue eText Pro, sans-serif;
+  font-family: SFU Souvenir;
+  font-size: 20px;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
   transition-timing-function: linear;
 }
 
-@media (min-width: 640px){
-  .menu__moblie{
-    width: 50%;
-  }
-}
-
-@media (min-width: 768px){
-  .menu__moblie{
-    width: 33.333333%;
-  }
-}
-
 @media (min-width: 1280px){
   .menu__moblie{
     display: none;
-    width: 20%;
   }
 }
 
-.menu__moblie ul{
+.menu__moblie li{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.menu__moblie ul > *{
-  border-bottom-width: 2px;
-  border-style: solid;
-  --tw-border-opacity: 1;
-  border-color: rgb(241 245 249 / var(--tw-border-opacity));
-  padding: 0.5rem;
-}
-
 .bg-over-menu{
   position: fixed;
-  top: 0px;
-  bottom: 0px;
-  right: 0px;
+  inset: 0px;
   background-color: rgb(0 0 0 / 0.1);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1097,22 +1081,9 @@ header i:hover,
   transition-timing-function: linear;
 }
 
-@media (min-width: 640px){
-  .bg-over-menu{
-    width: 50%;
-  }
-}
-
-@media (min-width: 768px){
-  .bg-over-menu{
-    width: 66.666667%;
-  }
-}
-
 @media (min-width: 1280px){
   .bg-over-menu{
     display: none;
-    width: 80%;
   }
 }
 
@@ -1198,8 +1169,9 @@ header i:hover,
   --tw-shadow-colored: 0px 9px 14.8px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   transition-property: all;
-  transition-duration: 1000ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+  transition-timing-function: linear;
 }
 
 .fixed{
@@ -1259,6 +1231,10 @@ header i:hover,
   z-index: -10;
 }
 
+.-z-\[1\]{
+  z-index: -1;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -1310,9 +1286,9 @@ header i:hover,
   margin-right: -0.75rem;
 }
 
-.-mx-7{
-  margin-left: -1.75rem;
-  margin-right: -1.75rem;
+.-mx-4{
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 
 .mx-2{
@@ -1348,11 +1324,6 @@ header i:hover,
 .my-auto{
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.-mx-4{
-  margin-left: -1rem;
-  margin-right: -1rem;
 }
 
 .mb-1{
@@ -1623,6 +1594,16 @@ header i:hover,
 
 .translate-x-\[10rem\]{
   --tw-translate-x: 10rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[2rem\]{
+  --tw-translate-x: 2rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[5rem\]{
+  --tw-translate-x: 5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1948,6 +1929,10 @@ header i:hover,
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-black\/10{
+  background-color: rgb(0 0 0 / 0.1);
+}
+
 .bg-ct-layout{
   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.55) 0.7%, rgba(102, 102, 102, 0.00) 100.38%);
 }
@@ -2006,10 +1991,6 @@ header i:hover,
 
 .p-5{
   padding: 1.25rem;
-}
-
-.p-7{
-  padding: 1.75rem;
 }
 
 .px-10{
@@ -2077,6 +2058,11 @@ header i:hover,
   padding-bottom: 1.25rem;
 }
 
+.py-7{
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
 .pb-2{
   padding-bottom: 0.5rem;
 }
@@ -2089,12 +2075,20 @@ header i:hover,
   padding-bottom: 1.25rem;
 }
 
+.pl-1{
+  padding-left: 0.25rem;
+}
+
 .pl-2{
   padding-left: 0.5rem;
 }
 
 .pl-5{
   padding-left: 1.25rem;
+}
+
+.pr-2{
+  padding-right: 0.5rem;
 }
 
 .pr-3{
@@ -2166,6 +2160,11 @@ header i:hover,
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-\[\.5rem\]{
@@ -2272,6 +2271,11 @@ header i:hover,
   letter-spacing: 0.2px;
 }
 
+.text-\[\#000\]{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-\[\#007DEA\]{
   --tw-text-opacity: 1;
   color: rgb(0 125 234 / var(--tw-text-opacity));
@@ -2350,12 +2354,22 @@ header i:hover,
   transition-duration: 150ms;
 }
 
+.transition-transform{
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-500{
   transition-duration: 500ms;
 }
 
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ease-linear{
+  transition-timing-function: linear;
 }
 
 /* :root {
@@ -2404,7 +2418,7 @@ header i:hover,
 }
 
 .accordion .accordion__title:has(input:checked) + .accordion__text {
-  max-height: 20rem;
+  max-height: 15rem;
 }
 
 .accordion .accordion__title:has(input:checked) i.fa-minus {
@@ -2523,6 +2537,22 @@ i.fa-minus {
   background-color: rgb(43 94 138 / var(--tw-bg-opacity));
 }
 
+.hover\:rotate-45:hover{
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:rotate-12:hover{
+  --tw-rotate: 12deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-110:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:bg-ct-blue:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(43 94 138 / var(--tw-bg-opacity));
@@ -2569,6 +2599,11 @@ i.fa-minus {
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:rotate-180{
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .group:hover .group-hover\:text-ct-footer{
@@ -2666,6 +2701,11 @@ i.fa-minus {
     flex-basis: 50%;
   }
 
+  .sm\:translate-x-\[5rem\]{
+    --tw-translate-x: 5rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .sm\:space-x-5 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(1.25rem * var(--tw-space-x-reverse));
@@ -2681,6 +2721,11 @@ i.fa-minus {
   .sm\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .sm\:px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .sm\:pb-10{
@@ -2824,6 +2869,11 @@ i.fa-minus {
   .md\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .md\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .md\:py-14{
@@ -3054,6 +3104,10 @@ i.fa-minus {
     margin-top: 250px;
   }
 
+  .xl\:hidden{
+    display: none;
+  }
+
   .xl\:w-1\/4{
     width: 25%;
   }
@@ -3114,6 +3168,16 @@ i.fa-minus {
 
   .\32xl\:max-w-\[768px\]{
     max-width: 768px;
+  }
+
+  .\32xl\:-translate-y-\[3rem\]{
+    --tw-translate-y: -3rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .\32xl\:translate-x-\[8rem\]{
+    --tw-translate-x: 8rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .\32xl\:justify-between{
