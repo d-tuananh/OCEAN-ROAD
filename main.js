@@ -3,26 +3,26 @@ const btnClosePopup = document.querySelectorAll(".btn-close-popup")
 
 const allBtnClosePopup = [...btnClosePopup]
 
-// if (popup) {
-//   function openPopup() {
-//     setTimeout(() => {
-//       popup.classList.remove("hidden")
-//       popup.classList.add("flex")
-//       document.body.style.overflow = "hidden"
-//     }, 1000)
-//   }
+if (popup) {
+  function openPopup() {
+    setTimeout(() => {
+      popup.classList.remove("hidden")
+      popup.classList.add("flex")
+      document.body.style.overflow = "hidden"
+    }, 1000)
+  }
 
-//   openPopup()
+  openPopup()
 
-//   allBtnClosePopup.forEach((i) =>
-//     i.addEventListener("click", (e) => {
-//       e.preventDefault()
-//       popup.classList.remove("flex")
-//       popup.classList.add("hidden")
-//       document.body.style.overflow = "auto"
-//     })
-//   )
-// }
+  allBtnClosePopup.forEach((i) =>
+    i.addEventListener("click", (e) => {
+      e.preventDefault()
+      popup.classList.remove("flex")
+      popup.classList.add("hidden")
+      document.body.style.overflow = "auto"
+    })
+  )
+}
 
 const btnToggle = document.querySelector(".btn-toggle")
 const btnCloseMenu = document.querySelector(
@@ -46,6 +46,7 @@ if (document.querySelector(".banner-slide")) {
       delay: 2000,
       disableOnInteraction: true,
     },
+    loop: true,
     speed: 1000,
     pagination: {
       el: ".swiper-pagination",
