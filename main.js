@@ -3,26 +3,26 @@ const btnClosePopup = document.querySelectorAll(".btn-close-popup")
 
 const allBtnClosePopup = [...btnClosePopup]
 
-// if (popup) {
-//   function openPopup() {
-//     setTimeout(() => {
-//       popup.classList.remove("hidden")
-//       popup.classList.add("flex")
-//       document.body.style.overflow = "hidden"
-//     }, 1000)
-//   }
+if (popup) {
+  function openPopup() {
+    setTimeout(() => {
+      popup.classList.remove("hidden")
+      popup.classList.add("flex")
+      document.body.style.overflow = "hidden"
+    }, 1000)
+  }
 
-//   openPopup()
+  openPopup()
 
-//   allBtnClosePopup.forEach((i) =>
-//     i.addEventListener("click", (e) => {
-//       e.preventDefault()
-//       popup.classList.remove("flex")
-//       popup.classList.add("hidden")
-//       document.body.style.overflow = "auto"
-//     })
-//   )
-// }
+  allBtnClosePopup.forEach((i) =>
+    i.addEventListener("click", (e) => {
+      e.preventDefault()
+      popup.classList.remove("flex")
+      popup.classList.add("hidden")
+      document.body.style.overflow = "auto"
+    })
+  )
+}
 
 const btnToggle = document.querySelector(".btn-toggle")
 const btnCloseMenu = document.querySelector(".menu__moblie ul i.fa-times")
@@ -64,24 +64,14 @@ if (document.querySelector(".banner-slide")) {
 
 if (document.querySelector(".slide-auto-play")) {
   var slide_auto_play = new Swiper(".slide-auto-play", {
-    slidesPerView: 2,
+    slidesPerView: "auto",
+    spaceBetween: 30,
     autoplay: {
       delay: 0,
-      disableOnInteraction: true,
+      disableOnInteraction: false,
     },
     loop: true,
-    speed: 2000,
-    breakpoints: {
-      450: {
-        slidesPerView: 3,
-      },
-      768: {
-        slidesPerView: 5,
-      },
-      1024: {
-        slidesPerView: 7,
-      },
-    },
+    speed: 2500,
     allowTouchMove: false,
   })
 }
