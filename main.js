@@ -25,9 +25,7 @@ const allBtnClosePopup = [...btnClosePopup]
 // }
 
 const btnToggle = document.querySelector(".btn-toggle")
-const btnCloseMenu = document.querySelector(
-  ".menu__moblie ul i.fa-caret-square-left"
-)
+const btnCloseMenu = document.querySelector(".menu__moblie ul i.fa-times")
 const bg_over_menu = document.querySelector(".bg-over-menu")
 const menu_moblie = document.querySelector(".menu__moblie")
 
@@ -36,7 +34,7 @@ arrBtnToggleMenuMoblie.forEach((i) =>
   i.addEventListener("click", (e) => {
     e.preventDefault()
     menu_moblie.classList.toggle("-translate-x-full")
-    bg_over_menu.classList.toggle("translate-x-full")
+    bg_over_menu.classList.toggle("hidden")
   })
 )
 
@@ -159,6 +157,7 @@ if (document.querySelector(".silde-danh-gia")) {
 
 if (document.querySelector(".slide-thong-tin-huu-ich")) {
   var slide_thong_tin_huu_ich = new Swiper(".slide-thong-tin-huu-ich", {
+    spaceBetween: 10,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,

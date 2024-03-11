@@ -52,10 +52,10 @@
       <div class="menu">
         <div class="menu-left">
           <ul>
-            <li>
+            <li class="group">
               <a href="#"
                 ><span>OCEAN ROAD DAIRIES</span>
-                <i class="fas fa-chevron-down"></i
+                <i class="fas fa-chevron-down group-hover:rotate-180"></i
               ></a>
             </li>
             <li><a href="#">ĐẠM QUÝ A2</a></li>
@@ -74,17 +74,19 @@
         </div>
         <div class="menu-right">
           <ul>
-            <li>
+            <li class="group">
               <a href="page-san-pham.html"
-                ><span>SẢN PHẨM</span> <i class="fas fa-chevron-down"></i
+                ><span>SẢN PHẨM</span>
+                <i class="fas fa-chevron-down group-hover:rotate-180"></i
               ></a>
             </li>
             <li>
               <a href="page-ocean-road-dairies.html">Tại sao chọn hữu cơ?</a>
             </li>
-            <li>
+            <li class="group">
               <a href="page-tin-tuc.html"
-                ><span>TIN TỨC</span> <i class="fas fa-chevron-down"></i
+                ><span>TIN TỨC</span>
+                <i class="fas fa-chevron-down group-hover:rotate-180"></i
               ></a>
             </li>
             <li><a href="page-hoi-dap.html">HỎI ĐÁP</a></li>
@@ -99,7 +101,7 @@
           <a href="#"><i class="fas fa-bars text-2xl"></i></a>
           <a href="#"><i class="fas fa-bars text-2xl opacity-0"></i></a>
         </div>
-        <a href="#">
+        <a href="/">
           <img
             src="../imgs/logo-header.png"
             width="189"
@@ -122,11 +124,10 @@
 
       <div class="menu__moblie -translate-x-full">
         <ul>
-          <div class="flex justify-between items-center">
-            <a href="/">
-              <img src="../imgs/logo-header.png" alt="" />
-            </a>
-            <i class="far fa-caret-square-left text-4xl"></i>
+          <div class="flex justify-end items-center">
+            <i
+              class="fas fa-times text-5xl p-2 hover:scale-110 transition-transform duration-500 ease-in-out"
+            ></i>
           </div>
           <li>
             <a href="#"
@@ -153,7 +154,7 @@
           <li><a href="page-lien-he.html">LIÊN HỆ</a></li>
         </ul>
       </div>
-      <div class="bg-over-menu translate-x-full"></div>
+      <div class="bg-over-menu hidden"></div>
     </header>
 
     <main>
