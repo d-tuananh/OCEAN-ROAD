@@ -830,7 +830,7 @@
       <!-- End Section 7  -->
 
       <!-- Start Section 8 -->
-      <section class="bg-bg-layout relative">
+      <section class="bg-bg-layout relative py-28 md:py-14">
         <div class="container z-10 relative">
           <h2
             class="text-center text-[24px] sm:text-[28px] xl:text-[34px] tracking-[0.24px] sm:tracking-[0.4px] font-bold text-ct-blue font-SFUSouvenir uppercase"
@@ -900,11 +900,23 @@
             </a>
           </div>
         </div>
-        <div class="absolute bottom-0 right-0 w-fit">
+        <div
+          class="hidden md:block absolute bottom-1/2 translate-y-1/2 right-0 w-fit h-fit"
+        >
           <img src="imgs/nen-hoa.png" alt="nen-hoa" />
         </div>
-        <div class="absolute bottom-0 left-0 w-fit rotate-180">
+        <div
+          class="hidden md:block absolute bottom-1/2 translate-y-1/2 left-0 w-fit h-fit rotate-180"
+        >
           <img src="imgs/nen-hoa.png" alt="nen-hoa" />
+        </div>
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 md:hidden">
+          <img src="imgs/nen-hoa-moblie.png" alt="nen-hoa" />
+        </div>
+        <div
+          class="absolute top-0 left-1/2 -translate-x-1/2 rotate-180 md:hidden"
+        >
+          <img src="imgs/nen-hoa-moblie.png" alt="nen-hoa" />
         </div>
       </section>
       <!-- End Section 8 -->
@@ -925,22 +937,34 @@
           >
           <div class="flex flex-col lg:flex-row -mx-3">
             <div class="lg:basis-1/2 p-3">
-              <div class="*:w-full rounded-t-xl overflow-hidden">
-                <img
-                  src="imgs/anh-thong-tin-huu-ich.png"
-                  alt="Cân đối giữa công việc và đám trẻ ở nhà trong mùa Covid"
-                />
-              </div>
-              <div class="p-5 bg-bg-layout space-y-3 rounded-b-xl">
-                <h6 class="text-ct-blue font-extrabold text-[20px]">
-                  Cân đối giữa công việc và đám trẻ ở nhà trong mùa Covid
-                </h6>
-                <p class="font-light text-[12px] lg:text-[16px]">
-                  Đầu tiên: Với tác động của Covid-19 đối với các bậc cha mẹ
-                  đang đi làm, thách thức là làm cách nào để họ có thể giúp con
-                  mình học tập và phát triển một cách hiệu quả trong khi giải
-                  quyết công việc toàn thời gian ở nhà?
-                </p>
+              <div class="rounded-xl overflow-hidden">
+                <div class="img_settings relative">
+                  <img
+                    src="imgs/anh-thong-tin-huu-ich.png"
+                    alt="Cân đối giữa công việc và đám trẻ ở nhà trong mùa Covid"
+                  />
+                  <div
+                    class="bg-ct-blue absolute left-4 bottom-6 size-16 sm:size-20 rounded-xl flex items-center justify-center"
+                  >
+                    <p
+                      class="text-[12px] sm:text-[16px] uppercase text-white font-HelveticaNeueeTextPro text-center font-bold"
+                    >
+                      20 <br />
+                      Tháng 1
+                    </p>
+                  </div>
+                </div>
+                <div class="p-5 bg-bg-layout space-y-3">
+                  <h6 class="text-ct-blue font-extrabold text-[20px]">
+                    Cân đối giữa công việc và đám trẻ ở nhà trong mùa Covid
+                  </h6>
+                  <p class="font-light text-[12px] lg:text-[16px]">
+                    Đầu tiên: Với tác động của Covid-19 đối với các bậc cha mẹ
+                    đang đi làm, thách thức là làm cách nào để họ có thể giúp
+                    con mình học tập và phát triển một cách hiệu quả trong khi
+                    giải quyết công việc toàn thời gian ở nhà?
+                  </p>
+                </div>
               </div>
             </div>
             <div class="lg:w-1/2 p-3">
@@ -1447,7 +1471,7 @@
       <!-- End Section 12 -->
 
       <!-- Start Section 13 -->
-      <section class="flex flex-col lg:flex-row">
+      <section class="flex flex-col lg:flex-row relative z-[5]">
         <div class="lg:w-1/2 w-full mb-5 lg:mb-0">
           <div
             class="px-4 sm:max-w-screen-sm md:max-w-screen-md lg:max-w-[512px] xl:max-w-[640px] 2xl:max-w-[768px] w-full h-full mr-auto lg:mr-0 ml-auto"
@@ -1500,7 +1524,7 @@
     </main>
 
     <footer
-      class="bg-center bg-cover bg-no-repeat relative overflow-hidden"
+      class="bg-center bg-cover bg-no-repeat relative"
       style="background-image: url(imgs/bg-footer.png)"
     >
       <div class="container pt-10 md:pt-40 pb-3 relative z-[2]">

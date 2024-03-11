@@ -151,11 +151,15 @@
       <!-- Start Section 1 -->
       <section class="bg-ct-layout relative">
         <div
-          class="container text-white h-[35rem] flex justify-center flex-col space-y-3"
+          class="container text-white h-[40rem] flex justify-center flex-col space-y-3"
         >
-          <h1 class="font-medium text-[2.5rem]">LIÊN HỆ</h1>
+          <h1
+            class="font-bold text-[24px] sm:text-[40px] leading-10 font-SFUSouvenir"
+          >
+            LIÊN HỆ
+          </h1>
           <div class="w-1/5 h-1 bg-ct-footer"></div>
-          <p class="md:w-1/2">
+          <p class="md:w-1/2 text-[12px] sm:text-[16px] font-light">
             Đăng ký nhận thông tin tư vấn và hợp tác cùng Ocean Road Dairy.
           </p>
         </div>
@@ -163,36 +167,58 @@
           class="bg-cover bg-center bg-no-repeat absolute inset-0 -z-10"
           style="background-image: url('../imgs/bg-contact.png')"
         ></div>
+        <div
+          class="absolute inset-x-0 top-0 h-[20%] *:w-fit sm:*:h-full container translate-y-28 opacity-90"
+        >
+          <img src="../imgs/icon-banner.png" alt="" />
+        </div>
       </section>
       <!-- End Section 1 -->
 
       <div class="container my-5">
         <p class="space-x-1">
-          <a href="#" class="opacity-50" title="Trang chủ">Trang chủ</a>
+          <a
+            href="#"
+            class="opacity-50 text-[12px] sm:text-[16px] font-light"
+            title="Trang chủ"
+            >Trang chủ</a
+          >
           <span class="opacity-50">|</span>
-          <a href="#" title="Liên hệ" class="text-ct-blue font-bold">Liên hệ</a>
+          <a
+            href="#"
+            title="Liên hệ"
+            class="text-ct-blue font-medium text-[12px] sm:text-[16px]"
+            >Liên hệ</a
+          >
         </p>
       </div>
 
       <!-- Start Section 2 -->
-      <section>
+      <section class="relative z-[5] pt-0">
         <div class="container">
-          <h2 class="text-center mb-3">Gửi thông tin liên hệ</h2>
-          <p class="md:w-1/2 mx-auto text-center">
+          <h2
+            class="text-ct-blue text-[24px] sm:text-[34px] font-bold capitalize leading-tight mb-5 text-center font-SFUSouvenir"
+          >
+            Gửi thông tin liên hệ
+          </h2>
+          <p class="text-center text-[12px] sm:text-[16px]">
             Xin kính chào quý khách! Cảm ơn quý khách đã quan tâm đến
             <a
               href="https://www.oceanroaddairies.com.au"
               title="OCEAN ROAD DAIRIES"
-              class="font-bold text-ct-brown"
+              class="font-bold text-ct-brown text-[12px] sm:text-[16px] hover:text-ct-blue"
               target="_blank"
               >OCEAN ROAD DAIRIES</a
             >
+            <br />
             Vui lòng liên hệ dưới đây và chúng tôi sẽ liên lạc lại với bạn ngay.
             Xin cảm ơn Quý khách!
           </p>
-          <div class="flex flex-wrap justify-center items-center -mx-5">
+          <div
+            class="flex flex-wrap justify-center items-center -mx-4 2xl:-mx-7"
+          >
             <div
-              class="flex w-full sm:w-1/2 lg:w-fit space-x-2 items-center p-5"
+              class="flex w-full sm:w-1/2 lg:w-fit space-x-2 items-center p-4 2xl:p-7"
             >
               <div
                 class="size-10 bg-ct-blue text-white rounded-lg flex justify-center items-center"
@@ -210,7 +236,7 @@
               </div>
             </div>
             <div
-              class="flex w-full sm:w-1/2 lg:w-fit space-x-2 items-center p-5"
+              class="flex w-full sm:w-1/2 lg:w-fit space-x-2 items-center p-4 2xl:p-7"
             >
               <div
                 class="size-10 bg-ct-blue text-white rounded-lg flex justify-center items-center"
@@ -227,8 +253,11 @@
                 >
               </div>
             </div>
+            <div class="p-4 2xl:p-7 hidden lg:block">
+              <div class="h-10 w-[1px] bg-[#E1E4ED]"></div>
+            </div>
             <div
-              class="flex w-full sm:w-1/2 lg:w-fit space-x-2 items-center p-5"
+              class="flex w-full sm:w-1/2 lg:w-fit space-x-2 items-center p-4 2xl:p-7"
             >
               <div
                 class="size-10 bg-ct-blue text-white rounded-lg flex justify-center items-center"
@@ -245,8 +274,11 @@
                 >
               </div>
             </div>
+            <div class="p-4 2xl:p-7 hidden lg:block">
+              <div class="h-10 w-[1px] bg-[#E1E4ED]"></div>
+            </div>
             <div
-              class="flex w-full sm:w-1/2 lg:w-fit space-x-2 items-center p-5"
+              class="flex w-full sm:w-1/2 lg:w-fit space-x-2 items-center p-4 2xl:p-7"
             >
               <div
                 class="size-10 bg-ct-blue text-white rounded-lg flex justify-center items-center"
@@ -266,80 +298,82 @@
             </div>
           </div>
 
-          <div class="flex flex-col lg:flex-row -mx-3">
-            <div class="lg:w-1/2 p-3">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.214672723935!2d105.8147352!3d20.9840302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acedb21d9007%3A0xe3795e6ead7b88b!2zNTM4IMSQLiBLaW0gR2lhbmcsIEtpbSBHaWFuZywgVGhhbmggWHXDom4sIEjDoCBO4buZaQ!5e0!3m2!1svi!2s!4v1709807715639!5m2!1svi!2s"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                class="w-full h-[20rem] lg:h-full"
-              ></iframe>
-            </div>
-            <div class="lg:w-1/2 p-3">
-              <form action="" class="form-lien-he flex flex-wrap -mx-2">
-                <div class="basis-full sm:basis-1/2 p-2">
-                  <label for="form-lien-he-ho-va-ten" id="">Họ và tên</label>
+          <div class="xl:px-20">
+            <div class="flex flex-col lg:flex-row -mx-3">
+              <div class="lg:w-1/2 p-3">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.214672723935!2d105.8147352!3d20.9840302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acedb21d9007%3A0xe3795e6ead7b88b!2zNTM4IMSQLiBLaW0gR2lhbmcsIEtpbSBHaWFuZywgVGhhbmggWHXDom4sIEjDoCBO4buZaQ!5e0!3m2!1svi!2s!4v1709807715639!5m2!1svi!2s"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  class="w-full h-[20rem] lg:h-full"
+                ></iframe>
+              </div>
+              <div class="lg:w-1/2 p-3">
+                <form action="" class="form-lien-he flex flex-wrap -mx-2">
+                  <div class="basis-full sm:basis-1/2 p-2">
+                    <label for="form-lien-he-ho-va-ten" id="">Họ và tên</label>
+                    <input
+                      type="text"
+                      id="form-lien-he-ho-va-ten"
+                      placeholder="Nhập họ và tên"
+                      class="rounded-full py-2 px-5 border"
+                      required
+                    />
+                  </div>
+                  <div class="basis-full sm:basis-1/2 p-2">
+                    <label for="form-lien-he-email" id="">Email</label>
+                    <input
+                      type="email"
+                      id="form-lien-he-email"
+                      placeholder="Nhập địa chỉ email"
+                      class="rounded-full py-2 px-5 border"
+                      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                      title="Vui lòng nhập một địa chỉ email hợp lệ dạng : user@example.com"
+                      required
+                    />
+                  </div>
+                  <div class="basis-full sm:basis-1/2 p-2">
+                    <label for="form-lien-he-so-dien-thoai" id=""
+                      >Số điện thoại</label
+                    >
+                    <input
+                      type="tel"
+                      id="form-lien-he-so-dien-thoai"
+                      placeholder="(123) 456 - 7890"
+                      class="rounded-full py-2 px-5 border"
+                      pattern="[0-9]{10,12}"
+                      title="Số điện thoại từ 10 đến 12 chữ số"
+                      required
+                    />
+                  </div>
+                  <div class="basis-full sm:basis-1/2 p-2">
+                    <label for="form-lien-he-chu-de" id="">Chủ đề</label>
+                    <input
+                      type="text"
+                      id="form-lien-he-chu-de"
+                      placeholder="Nhập chủ đề"
+                      class="rounded-full py-2 px-5 border"
+                    />
+                  </div>
+                  <div class="basis-full p-2">
+                    <label for="form-lien-he-noi-dung">Nội dung</label>
+                    <textarea
+                      name=""
+                      id="form-lien-he-noi-dung"
+                      rows="3"
+                      class="border rounded-xl px-5 py-2"
+                      placeholder="Nội dung"
+                    ></textarea>
+                  </div>
                   <input
-                    type="text"
-                    id="form-lien-he-ho-va-ten"
-                    placeholder="Nhập họ và tên"
-                    class="rounded-full py-2 px-5 border"
-                    required
+                    type="submit"
+                    value="GỬI NGAY"
+                    class="text-[14px] tracking-[0.2px] block m-2 bg-ct-blue basis-full p-2 text-white border border-solid border-ct-blue hover:bg-white hover:text-ct-blue duration-500 transition-all ease-in-out rounded-full cursor-pointer"
                   />
-                </div>
-                <div class="basis-full sm:basis-1/2 p-2">
-                  <label for="form-lien-he-email" id="">Email</label>
-                  <input
-                    type="email"
-                    id="form-lien-he-email"
-                    placeholder="Nhập địa chỉ email"
-                    class="rounded-full py-2 px-5 border"
-                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-                    title="Vui lòng nhập một địa chỉ email hợp lệ dạng : user@example.com"
-                    required
-                  />
-                </div>
-                <div class="basis-full sm:basis-1/2 p-2">
-                  <label for="form-lien-he-so-dien-thoai" id=""
-                    >Số điện thoại</label
-                  >
-                  <input
-                    type="tel"
-                    id="form-lien-he-so-dien-thoai"
-                    placeholder="(123) 456 - 7890"
-                    class="rounded-full py-2 px-5 border"
-                    pattern="[0-9]{10,12}"
-                    title="Số điện thoại từ 10 đến 12 chữ số"
-                    required
-                  />
-                </div>
-                <div class="basis-full sm:basis-1/2 p-2">
-                  <label for="form-lien-he-chu-de" id="">Chủ đề</label>
-                  <input
-                    type="text"
-                    id="form-lien-he-chu-de"
-                    placeholder="Nhập chủ đề"
-                    class="rounded-full py-2 px-5 border"
-                  />
-                </div>
-                <div class="basis-full p-2">
-                  <label for="form-lien-he-noi-dung">Nội dung</label>
-                  <textarea
-                    name=""
-                    id="form-lien-he-noi-dung"
-                    rows="3"
-                    class="border rounded-xl px-5 py-2"
-                    placeholder="Nội dung"
-                  ></textarea>
-                </div>
-                <input
-                  type="submit"
-                  value="GỬI NGAY"
-                  class="block m-2 bg-ct-blue basis-full p-2 text-white border border-solid border-ct-blue hover:bg-white hover:text-ct-blue duration-500 transition-all ease-in-out rounded-full cursor-pointer"
-                />
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -348,7 +382,7 @@
     </main>
 
     <footer
-      class="bg-center bg-cover bg-no-repeat relative overflow-hidden"
+      class="bg-center bg-cover bg-no-repeat relative"
       style="background-image: url(../imgs/bg-footer.png)"
     >
       <div class="container pt-10 md:pt-40 pb-3 relative z-[2]">
