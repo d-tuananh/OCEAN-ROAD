@@ -142,11 +142,11 @@
     <main>
       <!-- Start Section 1 -->
       <section
-        class="bg-cover bg-center bg-no-repeat relative overflow-hidden"
+        class="bg-cover bg-center bg-no-repeat relative overflow-hidden py-0"
         style="background-image: url(../imgs/bg-chi-tiet-san-pham.png)"
       >
         <div
-          class="container h-[35rem] lg:h-[40rem] text-white flex justify-center space-y-3 flex-col"
+          class="container h-[38rem] text-white flex justify-center space-y-3 flex-col"
         >
           <h1
             class="font-bold text-[24px] sm:text-[40px] leading-10 font-SFUSouvenir"
@@ -161,7 +161,7 @@
           </p>
         </div>
         <div
-          class="absolute inset-x-0 top-0 h-fit container -translate-y-1 opacity-90"
+          class="absolute inset-x-0 top-0 h-fit *:w-2/3 sm:*:w-1/2 lg:*:w-fit container -translate-y-1 opacity-90"
         >
           <img src="../imgs/icon-banner.png" alt="" />
         </div>
@@ -171,14 +171,14 @@
       <div class="container py-3">
         <p class="space-x-1">
           <a
-            href="#"
+            href="../index.html"
             class="opacity-50 font-light text-[12px] sm:text-[16px]"
             title="Trang chủ"
             >Trang chủ</a
           >
           <span class="opacity-50">|</span>
           <a
-            href="#"
+            href="page-san-pham.html"
             class="opacity-50 font-light text-[12px] sm:text-[16px]"
             title="Sản phẩm"
             >Sản phẩm</a
@@ -197,48 +197,58 @@
       <section>
         <div class="container">
           <div class="flex -mx-3 flex-col lg:flex-row">
-            <div class="lg:w-2/5 p-3 w-full min-h-full">
-              <div class="xl:ml-28 flex flex-col space-y-3 h-full">
-                <div
-                  class="swiper image-preview lg:min-h-[550px] xl:min-h-[500px]"
-                >
+            <div class="lg:w-2/5 p-3 w-full">
+              <div class="2xl:ml-28 flex flex-col space-y-3">
+                <div class="swiper image-preview">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div
-                        class="border-[3px] border-solid border-ct-brown rounded-xl w-full h-full flex items-center justify-center py-10"
+                        class="border-[3px] border-solid border-ct-brown rounded-xl w-full h-full flex items-center justify-center"
                       >
                         <div
-                          class="open-modal-image *:w-1/2 *:h-fit *:object-cover *:mx-auto"
+                          class="open-modal-image w-full p-[15%] lg:px-[31%] lg:py-[24.5%]"
                           onclick="onModalImage('../imgs/mat-trc-sp.png')"
                         >
-                          <img src="../imgs/mat-trc-sp.png" alt="mat-trc-sp" />
+                          <div class="img__pt pt-[100%] lg:pt-[170%]">
+                            <img
+                              src="../imgs/mat-trc-sp.png"
+                              alt="mat-trc-sp"
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div
-                        class="border-[3px] border-solid border-ct-brown rounded-xl w-full h-full flex items-center justify-center py-10"
+                        class="border-[3px] border-solid border-ct-brown rounded-xl w-full h-full flex items-center justify-center"
                       >
                         <div
-                          class="open-modal-image *:w-1/2 *:h-fit *:object-cover *:mx-auto"
+                          class="open-modal-image w-full p-[15%] lg:px-[31%] lg:py-[24.5%]"
                           onclick="onModalImage('../imgs/mat-sau-sp.png')"
                         >
-                          <img src="../imgs/mat-sau-sp.png" alt="mat-sau-sp" />
+                          <div class="img__pt pt-[100%] lg:pt-[170%]">
+                            <img
+                              src="../imgs/mat-sau-sp.png"
+                              alt="mat-sau-sp"
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div
-                        class="border-[3px] border-solid border-ct-brown rounded-xl w-full h-full flex items-center justify-center py-10"
+                        class="border-[3px] border-solid border-ct-brown rounded-xl w-full h-full flex items-center justify-center"
                       >
                         <div
-                          class="open-modal-image *:w-1/2 *:h-fit *:object-cover *:mx-auto"
+                          class="open-modal-image w-full p-[15%] lg:px-[31%] lg:py-[24.5%]"
                           onclick="onModalImage('../imgs/thong-tin-sp.png')"
                         >
-                          <img
-                            src="../imgs/thong-tin-sp.png"
-                            alt="thong-tin-sp"
-                          />
+                          <div class="img__pt pt-[100%] lg:pt-[170%]">
+                            <img
+                              src="../imgs/thong-tin-sp.png"
+                              alt="thong-tin-sp"
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -247,21 +257,27 @@
                 <div thumbsSlider="" class="swiper image-slide">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide max-w-fit border rounded-xl">
-                      <div class="w-[7rem] h-[8rem] p-2">
-                        <img src="../imgs/mat-trc-sp.png" alt="mat-trc-sp" />
+                      <div class="w-[7rem] p-2">
+                        <div class="w-full img__pt pt-[119%]">
+                          <img src="../imgs/mat-trc-sp.png" alt="mat-trc-sp" />
+                        </div>
                       </div>
                     </div>
                     <div class="swiper-slide max-w-fit border rounded-xl">
-                      <div class="w-[7rem] h-[8rem] p-2">
-                        <img src="../imgs/mat-sau-sp.png" alt="mat-sau-sp" />
+                      <div class="w-[7rem] p-2">
+                        <div class="w-full img__pt pt-[119%]">
+                          <img src="../imgs/mat-sau-sp.png" alt="mat-sau-sp" />
+                        </div>
                       </div>
                     </div>
                     <div class="swiper-slide max-w-fit border rounded-xl">
-                      <div class="w-[7rem] h-[8rem] p-2">
-                        <img
-                          src="../imgs/thong-tin-sp.png"
-                          alt="thong-tin-sp"
-                        />
+                      <div class="w-[7rem] p-2">
+                        <div class="w-full img__pt pt-[119%]">
+                          <img
+                            src="../imgs/thong-tin-sp.png"
+                            alt="thong-tin-sp"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -687,10 +703,10 @@
       </div>
 
       <!-- Start Section 6  -->
-      <section class="flex flex-col-reverse lg:flex-row">
-        <div class="lg:w-1/2 w-full pr-4 lg:pr-0">
+      <section class="flex flex-col-reverse lg:flex-row overflow-hidden">
+        <div class="lg:w-[50%] w-full pr-4 lg:pr-0">
           <div
-            class="img_settings rounded-r-[15rem] h-full w-full overflow-hidden"
+            class="w-full img__pt pt-[58%] rounded-r-[10rem] overflow-hidden"
           >
             <img
               src="../imgs/cows.png"
@@ -700,15 +716,15 @@
             />
           </div>
         </div>
-        <div class="lg:w-1/2 w-full mb-5 lg:mb-0">
+        <div class="lg:w-[50%] w-full mb-5 lg:mb-0">
           <div
             class="px-4 sm:max-w-screen-sm md:max-w-screen-md lg:max-w-[512px] xl:max-w-[640px] 2xl:max-w-[768px] w-full h-full ml-auto lg:ml-0 mr-auto"
           >
             <div
-              class="flex flex-col h-full justify-center items-start *:my-2 lg:py-20 pb-5 lg:pl-5"
+              class="flex flex-col h-full justify-center items-start space-y-5"
             >
               <h2
-                class="font-SFUSouvenir font-bold uppercase tracking-[0.24px] sm:tracking-[0.34px] text-[24px] sm:text-[28px] xl:text-[34px] text-ct-blue"
+                class="font-SFUSouvenir font-bold uppercase text-[24px] sm:text-[28px] xl:text-[34px] text-ct-blue"
               >
                 Công thức từ sữa tươi - chứa đạm quý A2
               </h2>
@@ -724,7 +740,7 @@
                 tươi Úc”.
               </p>
               <button
-                class="bg-ct-brown text-white py-3 px-5 rounded-full hover:bg-ct-blue text-[10px] sm:text-[14px] font-medium flex items-center space-x-2 group"
+                class="bg-ct-brown text-white py-3 px-5 rounded-xl hover:bg-ct-blue text-[10px] sm:text-[14px] font-medium flex items-center space-x-2 group"
               >
                 <span>Những lợi ích vượt trội của Đạm quý A2</span>
                 <svg
@@ -762,9 +778,11 @@
               <a
                 href="page-chi-tiet-san-pham.html"
                 title="chi-tiet-san-pham"
-                class="grow block bg-white rounded-xl w-full pt-14 pb-10 *:mx-auto img-hover overflow-hidden"
+                class="block w-full px-[12%] pt-[5%] pb-[4%] md:pb-[10%] md:pt-[17%] bg-white rounded-xl"
               >
-                <img src="../imgs/sp-sua-1.png" alt="hop-sua" />
+                <div class="img__pt pt-[132%]">
+                  <img src="../imgs/sp-sua-1.png" alt="hop-sua" />
+                </div>
               </a>
               <a
                 href="page-chi-tiet-san-pham.html"
@@ -798,9 +816,11 @@
               <a
                 href="page-chi-tiet-san-pham.html"
                 title="chi-tiet-san-pham"
-                class="grow block bg-white rounded-xl w-full pt-14 pb-10 *:mx-auto img-hover overflow-hidden"
+                class="block w-full px-[12%] pt-[5%] pb-[4%] md:pb-[10%] md:pt-[17%] bg-white rounded-xl"
               >
-                <img src="../imgs/sp-sua-3.png" alt="hop-sua" />
+                <div class="img__pt pt-[132%]">
+                  <img src="../imgs/sp-sua-3.png" alt="hop-sua" />
+                </div>
               </a>
               <a
                 href="page-chi-tiet-san-pham.html"
@@ -864,16 +884,22 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div
-                    class="w-full h-full flex items-center justify-start relative py-10 overflow-x-hidden"
+                    class="w-full h-full flex items-center justify-start relative py-7 md:py-10 overflow-x-hidden"
                   >
-                    <div class="z-[2] px-2 img_settings">
+                    <div
+                      class="sm:px-2 img__pt max-w-[21.5rem] w-full pt-[27.5%] rounded-xl overflow-hidden"
+                    >
                       <img
                         src="../imgs/nhan_xet_cua_me_thuy_minh.png"
                         alt="nhan_xet_cua_nguoi_tieu_dung"
                       />
                     </div>
-                    <div class="text-start text-sm z-[2] px-2 max-w-[500px]">
-                      <p class="line-clamp-6 text-[10px] lg:text-[14px]">
+                    <div
+                      class="text-start text-sm pl-1 pr-2 sm:px-2 max-w-[500px] w-full"
+                    >
+                      <p
+                        class="text-[#000] text-[10px] text-justify lg:text-[14px]"
+                      >
                         Không có gì tuyệt vời hơn khi biết rằng con trẻ của mình
                         đang uống sữa Ocean Road Dairies. Chất lượng và dinh
                         dưỡng của sản phẩm này thực sự xuất sắc. Chúng tôi cảm
@@ -888,23 +914,29 @@
                       <span class="text-[8px] lg:text-[12px]">Nội trợ</span>
                     </div>
                     <div
-                      class="absolute inset-0 translate-x-[10rem] rounded-l-full rounded-r-[25rem] bg-bg-layout z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
+                      class="absolute inset-0 translate-x-[2rem] sm:translate-x-[5rem] 2xl:translate-x-[8rem] rounded-l-full rounded-r-[25rem] bg-bg-layout -z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
                       style="background-image: url('imgs/layout-bay-co.png')"
                     ></div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div
-                    class="w-full h-full flex items-center justify-start relative py-10 overflow-x-hidden"
+                    class="w-full h-full flex items-center justify-start relative py-7 md:py-10 overflow-x-hidden"
                   >
-                    <div class="z-[2] px-2 img_settings">
+                    <div
+                      class="sm:px-2 img__pt max-w-[21.5rem] w-full pt-[27.5%] rounded-xl overflow-hidden"
+                    >
                       <img
                         src="../imgs/nhan_xet_cua_me_thuy_minh.png"
                         alt="nhan_xet_cua_nguoi_tieu_dung"
                       />
                     </div>
-                    <div class="text-start text-sm z-[2] px-2 max-w-[500px]">
-                      <p class="line-clamp-6 text-[10px] lg:text-[14px]">
+                    <div
+                      class="text-start text-sm pl-1 pr-2 sm:px-2 max-w-[500px] w-full"
+                    >
+                      <p
+                        class="text-[#000] text-[10px] text-justify lg:text-[14px]"
+                      >
                         Không có gì tuyệt vời hơn khi biết rằng con trẻ của mình
                         đang uống sữa Ocean Road Dairies. Chất lượng và dinh
                         dưỡng của sản phẩm này thực sự xuất sắc. Chúng tôi cảm
@@ -919,23 +951,29 @@
                       <span class="text-[8px] lg:text-[12px]">Nội trợ</span>
                     </div>
                     <div
-                      class="absolute inset-0 translate-x-[10rem] rounded-l-full rounded-r-[25rem] bg-bg-layout z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
+                      class="absolute inset-0 translate-x-[2rem] sm:translate-x-[5rem] 2xl:translate-x-[8rem] rounded-l-full rounded-r-[25rem] bg-bg-layout -z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
                       style="background-image: url('imgs/layout-bay-co.png')"
                     ></div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div
-                    class="w-full h-full flex items-center justify-start relative py-10 overflow-x-hidden"
+                    class="w-full h-full flex items-center justify-start relative py-7 md:py-10 overflow-x-hidden"
                   >
-                    <div class="z-[2] px-2 img_settings">
+                    <div
+                      class="sm:px-2 img__pt max-w-[21.5rem] w-full pt-[27.5%] rounded-xl overflow-hidden"
+                    >
                       <img
                         src="../imgs/nhan_xet_cua_me_thuy_minh.png"
                         alt="nhan_xet_cua_nguoi_tieu_dung"
                       />
                     </div>
-                    <div class="text-start text-sm z-[2] px-2 max-w-[500px]">
-                      <p class="line-clamp-6 text-[10px] lg:text-[14px]">
+                    <div
+                      class="text-start text-sm pl-1 pr-2 sm:px-2 max-w-[500px] w-full"
+                    >
+                      <p
+                        class="text-[#000] text-[10px] text-justify lg:text-[14px]"
+                      >
                         Không có gì tuyệt vời hơn khi biết rằng con trẻ của mình
                         đang uống sữa Ocean Road Dairies. Chất lượng và dinh
                         dưỡng của sản phẩm này thực sự xuất sắc. Chúng tôi cảm
@@ -950,23 +988,29 @@
                       <span class="text-[8px] lg:text-[12px]">Nội trợ</span>
                     </div>
                     <div
-                      class="absolute inset-0 translate-x-[10rem] rounded-l-full rounded-r-[25rem] bg-bg-layout z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
+                      class="absolute inset-0 translate-x-[2rem] sm:translate-x-[5rem] 2xl:translate-x-[8rem] rounded-l-full rounded-r-[25rem] bg-bg-layout -z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
                       style="background-image: url('imgs/layout-bay-co.png')"
                     ></div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div
-                    class="w-full h-full flex items-center justify-start relative py-10 overflow-x-hidden"
+                    class="w-full h-full flex items-center justify-start relative py-7 md:py-10 overflow-x-hidden"
                   >
-                    <div class="z-[2] px-2 img_settings">
+                    <div
+                      class="sm:px-2 img__pt max-w-[21.5rem] w-full pt-[27.5%] rounded-xl overflow-hidden"
+                    >
                       <img
                         src="../imgs/nhan_xet_cua_me_thuy_minh.png"
                         alt="nhan_xet_cua_nguoi_tieu_dung"
                       />
                     </div>
-                    <div class="text-start text-sm z-[2] px-2 max-w-[500px]">
-                      <p class="line-clamp-6 text-[10px] lg:text-[14px]">
+                    <div
+                      class="text-start text-sm pl-1 pr-2 sm:px-2 max-w-[500px] w-full"
+                    >
+                      <p
+                        class="text-[#000] text-[10px] text-justify lg:text-[14px]"
+                      >
                         Không có gì tuyệt vời hơn khi biết rằng con trẻ của mình
                         đang uống sữa Ocean Road Dairies. Chất lượng và dinh
                         dưỡng của sản phẩm này thực sự xuất sắc. Chúng tôi cảm
@@ -981,23 +1025,29 @@
                       <span class="text-[8px] lg:text-[12px]">Nội trợ</span>
                     </div>
                     <div
-                      class="absolute inset-0 translate-x-[10rem] rounded-l-full rounded-r-[25rem] bg-bg-layout z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
+                      class="absolute inset-0 translate-x-[2rem] sm:translate-x-[5rem] 2xl:translate-x-[8rem] rounded-l-full rounded-r-[25rem] bg-bg-layout -z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
                       style="background-image: url('imgs/layout-bay-co.png')"
                     ></div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div
-                    class="w-full h-full flex items-center justify-start relative py-10 overflow-x-hidden"
+                    class="w-full h-full flex items-center justify-start relative py-7 md:py-10 overflow-x-hidden"
                   >
-                    <div class="z-[2] px-2 img_settings">
+                    <div
+                      class="sm:px-2 img__pt max-w-[21.5rem] w-full pt-[27.5%] rounded-xl overflow-hidden"
+                    >
                       <img
                         src="../imgs/nhan_xet_cua_me_thuy_minh.png"
                         alt="nhan_xet_cua_nguoi_tieu_dung"
                       />
                     </div>
-                    <div class="text-start text-sm z-[2] px-2 max-w-[500px]">
-                      <p class="line-clamp-6 text-[10px] lg:text-[14px]">
+                    <div
+                      class="text-start text-sm pl-1 pr-2 sm:px-2 max-w-[500px] w-full"
+                    >
+                      <p
+                        class="text-[#000] text-[10px] text-justify lg:text-[14px]"
+                      >
                         Không có gì tuyệt vời hơn khi biết rằng con trẻ của mình
                         đang uống sữa Ocean Road Dairies. Chất lượng và dinh
                         dưỡng của sản phẩm này thực sự xuất sắc. Chúng tôi cảm
@@ -1012,13 +1062,15 @@
                       <span class="text-[8px] lg:text-[12px]">Nội trợ</span>
                     </div>
                     <div
-                      class="absolute inset-0 translate-x-[10rem] rounded-l-full rounded-r-[25rem] bg-bg-layout z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
+                      class="absolute inset-0 translate-x-[2rem] sm:translate-x-[5rem] 2xl:translate-x-[8rem] rounded-l-full rounded-r-[25rem] bg-bg-layout -z-[1] bg-repeat-x bg-bottom bg-[length:auto_8rem]"
                       style="background-image: url('imgs/layout-bay-co.png')"
                     ></div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
+              <div
+                class="swiper-pagination translate-x-[5rem] 2xl:-translate-y-[3rem]"
+              ></div>
             </div>
           </div>
         </div>
@@ -1033,11 +1085,11 @@
           >
             <div class="flex flex-col justify-center h-full">
               <h2
-                class="text-center text-[24px] mb-5 lg:mt-10 sm:text-[28px] xl:text-[34px] tracking-[0.24px] sm:tracking-[0.4px] font-bold text-ct-blue font-SFUSouvenir uppercase"
+                class="text-center text-[24px] mb-8 sm:text-[28px] xl:text-[34px] tracking-[0.24px] sm:tracking-[0.4px] font-bold text-ct-blue font-SFUSouvenir uppercase"
               >
                 ĐĂNG KÝ NHẬN THÔNG TIN TƯ VẤN
               </h2>
-              <form action="" class="flex flex-col mt-10 space-y-5">
+              <form action="" class="flex flex-col space-y-5">
                 <input
                   class="border border-solid border-[#6F6F6F] py-2 px-5 rounded-full"
                   type="text"
@@ -1070,7 +1122,7 @@
           </div>
         </div>
         <div class="lg:w-1/2 w-full">
-          <div class="img_settings rounded-l-[15rem] overflow-hidden ml-4">
+          <div class="img__pt pt-[51%] rounded-l-[15rem] overflow-hidden ml-4">
             <img src="../imgs/anh-form-dang-ky.png" alt="anh-form-dang-ky" />
           </div>
         </div>

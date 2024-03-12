@@ -23,8 +23,11 @@
 } */
 
 @layer base {
+  html {
+    @apply 2xl:text-[18px] lg:text-[16px] text-[14px];
+  }
   body {
-    @apply 2xl:text-[18px] lg:text-[16px] text-[14px] leading-snug font-normal overflow-x-hidden font-BTBeauSans text-[#6F6F6F];
+    @apply leading-snug font-normal overflow-x-hidden font-BTBeauSans text-[#6F6F6F];
   }
   section {
     @apply py-7 md:py-10 xl:py-14;
@@ -98,6 +101,14 @@
 
   .img-hover > img {
     @apply hover:scale-125 transition-transform ease-in-out duration-500;
+  }
+
+  .img__pt {
+    @apply relative block;
+  }
+
+  .img__pt > img {
+    @apply absolute size-full top-0 left-0 object-cover;
   }
 }
 
