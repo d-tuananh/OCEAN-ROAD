@@ -12,7 +12,7 @@ if (popup) {
     }, 1000)
   }
 
-  openPopup()
+  // openPopup()
 
   allBtnClosePopup.forEach((i) =>
     i.addEventListener("click", (e) => {
@@ -22,6 +22,33 @@ if (popup) {
       document.body.style.overflow = "auto"
     })
   )
+}
+
+window.onscroll = function () {
+  myFunctionSticky()
+  myFunctionMoblieSticky()
+}
+
+var navbar = document.querySelector(".sticky-navbar")
+var sticky = navbar.offsetTop
+
+function myFunctionSticky() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky")
+  }
+}
+
+var navbarMoblie = document.querySelector(".sticky-navbar-moblie")
+var stickyMoblie = navbarMoblie.offsetTop
+
+function myFunctionMoblieSticky() {
+  if (window.pageYOffset >= stickyMoblie) {
+    navbarMoblie.classList.add("sticky")
+  } else {
+    navbarMoblie.classList.remove("sticky")
+  }
 }
 
 const btnToggle = document.querySelector(".btn-toggle")

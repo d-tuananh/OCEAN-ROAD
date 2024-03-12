@@ -20,9 +20,7 @@
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <header
-      class="text-ct-blue fixed z-40 inset-x-0 top-0 shadow-header bg-white"
-    >
+    <header class="text-ct-blue shadow-header bg-white">
       <div class="bg-[#F2EEE5]">
         <div
           class="container text-sm font-medium flex justify-center 2xl:justify-between items-center py-1"
@@ -45,21 +43,55 @@
         </div>
       </div>
 
-      <div class="menu">
-        <div class="menu-left">
-          <ul>
-            <li class="group">
-              <a href="#"
-                ><span>OCEAN ROAD DAIRIES</span>
-                <i class="fas fa-chevron-down group-hover:rotate-180"></i
-              ></a>
-            </li>
-            <li><a href="#">ĐẠM QUÝ A2</a></li>
-            <li><a href="#"> Công thức từ sữa tươi</a></li>
-          </ul>
+      <div class="sticky-navbar shadow-header">
+        <div class="menu">
+          <div class="menu-left">
+            <ul>
+              <li class="group">
+                <a href="#">OCEAN ROAD DAIRIES </a>
+              </li>
+              <li><a href="#">ĐẠM QUÝ A2</a></li>
+              <li><a href="#"> Công thức từ sữa tươi</a></li>
+            </ul>
+          </div>
+          <div class="logo">
+            <a href="/">
+              <img
+                src="imgs/logo-header.png"
+                width="189"
+                height="75"
+                alt="logo-header"
+              />
+            </a>
+          </div>
+          <div class="menu-right">
+            <ul>
+              <li class="group">
+                <a href="pages/page-san-pham.html">SẢN PHẨM </a>
+              </li>
+              <li>
+                <a href="pages/page-ocean-road-dairies.html"
+                  >Tại sao chọn hữu cơ?</a
+                >
+              </li>
+              <li class="group">
+                <a href="pages/page-tin-tuc.html">TIN TỨC </a>
+              </li>
+              <li><a href="pages/page-hoi-dap.html">HỎI ĐÁP</a></li>
+              <li><a href="pages/page-lien-he.html">LIÊN HỆ</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="logo">
-          <a href="/">
+      </div>
+
+      <!-- Moblie -->
+      <div class="sticky-navbar-moblie shadow-header">
+        <div class="header__moblie">
+          <div class="btn-toggle">
+            <a href="#"><i class="fas fa-bars text-2xl"></i></a>
+            <a href="#"><i class="fas fa-bars text-2xl opacity-0"></i></a>
+          </div>
+          <a href="#">
             <img
               src="imgs/logo-header.png"
               width="189"
@@ -67,60 +99,21 @@
               alt="logo-header"
             />
           </a>
-        </div>
-        <div class="menu-right">
-          <ul>
-            <li class="group">
-              <a href="pages/page-san-pham.html"
-                ><span>SẢN PHẨM</span>
-                <i class="fas fa-chevron-down group-hover:rotate-180"></i
-              ></a>
-            </li>
-            <li>
-              <a href="pages/page-ocean-road-dairies.html"
-                >Tại sao chọn hữu cơ?</a
-              >
-            </li>
-            <li class="group">
-              <a href="pages/page-tin-tuc.html"
-                ><span>TIN TỨC</span>
-                <i class="fas fa-chevron-down group-hover:rotate-180"></i
-              ></a>
-            </li>
-            <li><a href="pages/page-hoi-dap.html">HỎI ĐÁP</a></li>
-            <li><a href="pages/page-lien-he.html">LIÊN HỆ</a></li>
-          </ul>
+          <div class="space-x-2 text-lg">
+            <a href="https://www.facebook.com/oceanroaddairies" target="_blank">
+              <i class="fab fa-facebook-f text-2xl"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/oceanroaddairies?fbclid=IwAR1e4VRzcUDlySXMdUEzCawoKfl_aqRAJADzRGoF-ut4kS1-htZ1bOGFig4"
+              target="_blank"
+            >
+              <i class="fab fa-instagram text-2xl"></i>
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- Moblie -->
-      <div class="header__moblie">
-        <div class="btn-toggle">
-          <a href="#"><i class="fas fa-bars text-2xl"></i></a>
-          <a href="#"><i class="fas fa-bars text-2xl opacity-0"></i></a>
-        </div>
-        <a href="#">
-          <img
-            src="imgs/logo-header.png"
-            width="189"
-            height="75"
-            alt="logo-header"
-          />
-        </a>
-        <div class="space-x-2 text-lg">
-          <a href="https://www.facebook.com/oceanroaddairies" target="_blank">
-            <i class="fab fa-facebook-f text-2xl"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/oceanroaddairies?fbclid=IwAR1e4VRzcUDlySXMdUEzCawoKfl_aqRAJADzRGoF-ut4kS1-htZ1bOGFig4"
-            target="_blank"
-          >
-            <i class="fab fa-instagram text-2xl"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="menu__moblie -translate-x-full">
+      <div class="menu__moblie -translate-x-full z-50">
         <ul>
           <div class="flex justify-end items-center">
             <i
@@ -128,17 +121,12 @@
             ></i>
           </div>
           <li>
-            <a href="#"
-              ><span>OCEAN ROAD DAIRIES</span>
-              <i class="fas fa-chevron-down"></i
-            ></a>
+            <a href="#">OCEAN ROAD DAIRIES</a>
           </li>
           <li><a href="#">ĐẠM QUÝ A2</a></li>
           <li><a href="#"> Công thức từ sữa tươi</a></li>
           <li>
-            <a href="pages/page-san-pham.html"
-              ><span>SẢN PHẨM</span> <i class="fas fa-chevron-down"></i
-            ></a>
+            <a href="pages/page-san-pham.html">SẢN PHẨM </a>
           </li>
           <li>
             <a href="pages/page-ocean-road-dairies.html"
@@ -146,15 +134,13 @@
             >
           </li>
           <li>
-            <a href="pages/page-tin-tuc.html"
-              ><span>TIN TỨC</span> <i class="fas fa-chevron-down"></i
-            ></a>
+            <a href="pages/page-tin-tuc.html">TIN TỨC</a>
           </li>
           <li><a href="pages/page-hoi-dap.html">HỎI ĐÁP</a></li>
           <li><a href="pages/page-lien-he.html">LIÊN HỆ</a></li>
         </ul>
       </div>
-      <div class="bg-over-menu hidden"></div>
+      <div class="bg-over-menu hidden z-[49]"></div>
     </header>
 
     <main>
@@ -168,7 +154,7 @@
                 style="background-image: url(imgs/bg-banner-slide.png)"
               >
                 <p
-                  class="font-DancingScript font-medium text-base sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[86px] text-[#007DEA] text-center mt-[150px] lg:mt-[200px] xl:mt-[250px] 2xl:mt-[300px] mb-10 lg:mb-20 2xl:mb-32"
+                  class="font-DancingScript font-medium text-base sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[86px] text-[#007DEA] text-center mt-[170px] xl:mt-[250px] mb-10 lg:mb-20 2xl:mb-32"
                 >
                   Chất lựa chọn số 1 cho sức khỏe và phát triển của bé yêu
                 </p>
@@ -183,7 +169,7 @@
                 style="background-image: url(imgs/bg-banner-slide.png)"
               >
                 <p
-                  class="font-DancingScript font-medium text-base sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[86px] text-[#007DEA] text-center mt-[150px] lg:mt-[200px] xl:mt-[250px] 2xl:mt-[300px] mb-10 lg:mb-20 2xl:mb-32"
+                  class="font-DancingScript font-medium text-base sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[86px] text-[#007DEA] text-center mt-[170px] xl:mt-[250px] mb-10 lg:mb-20 2xl:mb-32"
                 >
                   Chất lựa chọn số 1 cho sức khỏe và phát triển của bé yêu
                 </p>
@@ -198,7 +184,7 @@
                 style="background-image: url(imgs/bg-banner-slide.png)"
               >
                 <p
-                  class="font-DancingScript font-medium text-base sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[86px] text-[#007DEA] text-center mt-[150px] lg:mt-[200px] xl:mt-[250px] 2xl:mt-[300px] mb-10 lg:mb-20 2xl:mb-32"
+                  class="font-DancingScript font-medium text-base sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[86px] text-[#007DEA] text-center mt-[170px] xl:mt-[250px] mb-10 lg:mb-20 2xl:mb-32"
                 >
                   Chất lựa chọn số 1 cho sức khỏe và phát triển của bé yêu
                 </p>
@@ -238,7 +224,7 @@
                 thiên nhiên, làm êm bụng bé.
               </p>
               <button
-                class="bg-ct-brown text-white py-3 px-5 rounded-xl hover:bg-ct-blue text-[10px] sm:text-[14px] font-medium flex items-center space-x-2"
+                class="bg-ct-brown text-white py-3 px-5 rounded-xl hover:bg-ct-blue text-[10px] sm:text-[14px] font-medium flex items-center space-x-2 group"
               >
                 <span>Tìm hiểu thêm</span>
                 <svg
@@ -247,6 +233,7 @@
                   viewBox="0 0 21 10"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  class="group-hover:translate-x-2 transition-transform duration-500 ease-in-out"
                 >
                   <path
                     d="M16.4362 9.85073L20.7843 5.51964C20.9224 5.38172 21 5.19484 21 5C21 4.80516 20.9224 4.61828 20.7843 4.48036L16.4362 0.149273C16.3398 0.0535731 16.2093 -0.000113405 16.0732 1.79868e-07C15.9371 0.000113765 15.8066 0.0540183 15.7103 0.149879C15.6141 0.24574 15.56 0.375722 15.5599 0.51129C15.5598 0.646858 15.6137 0.77693 15.7097 0.872952L19.3393 4.48828H0.51372C0.377473 4.48828 0.246806 4.54219 0.150465 4.63816C0.0541239 4.73413 0 4.86428 0 5C0 5.13572 0.0541239 5.26587 0.150465 5.36184C0.246806 5.45781 0.377473 5.51172 0.51372 5.51172H19.3393L15.7097 9.12705C15.6137 9.22307 15.5598 9.35314 15.5599 9.48871C15.56 9.62428 15.6141 9.75426 15.7103 9.85012C15.8066 9.94598 15.9371 9.99989 16.0732 10C16.2093 10.0001 16.3398 9.94643 16.4362 9.85073Z"
@@ -305,7 +292,7 @@
                 kiện thời tiết và môi trường.
               </p>
               <button
-                class="bg-ct-brown text-white py-3 px-5 rounded-full hover:bg-ct-blue text-[10px] sm:text-[14px] font-medium flex items-center space-x-2"
+                class="bg-ct-brown text-white py-3 px-5 rounded-full hover:bg-ct-blue text-[10px] sm:text-[14px] font-medium flex items-center space-x-2 group"
               >
                 <span>Tìm hiểu thêm</span>
                 <svg
@@ -314,6 +301,7 @@
                   viewBox="0 0 21 10"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  class="group-hover:translate-x-2 transition-transform duration-500 ease-in-out"
                 >
                   <path
                     d="M16.4362 9.85073L20.7843 5.51964C20.9224 5.38172 21 5.19484 21 5C21 4.80516 20.9224 4.61828 20.7843 4.48036L16.4362 0.149273C16.3398 0.0535731 16.2093 -0.000113405 16.0732 1.79868e-07C15.9371 0.000113765 15.8066 0.0540183 15.7103 0.149879C15.6141 0.24574 15.56 0.375722 15.5599 0.51129C15.5598 0.646858 15.6137 0.77693 15.7097 0.872952L19.3393 4.48828H0.51372C0.377473 4.48828 0.246806 4.54219 0.150465 4.63816C0.0541239 4.73413 0 4.86428 0 5C0 5.13572 0.0541239 5.26587 0.150465 5.36184C0.246806 5.45781 0.377473 5.51172 0.51372 5.51172H19.3393L15.7097 9.12705C15.6137 9.22307 15.5598 9.35314 15.5599 9.48871C15.56 9.62428 15.6141 9.75426 15.7103 9.85012C15.8066 9.94598 15.9371 9.99989 16.0732 10C16.2093 10.0001 16.3398 9.94643 16.4362 9.85073Z"
@@ -339,7 +327,7 @@
             </h2>
             <a
               href="pages/page-ocean-road-dairies.html"
-              class="bg-ct-brown text-white py-3 px-5 rounded-full hover:bg-ct-blue text-[10px] sm:text-[14px] font-medium flex items-center space-x-2 duration-500 ease-in-out transition-all"
+              class="bg-ct-brown text-white py-3 px-5 rounded-full hover:bg-ct-blue text-[10px] sm:text-[14px] font-medium flex items-center space-x-2 duration-500 ease-in-out transition-all group"
             >
               <span>Tại sao chọn hữu cơ</span>
 
@@ -349,6 +337,7 @@
                 viewBox="0 0 21 10"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                class="group-hover:translate-x-2 transition-transform duration-500 ease-in-out"
               >
                 <path
                   d="M16.4362 9.85073L20.7843 5.51964C20.9224 5.38172 21 5.19484 21 5C21 4.80516 20.9224 4.61828 20.7843 4.48036L16.4362 0.149273C16.3398 0.0535731 16.2093 -0.000113405 16.0732 1.79868e-07C15.9371 0.000113765 15.8066 0.0540183 15.7103 0.149879C15.6141 0.24574 15.56 0.375722 15.5599 0.51129C15.5598 0.646858 15.6137 0.77693 15.7097 0.872952L19.3393 4.48828H0.51372C0.377473 4.48828 0.246806 4.54219 0.150465 4.63816C0.0541239 4.73413 0 4.86428 0 5C0 5.13572 0.0541239 5.26587 0.150465 5.36184C0.246806 5.45781 0.377473 5.51172 0.51372 5.51172H19.3393L15.7097 9.12705C15.6137 9.22307 15.5598 9.35314 15.5599 9.48871C15.56 9.62428 15.6141 9.75426 15.7103 9.85012C15.8066 9.94598 15.9371 9.99989 16.0732 10C16.2093 10.0001 16.3398 9.94643 16.4362 9.85073Z"
@@ -596,7 +585,7 @@
                 tươi Úc”.
               </p>
               <button
-                class="bg-ct-brown text-white py-3 px-5 rounded-full hover:bg-ct-blue text-[10px] sm:text-[14px] font-medium flex items-center space-x-2"
+                class="bg-ct-brown text-white py-3 px-5 rounded-full hover:bg-ct-blue text-[10px] sm:text-[14px] font-medium flex items-center space-x-2 group"
               >
                 <span>Những lợi ích vượt trội của Đạm quý A2</span>
                 <svg
@@ -605,6 +594,7 @@
                   viewBox="0 0 21 10"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  class="group-hover:translate-x-2 transition-transform duration-500 ease-in-out"
                 >
                   <path
                     d="M16.4362 9.85073L20.7843 5.51964C20.9224 5.38172 21 5.19484 21 5C21 4.80516 20.9224 4.61828 20.7843 4.48036L16.4362 0.149273C16.3398 0.0535731 16.2093 -0.000113405 16.0732 1.79868e-07C15.9371 0.000113765 15.8066 0.0540183 15.7103 0.149879C15.6141 0.24574 15.56 0.375722 15.5599 0.51129C15.5598 0.646858 15.6137 0.77693 15.7097 0.872952L19.3393 4.48828H0.51372C0.377473 4.48828 0.246806 4.54219 0.150465 4.63816C0.0541239 4.73413 0 4.86428 0 5C0 5.13572 0.0541239 5.26587 0.150465 5.36184C0.246806 5.45781 0.377473 5.51172 0.51372 5.51172H19.3393L15.7097 9.12705C15.6137 9.22307 15.5598 9.35314 15.5599 9.48871C15.56 9.62428 15.6141 9.75426 15.7103 9.85012C15.8066 9.94598 15.9371 9.99989 16.0732 10C16.2093 10.0001 16.3398 9.94643 16.4362 9.85073Z"
@@ -858,9 +848,11 @@
             <a
               href="pages/page-chi-tiet-san-pham.html"
               title="chi-tiet-san-pham"
-              class="flex flex-col items-center my-2 md:m-5 space-y-1"
+              class="flex flex-col items-center my-2 md:m-5 space-y-1 md:w-1/3 xl:w-1/4"
             >
-              <div class="grow bg-white rounded-xl">
+              <div
+                class="grow bg-white rounded-xl w-full flex justify-center py-12 xl:py-14 img-hover overflow-hidden"
+              >
                 <img src="imgs/sp-sua-1.png" alt="hop-sua" />
               </div>
               <p
@@ -878,9 +870,11 @@
             <a
               href="pages/page-chi-tiet-san-pham.html"
               title="chi-tiet-san-pham"
-              class="flex flex-col items-center my-2 md:m-5 space-y-1"
+              class="flex flex-col items-center my-2 md:m-5 space-y-1 md:w-1/3 xl:w-1/4"
             >
-              <div class="grow bg-white rounded-xl">
+              <div
+                class="grow bg-white rounded-xl w-full flex justify-center py-12 xl:py-14 img-hover overflow-hidden"
+              >
                 <img src="imgs/sp-sua-2.png" alt="hop-sua" />
               </div>
               <p
@@ -898,9 +892,11 @@
             <a
               href="pages/page-chi-tiet-san-pham.html"
               title="chi-tiet-san-pham"
-              class="flex flex-col items-center my-2 md:m-5 space-y-1"
+              class="flex flex-col items-center my-2 md:m-5 space-y-1 md:w-1/3 xl:w-1/4"
             >
-              <div class="grow bg-white rounded-xl px-5">
+              <div
+                class="grow bg-white rounded-xl px-5 w-full flex justify-center py-12 xl:py-14 img-hover overflow-hidden"
+              >
                 <img src="imgs/sp-sua-3.png" alt="hop-sua" />
               </div>
               <p
@@ -955,7 +951,10 @@
           <div class="flex flex-col lg:flex-row -mx-3">
             <div class="lg:basis-1/2 p-3">
               <div class="rounded-xl overflow-hidden">
-                <div class="img_settings relative">
+                <a
+                  href="pages/page-chi-tiet-tin-tuc.html"
+                  class="block img_settings relative img-hover overflow-hidden"
+                >
                   <img
                     src="imgs/anh-thong-tin-huu-ich.png"
                     alt="Cân đối giữa công việc và đám trẻ ở nhà trong mùa Covid"
@@ -970,7 +969,7 @@
                       Tháng 1
                     </p>
                   </div>
-                </div>
+                </a>
                 <div class="p-5 bg-bg-layout space-y-3">
                   <h6 class="text-ct-blue font-extrabold text-[20px]">
                     Cân đối giữa công việc và đám trẻ ở nhà trong mùa Covid
@@ -989,12 +988,15 @@
                 <div class="swiper-wrapper mb-5">
                   <div class="swiper-slide" style="align-items: start">
                     <div class="rounded-xl overflow-hidden">
-                      <div class="">
+                      <a
+                        href="pages/page-chi-tiet-tin-tuc.html"
+                        class="img-hover overflow-hidden block"
+                      >
                         <img
                           src="imgs/img-slide-thong-tin-huu-ich-1.png"
                           alt="thong-tin-huu-ich"
                         />
-                      </div>
+                      </a>
                       <div class="text-start p-5 bg-bg-layout space-y-2">
                         <p
                           class="text-black/70 text-[10px] lg:text-[12px] font-light"
@@ -1016,12 +1018,15 @@
                   </div>
                   <div class="swiper-slide" style="align-items: start">
                     <div class="rounded-xl overflow-hidden">
-                      <div class="">
+                      <a
+                        href="pages/page-chi-tiet-tin-tuc.html"
+                        class="block img-hover overflow-hidden"
+                      >
                         <img
                           src="imgs/img-slide-thong-tin-huu-ich-2.png"
                           alt="thong-tin-huu-ich"
                         />
-                      </div>
+                      </a>
                       <div class="text-start p-5 bg-bg-layout space-y-2">
                         <p
                           class="text-black/70 text-[10px] lg:text-[12px] font-light"
@@ -1043,12 +1048,15 @@
                   </div>
                   <div class="swiper-slide" style="align-items: start">
                     <div class="rounded-xl overflow-hidden">
-                      <div class="">
+                      <a
+                        href="pages/page-chi-tiet-tin-tuc.html"
+                        class="img-hover overflow-hidden block"
+                      >
                         <img
                           src="imgs/img-slide-thong-tin-huu-ich-1.png"
                           alt="thong-tin-huu-ich"
                         />
-                      </div>
+                      </a>
                       <div class="text-start p-5 bg-bg-layout space-y-2">
                         <p
                           class="text-black/70 text-[10px] lg:text-[12px] font-light"
@@ -1070,12 +1078,15 @@
                   </div>
                   <div class="swiper-slide" style="align-items: start">
                     <div class="rounded-xl overflow-hidden">
-                      <div class="">
+                      <a
+                        href="pages/page-chi-tiet-tin-tuc.html"
+                        class="block img-hover overflow-hidden"
+                      >
                         <img
                           src="imgs/img-slide-thong-tin-huu-ich-2.png"
                           alt="thong-tin-huu-ich"
                         />
-                      </div>
+                      </a>
                       <div class="text-start p-5 bg-bg-layout space-y-2">
                         <p
                           class="text-black/70 text-[10px] lg:text-[12px] font-light"
@@ -1097,12 +1108,15 @@
                   </div>
                   <div class="swiper-slide" style="align-items: start">
                     <div class="rounded-xl overflow-hidden">
-                      <div class="">
+                      <a
+                        href="pages/page-chi-tiet-tin-tuc.html"
+                        class="img-hover overflow-hidden block"
+                      >
                         <img
                           src="imgs/img-slide-thong-tin-huu-ich-1.png"
                           alt="thong-tin-huu-ich"
                         />
-                      </div>
+                      </a>
                       <div class="text-start p-5 bg-bg-layout space-y-2">
                         <p
                           class="text-black/70 text-[10px] lg:text-[12px] font-light"
@@ -1124,12 +1138,15 @@
                   </div>
                   <div class="swiper-slide" style="align-items: start">
                     <div class="rounded-xl overflow-hidden">
-                      <div class="">
+                      <a
+                        href="pages/page-chi-tiet-tin-tuc.html"
+                        class="block img-hover overflow-hidden"
+                      >
                         <img
                           src="imgs/img-slide-thong-tin-huu-ich-2.png"
                           alt="thong-tin-huu-ich"
                         />
-                      </div>
+                      </a>
                       <div class="text-start p-5 bg-bg-layout space-y-2">
                         <p
                           class="text-black/70 text-[10px] lg:text-[12px] font-light"
@@ -1151,12 +1168,15 @@
                   </div>
                   <div class="swiper-slide" style="align-items: start">
                     <div class="rounded-xl overflow-hidden">
-                      <div class="">
+                      <a
+                        href="pages/page-chi-tiet-tin-tuc.html"
+                        class="img-hover overflow-hidden block"
+                      >
                         <img
                           src="imgs/img-slide-thong-tin-huu-ich-1.png"
                           alt="thong-tin-huu-ich"
                         />
-                      </div>
+                      </a>
                       <div class="text-start p-5 bg-bg-layout space-y-2">
                         <p
                           class="text-black/70 text-[10px] lg:text-[12px] font-light"
@@ -1178,12 +1198,15 @@
                   </div>
                   <div class="swiper-slide" style="align-items: start">
                     <div class="rounded-xl overflow-hidden">
-                      <div class="">
+                      <a
+                        href="pages/page-chi-tiet-tin-tuc.html"
+                        class="block img-hover overflow-hidden"
+                      >
                         <img
                           src="imgs/img-slide-thong-tin-huu-ich-2.png"
                           alt="thong-tin-huu-ich"
                         />
-                      </div>
+                      </a>
                       <div class="text-start p-5 bg-bg-layout space-y-2">
                         <p
                           class="text-black/70 text-[10px] lg:text-[12px] font-light"
@@ -1881,14 +1904,18 @@
     <div
       class="fixed inset-0 bg-black/50 z-[100] hidden justify-center items-center popup"
     >
-      <div class="max-w-[50rem] px-[3rem]">
-        <div class="bg-white p-5 space-y-5 rounded-3xl">
-          <p class="text-2xl font-bold text-ct-blue text-center">
+      <div class="max-w-[50rem] px-[1.5rem] sm:px-[3rem]">
+        <div class="bg-white p-4 md:p-5 space-y-5 rounded-3xl">
+          <p
+            class="text-[20px] sm:text-[24px] font-bold text-ct-blue text-center"
+          >
             Lưu ý quan trọng cho Cha mẹ và Người giám hộ
           </p>
-          <div class="space-y-5 max-h-[10rem] sm:max-h-max overflow-auto pl-5">
+          <div
+            class="space-y-5 max-h-[10rem] sm:max-h-max overflow-auto sm:overflow-visible pl-5"
+          >
             <p
-              class="text-ct-blue pr-3 text-justify relative after:absolute after:block after:size-2 after:bg-ct-blue after:top-0 after:left-0 after:-translate-x-4 after:translate-y-1 sm:after:translate-y-2 after:rounded-full"
+              class="text-ct-blue text-[12px] sm:text-[16px] pr-3 text-justify relative after:absolute after:block after:size-2 after:bg-ct-blue after:top-0 after:left-0 after:-translate-x-4 after:translate-y-1 sm:after:translate-y-2 after:rounded-full"
             >
               Sữa mẹ là thức ăn tốt nhất cho trẻ sơ sinh và trẻ nhỏ. Tổ chức Y
               tế Thế giới khuyến nghị rằng hãy nuôi con hoàn toàn bằng sữa mẹ
@@ -1902,7 +1929,7 @@
               bú sữa mẹ.
             </p>
             <p
-              class="text-ct-blue pr-3 text-justify relative after:absolute after:block after:size-2 after:bg-ct-blue after:top-0 after:left-0 after:-translate-x-4 after:translate-y-1 sm:after:translate-y-2 after:rounded-full"
+              class="text-ct-blue text-[12px] sm:text-[16px] pr-3 text-justify relative after:absolute after:block after:size-2 after:bg-ct-blue after:top-0 after:left-0 after:-translate-x-4 after:translate-y-1 sm:after:translate-y-2 after:rounded-full"
             >
               Nội dung trên trang web này nhằm mục đích cung cấp thông tin chung
               cho người dân Việt Nam và không được sử dụng thay thế cho chăm sóc
@@ -1916,12 +1943,12 @@
 
           <div class="flex justify-center">
             <button
-              class="btn-close-popup mx-2 border border-solid border-ct-brown rounded-xl text-ct-brown hover:text-white hover:bg-ct-brown duration-500 ease-in-out transition-all py-2 px-4"
+              class="btn-close-popup text-[14px] sm:text-[16px] mx-2 border border-solid border-ct-brown rounded-xl text-ct-brown hover:text-white hover:bg-ct-brown duration-500 ease-in-out transition-all py-2 px-4"
             >
               RỜI KHỎI
             </button>
             <button
-              class="btn-close-popup mx-2 border border-solid border-ct-blue rounded-xl text-white hover:text-ct-blue hover:bg-white bg-ct-blue duration-500 ease-in-out transition-all py-2 px-4"
+              class="btn-close-popup text-[14px] sm:text-[16px] mx-2 border border-solid border-ct-blue rounded-xl text-white hover:text-ct-blue hover:bg-white bg-ct-blue duration-500 ease-in-out transition-all py-2 px-4"
             >
               BẮT ĐẦU
             </button>
