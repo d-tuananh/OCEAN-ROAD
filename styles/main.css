@@ -3017,6 +3017,10 @@ header i:hover,
     display: block;
   }
 
+  .lg\:flex{
+    display: flex;
+  }
+
   .lg\:hidden{
     display: none;
   }
@@ -3099,6 +3103,10 @@ header i:hover,
     --tw-space-x-reverse: 0;
     margin-right: calc(1.25rem * var(--tw-space-x-reverse));
     margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:rounded-full{
+    border-radius: 9999px;
   }
 
   .lg\:px-20{
