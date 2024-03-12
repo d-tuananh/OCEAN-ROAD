@@ -1170,8 +1170,20 @@ header i:hover,
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 700ms;
+  transition-duration: 500ms;
   transition-timing-function: linear;
+}
+
+.img-hover > img{
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.img-hover > img:hover{
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .fixed{
@@ -1184,6 +1196,10 @@ header i:hover,
 
 .relative{
   position: relative;
+}
+
+.sticky{
+  position: sticky;
 }
 
 .inset-0{
@@ -1239,10 +1255,6 @@ header i:hover,
   z-index: 10;
 }
 
-.z-40{
-  z-index: 40;
-}
-
 .z-50{
   z-index: 50;
 }
@@ -1257,6 +1269,10 @@ header i:hover,
 
 .z-\[2\]{
   z-index: 2;
+}
+
+.z-\[49\]{
+  z-index: 49;
 }
 
 .z-\[5\]{
@@ -1350,10 +1366,6 @@ header i:hover,
   margin-bottom: 1.25rem;
 }
 
-.ml-0{
-  margin-left: 0px;
-}
-
 .ml-4{
   margin-left: 1rem;
 }
@@ -1382,8 +1394,8 @@ header i:hover,
   margin-top: 1.25rem;
 }
 
-.mt-\[150px\]{
-  margin-top: 150px;
+.mt-\[170px\]{
+  margin-top: 170px;
 }
 
 .line-clamp-2{
@@ -1426,6 +1438,11 @@ header i:hover,
   height: 4rem;
 }
 
+.size-5{
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
 .size-8{
   width: 2rem;
   height: 2rem;
@@ -1441,19 +1458,9 @@ header i:hover,
   height: 25rem;
 }
 
-.size-full{
-  width: 100%;
-  height: 100%;
-}
-
-.size-20{
-  width: 5rem;
-  height: 5rem;
-}
-
-.size-24{
-  width: 6rem;
-  height: 6rem;
+.size-4{
+  width: 1rem;
+  height: 1rem;
 }
 
 .h-1{
@@ -1476,16 +1483,16 @@ header i:hover,
   height: 12rem;
 }
 
-.h-\[20\%\]{
-  height: 20%;
+.h-\[1px\]{
+  height: 1px;
 }
 
 .h-\[20rem\]{
   height: 20rem;
 }
 
-.h-\[40rem\]{
-  height: 40rem;
+.h-\[35rem\]{
+  height: 35rem;
 }
 
 .h-\[500px\]{
@@ -1505,61 +1512,16 @@ header i:hover,
   height: 100%;
 }
 
-.h-\[10rem\]{
-  height: 10rem;
-}
-
-.h-\[1px\]{
-  height: 1px;
-}
-
 .max-h-\[10rem\]{
   max-height: 10rem;
-}
-
-.max-h-\[500px\]{
-  max-height: 500px;
-}
-
-.max-h-\[600px\]{
-  max-height: 600px;
-}
-
-.max-h-full{
-  max-height: 100%;
 }
 
 .min-h-full{
   min-height: 100%;
 }
 
-.min-h-fit{
-  min-height: -moz-fit-content;
-  min-height: fit-content;
-}
-
-.min-h-\[10rem\]{
-  min-height: 10rem;
-}
-
-.min-h-\[500px\]{
-  min-height: 500px;
-}
-
-.min-h-\[600px\]{
-  min-height: 600px;
-}
-
-.min-h-\[700px\]{
-  min-height: 700px;
-}
-
-.min-h-\[650px\]{
-  min-height: 650px;
-}
-
-.min-h-\[550px\]{
-  min-height: 550px;
+.w-1{
+  width: 0.25rem;
 }
 
 .w-1\/2{
@@ -1580,10 +1542,6 @@ header i:hover,
 
 .w-\[1px\]{
   width: 1px;
-}
-
-.w-\[20rem\]{
-  width: 20rem;
 }
 
 .w-\[7px\]{
@@ -1616,10 +1574,6 @@ header i:hover,
   max-width: fit-content;
 }
 
-.max-w-\[20rem\]{
-  max-width: 20rem;
-}
-
 .grow{
   flex-grow: 1;
 }
@@ -1643,6 +1597,11 @@ header i:hover,
 
 .-translate-x-full{
   --tw-translate-x: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-1{
+  --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1673,11 +1632,6 @@ header i:hover,
 
 .translate-y-1\/2{
   --tw-translate-y: 50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-28{
-  --tw-translate-y: 7rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1951,6 +1905,10 @@ header i:hover,
   background-color: rgb(242 238 229 / var(--tw-bg-opacity));
 }
 
+.bg-black\/15{
+  background-color: rgb(0 0 0 / 0.15);
+}
+
 .bg-black\/30{
   background-color: rgb(0 0 0 / 0.3);
 }
@@ -1986,10 +1944,6 @@ header i:hover,
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-black\/15{
-  background-color: rgb(0 0 0 / 0.15);
 }
 
 .bg-ct-layout{
@@ -2052,14 +2006,6 @@ header i:hover,
   padding: 1.25rem;
 }
 
-.p-10{
-  padding: 2.5rem;
-}
-
-.p-32{
-  padding: 8rem;
-}
-
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -2080,9 +2026,9 @@ header i:hover,
   padding-right: 1.25rem;
 }
 
-.px-\[3rem\]{
-  padding-left: 3rem;
-  padding-right: 3rem;
+.px-\[1\.5rem\]{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .py-0{
@@ -2130,9 +2076,8 @@ header i:hover,
   padding-bottom: 1.75rem;
 }
 
-.px-32{
-  padding-left: 8rem;
-  padding-right: 8rem;
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .pb-2{
@@ -2177,6 +2122,10 @@ header i:hover,
 
 .pt-10{
   padding-top: 2.5rem;
+}
+
+.pt-14{
+  padding-top: 3.5rem;
 }
 
 .pt-5{
@@ -2486,19 +2435,13 @@ header i:hover,
 }
 
 .accordion .accordion__title:has(input:checked) + .accordion__text {
+  padding-top: 2px;
+  padding-bottom: 2px;
   max-height: 15rem;
 }
 
-.accordion .accordion__title:has(input:checked) i.fa-minus {
-  display: block;
-}
-
-.accordion .accordion__title:has(input:checked) i.fa-plus {
-  display: none;
-}
-
-i.fa-minus {
-  display: none;
+.accordion .accordion__title:has(input:checked) .icon-checked {
+  transform: rotate(90deg);
 }
 
 .img_settings > img {
@@ -2512,6 +2455,15 @@ i.fa-minus {
   background-color: transparent;
   width: auto;
   height: auto;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  background-color: #fff;
 }
 
 .\*\:mx-auto > *{
@@ -2544,17 +2496,8 @@ i.fa-minus {
   width: 66.666667%;
 }
 
-.\*\:w-fit > *{
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 .\*\:w-full > *{
   width: 100%;
-}
-
-.\*\:w-1\/3 > *{
-  width: 33.333333%;
 }
 
 .\*\:rounded-2xl > *{
@@ -2619,6 +2562,10 @@ i.fa-minus {
   background-color: rgb(43 94 138 / var(--tw-bg-opacity));
 }
 
+.hover\:relative:hover{
+  position: relative;
+}
+
 .hover\:scale-110:hover{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -2673,8 +2620,46 @@ i.fa-minus {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.group:hover .group-hover\:rotate-180{
-  --tw-rotate: 180deg;
+.hover\:after\:absolute:hover::after{
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.hover\:after\:inset-x-0:hover::after{
+  content: var(--tw-content);
+  left: 0px;
+  right: 0px;
+}
+
+.hover\:after\:bottom-0:hover::after{
+  content: var(--tw-content);
+  bottom: 0px;
+}
+
+.hover\:after\:block:hover::after{
+  content: var(--tw-content);
+  display: block;
+}
+
+.hover\:after\:h-1:hover::after{
+  content: var(--tw-content);
+  height: 0.25rem;
+}
+
+.hover\:after\:translate-y-1\/2:hover::after{
+  content: var(--tw-content);
+  --tw-translate-y: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:after\:bg-ct-brown:hover::after{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(170 146 89 / var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:translate-x-2{
+  --tw-translate-x: 0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2735,6 +2720,11 @@ i.fa-minus {
     height: 5rem;
   }
 
+  .sm\:size-5{
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
   .sm\:h-\[30px\]{
     height: 30px;
   }
@@ -2778,10 +2768,6 @@ i.fa-minus {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .sm\:justify-stretch{
-    justify-content: stretch;
-  }
-
   .sm\:space-x-5 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(1.25rem * var(--tw-space-x-reverse));
@@ -2794,6 +2780,10 @@ i.fa-minus {
     margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
   }
 
+  .sm\:overflow-visible{
+    overflow: visible;
+  }
+
   .sm\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -2802,6 +2792,11 @@ i.fa-minus {
   .sm\:px-2{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+  .sm\:px-\[3rem\]{
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .sm\:pb-10{
@@ -2882,10 +2877,6 @@ i.fa-minus {
     letter-spacing: 0.4px;
   }
 
-  .sm\:\*\:h-full > *{
-    height: 100%;
-  }
-
   .sm\:\*\:w-fit > *{
     width: -moz-fit-content;
     width: fit-content;
@@ -2913,6 +2904,10 @@ i.fa-minus {
 
   .md\:w-1\/2{
     width: 50%;
+  }
+
+  .md\:w-1\/3{
+    width: 33.333333%;
   }
 
   .md\:w-fit{
@@ -3018,10 +3013,6 @@ i.fa-minus {
     margin-top: 2.5rem;
   }
 
-  .lg\:mt-\[200px\]{
-    margin-top: 200px;
-  }
-
   .lg\:block{
     display: block;
   }
@@ -3030,16 +3021,16 @@ i.fa-minus {
     display: none;
   }
 
+  .lg\:h-\[40rem\]{
+    height: 40rem;
+  }
+
   .lg\:h-full{
     height: 100%;
   }
 
   .lg\:max-h-\[13rem\]{
     max-height: 13rem;
-  }
-
-  .lg\:min-h-\[650px\]{
-    min-height: 650px;
   }
 
   .lg\:min-h-\[550px\]{
@@ -3184,16 +3175,12 @@ i.fa-minus {
     margin-right: -2.5rem;
   }
 
-  .xl\:ml-24{
-    margin-left: 6rem;
+  .xl\:ml-28{
+    margin-left: 7rem;
   }
 
   .xl\:mt-\[250px\]{
     margin-top: 250px;
-  }
-
-  .xl\:ml-28{
-    margin-left: 7rem;
   }
 
   .xl\:size-24{
@@ -3227,6 +3214,11 @@ i.fa-minus {
     padding-right: 5rem;
   }
 
+  .xl\:py-14{
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
   .xl\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
@@ -3238,10 +3230,6 @@ i.fa-minus {
 
   .xl\:text-\[40px\]{
     font-size: 40px;
-  }
-
-  .xl\:\*\:w-full > *{
-    width: 100%;
   }
 }
 
@@ -3255,25 +3243,8 @@ i.fa-minus {
     margin-bottom: 8rem;
   }
 
-  .\32xl\:mt-\[300px\]{
-    margin-top: 300px;
-  }
-
   .\32xl\:block{
     display: block;
-  }
-
-  .\32xl\:size-24{
-    width: 6rem;
-    height: 6rem;
-  }
-
-  .\32xl\:min-h-\[500px\]{
-    min-height: 500px;
-  }
-
-  .\32xl\:w-1\/5{
-    width: 20%;
   }
 
   .\32xl\:max-w-\[768px\]{

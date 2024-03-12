@@ -20,9 +20,7 @@
     <link rel="stylesheet" href="../styles/main.css" />
   </head>
   <body>
-    <header
-      class="text-ct-blue fixed z-40 inset-x-0 top-0 shadow-header bg-white"
-    >
+    <header class="text-ct-blue shadow-header bg-white">
       <div class="bg-[#F2EEE5]">
         <div
           class="container text-sm font-medium flex justify-center 2xl:justify-between items-center py-1"
@@ -45,20 +43,52 @@
         </div>
       </div>
 
-      <div class="menu">
-        <div class="menu-left">
-          <ul>
-            <li class="group">
-              <a href="#"
-                ><span>OCEAN ROAD DAIRIES</span>
-                <i class="fas fa-chevron-down group-hover:rotate-180"></i
-              ></a>
-            </li>
-            <li><a href="#">ĐẠM QUÝ A2</a></li>
-            <li><a href="#"> Công thức từ sữa tươi</a></li>
-          </ul>
+      <div class="sticky-navbar shadow-header">
+        <div class="menu">
+          <div class="menu-left">
+            <ul>
+              <li class="group">
+                <a href="#">OCEAN ROAD DAIRIES </a>
+              </li>
+              <li><a href="#">ĐẠM QUÝ A2</a></li>
+              <li><a href="#"> Công thức từ sữa tươi</a></li>
+            </ul>
+          </div>
+          <div class="logo">
+            <a href="/">
+              <img
+                src="../imgs/logo-header.png"
+                width="189"
+                height="75"
+                alt="logo-header"
+              />
+            </a>
+          </div>
+          <div class="menu-right">
+            <ul>
+              <li class="group">
+                <a href="page-san-pham.html">SẢN PHẨM </a>
+              </li>
+              <li>
+                <a href="page-ocean-road-dairies.html">Tại sao chọn hữu cơ?</a>
+              </li>
+              <li class="group">
+                <a href="page-tin-tuc.html">TIN TỨC </a>
+              </li>
+              <li><a href="page-hoi-dap.html">HỎI ĐÁP</a></li>
+              <li><a href="page-lien-he.html">LIÊN HỆ</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="logo">
+      </div>
+
+      <!-- Moblie -->
+      <div class="sticky-navbar-moblie shadow-header">
+        <div class="header__moblie">
+          <div class="btn-toggle">
+            <a href="#"><i class="fas fa-bars text-2xl"></i></a>
+            <a href="#"><i class="fas fa-bars text-2xl opacity-0"></i></a>
+          </div>
           <a href="/">
             <img
               src="../imgs/logo-header.png"
@@ -67,58 +97,21 @@
               alt="logo-header"
             />
           </a>
-        </div>
-        <div class="menu-right">
-          <ul>
-            <li class="group">
-              <a href="page-san-pham.html"
-                ><span>SẢN PHẨM</span>
-                <i class="fas fa-chevron-down group-hover:rotate-180"></i
-              ></a>
-            </li>
-            <li>
-              <a href="page-ocean-road-dairies.html">Tại sao chọn hữu cơ?</a>
-            </li>
-            <li class="group">
-              <a href="page-tin-tuc.html"
-                ><span>TIN TỨC</span>
-                <i class="fas fa-chevron-down group-hover:rotate-180"></i
-              ></a>
-            </li>
-            <li><a href="page-hoi-dap.html">HỎI ĐÁP</a></li>
-            <li><a href="page-lien-he.html">LIÊN HỆ</a></li>
-          </ul>
+          <div class="space-x-2 text-lg">
+            <a href="https://www.facebook.com/oceanroaddairies" target="_blank">
+              <i class="fab fa-facebook-f text-2xl"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/oceanroaddairies?fbclid=IwAR1e4VRzcUDlySXMdUEzCawoKfl_aqRAJADzRGoF-ut4kS1-htZ1bOGFig4"
+              target="_blank"
+            >
+              <i class="fab fa-instagram text-2xl"></i>
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- Moblie -->
-      <div class="header__moblie">
-        <div class="btn-toggle">
-          <a href="#"><i class="fas fa-bars text-2xl"></i></a>
-          <a href="#"><i class="fas fa-bars text-2xl opacity-0"></i></a>
-        </div>
-        <a href="/">
-          <img
-            src="../imgs/logo-header.png"
-            width="189"
-            height="75"
-            alt="logo-header"
-          />
-        </a>
-        <div class="space-x-2 text-lg">
-          <a href="https://www.facebook.com/oceanroaddairies" target="_blank">
-            <i class="fab fa-facebook-f text-2xl"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/oceanroaddairies?fbclid=IwAR1e4VRzcUDlySXMdUEzCawoKfl_aqRAJADzRGoF-ut4kS1-htZ1bOGFig4"
-            target="_blank"
-          >
-            <i class="fab fa-instagram text-2xl"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="menu__moblie -translate-x-full">
+      <div class="menu__moblie -translate-x-full z-50">
         <ul>
           <div class="flex justify-end items-center">
             <i
@@ -126,38 +119,31 @@
             ></i>
           </div>
           <li>
-            <a href="#"
-              ><span>OCEAN ROAD DAIRIES</span>
-              <i class="fas fa-chevron-down"></i
-            ></a>
+            <a href="#">OCEAN ROAD DAIRIES</a>
           </li>
           <li><a href="#">ĐẠM QUÝ A2</a></li>
           <li><a href="#"> Công thức từ sữa tươi</a></li>
           <li>
-            <a href="page-san-pham.html"
-              ><span>SẢN PHẨM</span> <i class="fas fa-chevron-down"></i
-            ></a>
+            <a href="page-san-pham.html">SẢN PHẨM </a>
           </li>
           <li>
             <a href="page-ocean-road-dairies.html">Tại sao chọn hữu cơ?</a>
           </li>
           <li>
-            <a href="page-tin-tuc.html"
-              ><span>TIN TỨC</span> <i class="fas fa-chevron-down"></i
-            ></a>
+            <a href="page-tin-tuc.html">TIN TỨC</a>
           </li>
           <li><a href="page-hoi-dap.html">HỎI ĐÁP</a></li>
           <li><a href="page-lien-he.html">LIÊN HỆ</a></li>
         </ul>
       </div>
-      <div class="bg-over-menu hidden"></div>
+      <div class="bg-over-menu hidden z-[49]"></div>
     </header>
 
     <main>
       <!-- Start Section 1 -->
-      <section class="bg-ct-layout relative">
+      <section class="bg-ct-layout relative overflow-hidden">
         <div
-          class="container text-white h-[40rem] flex justify-center flex-col space-y-3"
+          class="container text-white h-[35rem] lg:h-[40rem] flex justify-center flex-col space-y-3"
         >
           <h1
             class="font-bold text-[24px] sm:text-[40px] leading-10 font-SFUSouvenir"
@@ -175,7 +161,7 @@
           style="background-image: url('../imgs/bg-trang-hoi-dap.png')"
         ></div>
         <div
-          class="absolute inset-x-0 top-0 h-[20%] *:w-fit sm:*:h-full container translate-y-28 opacity-90"
+          class="absolute inset-x-0 top-0 h-fit container -translate-y-1 opacity-90"
         >
           <img src="../imgs/icon-banner.png" alt="" />
         </div>
@@ -219,8 +205,16 @@
               <p class="grow font-medium">
                 Ocean Road Dairy đã có thành tựu gì?
               </p>
-              <i class="fas fa-plus"></i>
-              <i class="fas fa-minus hidden"></i>
+              <div
+                class="size-4 sm:size-5 flex justify-center relative group duration-500 transition-all ease-in-out"
+              >
+                <div
+                  class="h-full w-1 bg-ct-blue duration-500 transition-all ease-in-out icon-checked"
+                ></div>
+                <div
+                  class="w-full h-1 bg-ct-blue absolute bottom-1/2 translate-y-1/2"
+                ></div>
+              </div>
             </label>
             <p class="accordion__text text-[12px] sm:text-[16px]">
               Ocean Road Dairies, một thương hiệu sữa nổi tiếng, đã hái thành
@@ -242,8 +236,16 @@
                 class="appearance-none"
               />
               <p class="grow font-medium">Hướng dẫn mở sản phẩm</p>
-              <i class="fas fa-plus"></i>
-              <i class="fas fa-minus hidden"></i>
+              <div
+                class="size-4 sm:size-5 flex justify-center relative group duration-500 transition-all ease-in-out"
+              >
+                <div
+                  class="h-full w-1 bg-ct-blue duration-500 transition-all ease-in-out icon-checked"
+                ></div>
+                <div
+                  class="w-full h-1 bg-ct-blue absolute bottom-1/2 translate-y-1/2"
+                ></div>
+              </div>
             </label>
             <p class="accordion__text text-[12px] sm:text-[16px]">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -267,8 +269,16 @@
                 class="appearance-none"
               />
               <p class="grow font-medium">Hướng dẫn mở sản phẩm</p>
-              <i class="fas fa-plus"></i>
-              <i class="fas fa-minus hidden"></i>
+              <div
+                class="size-4 sm:size-5 flex justify-center relative group duration-500 transition-all ease-in-out"
+              >
+                <div
+                  class="h-full w-1 bg-ct-blue duration-500 transition-all ease-in-out icon-checked"
+                ></div>
+                <div
+                  class="w-full h-1 bg-ct-blue absolute bottom-1/2 translate-y-1/2"
+                ></div>
+              </div>
             </label>
             <p class="accordion__text text-[12px] sm:text-[16px]">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -292,8 +302,16 @@
                 class="appearance-none"
               />
               <p class="grow font-medium">Hướng dẫn mở sản phẩm</p>
-              <i class="fas fa-plus"></i>
-              <i class="fas fa-minus hidden"></i>
+              <div
+                class="size-4 sm:size-5 flex justify-center relative group duration-500 transition-all ease-in-out"
+              >
+                <div
+                  class="h-full w-1 bg-ct-blue duration-500 transition-all ease-in-out icon-checked"
+                ></div>
+                <div
+                  class="w-full h-1 bg-ct-blue absolute bottom-1/2 translate-y-1/2"
+                ></div>
+              </div>
             </label>
             <p class="accordion__text text-[12px] sm:text-[16px]">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -317,8 +335,16 @@
                 class="appearance-none"
               />
               <p class="grow font-medium">Hướng dẫn mở sản phẩm</p>
-              <i class="fas fa-plus"></i>
-              <i class="fas fa-minus hidden"></i>
+              <div
+                class="size-4 sm:size-5 flex justify-center relative group duration-500 transition-all ease-in-out"
+              >
+                <div
+                  class="h-full w-1 bg-ct-blue duration-500 transition-all ease-in-out icon-checked"
+                ></div>
+                <div
+                  class="w-full h-1 bg-ct-blue absolute bottom-1/2 translate-y-1/2"
+                ></div>
+              </div>
             </label>
             <p class="accordion__text text-[12px] sm:text-[16px]">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -342,8 +368,16 @@
                 class="appearance-none"
               />
               <p class="grow font-medium">Hướng dẫn mở sản phẩm</p>
-              <i class="fas fa-plus"></i>
-              <i class="fas fa-minus hidden"></i>
+              <div
+                class="size-4 sm:size-5 flex justify-center relative group duration-500 transition-all ease-in-out"
+              >
+                <div
+                  class="h-full w-1 bg-ct-blue duration-500 transition-all ease-in-out icon-checked"
+                ></div>
+                <div
+                  class="w-full h-1 bg-ct-blue absolute bottom-1/2 translate-y-1/2"
+                ></div>
+              </div>
             </label>
             <p class="accordion__text text-[12px] sm:text-[16px]">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -367,8 +401,16 @@
                 class="appearance-none"
               />
               <p class="grow font-medium">Hướng dẫn mở sản phẩm</p>
-              <i class="fas fa-plus"></i>
-              <i class="fas fa-minus hidden"></i>
+              <div
+                class="size-4 sm:size-5 flex justify-center relative group duration-500 transition-all ease-in-out"
+              >
+                <div
+                  class="h-full w-1 bg-ct-blue duration-500 transition-all ease-in-out icon-checked"
+                ></div>
+                <div
+                  class="w-full h-1 bg-ct-blue absolute bottom-1/2 translate-y-1/2"
+                ></div>
+              </div>
             </label>
             <p class="accordion__text text-[12px] sm:text-[16px]">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -392,8 +434,16 @@
                 class="appearance-none"
               />
               <p class="grow font-medium">Hướng dẫn mở sản phẩm</p>
-              <i class="fas fa-plus"></i>
-              <i class="fas fa-minus hidden"></i>
+              <div
+                class="size-4 sm:size-5 flex justify-center relative group duration-500 transition-all ease-in-out"
+              >
+                <div
+                  class="h-full w-1 bg-ct-blue duration-500 transition-all ease-in-out icon-checked"
+                ></div>
+                <div
+                  class="w-full h-1 bg-ct-blue absolute bottom-1/2 translate-y-1/2"
+                ></div>
+              </div>
             </label>
             <p class="accordion__text text-[12px] sm:text-[16px]">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
