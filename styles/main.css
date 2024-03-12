@@ -3047,33 +3047,17 @@ header i:hover,
     width: 75%;
   }
 
-  .lg\:w-fit{
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-
-  .lg\:w-\[45\%\]{
-    width: 45%;
-  }
-
-  .lg\:w-\[55\%\]{
-    width: 55%;
-  }
-
-  .lg\:w-\[48\%\]{
-    width: 48%;
-  }
-
-  .lg\:w-\[52\%\]{
-    width: 52%;
-  }
-
   .lg\:w-\[47\%\]{
     width: 47%;
   }
 
   .lg\:w-\[53\%\]{
     width: 53%;
+  }
+
+  .lg\:w-fit{
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .lg\:max-w-\[512px\]{
