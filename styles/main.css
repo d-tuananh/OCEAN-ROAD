@@ -1438,9 +1438,9 @@ header i:hover,
   height: 4rem;
 }
 
-.size-5{
-  width: 1.25rem;
-  height: 1.25rem;
+.size-4{
+  width: 1rem;
+  height: 1rem;
 }
 
 .size-8{
@@ -1456,11 +1456,6 @@ header i:hover,
 .size-\[25rem\]{
   width: 25rem;
   height: 25rem;
-}
-
-.size-4{
-  width: 1rem;
-  height: 1rem;
 }
 
 .h-1{
@@ -2188,10 +2183,6 @@ header i:hover,
   line-height: 1;
 }
 
-.text-\[\.5rem\]{
-  font-size: .5rem;
-}
-
 .text-\[10px\]{
   font-size: 10px;
 }
@@ -2860,11 +2851,6 @@ header i:hover,
     font-size: 40px;
   }
 
-  .sm\:text-base{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
   .sm\:font-bold{
     font-weight: 700;
   }
@@ -3064,6 +3050,30 @@ header i:hover,
   .lg\:w-fit{
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .lg\:w-\[45\%\]{
+    width: 45%;
+  }
+
+  .lg\:w-\[55\%\]{
+    width: 55%;
+  }
+
+  .lg\:w-\[48\%\]{
+    width: 48%;
+  }
+
+  .lg\:w-\[52\%\]{
+    width: 52%;
+  }
+
+  .lg\:w-\[47\%\]{
+    width: 47%;
+  }
+
+  .lg\:w-\[53\%\]{
+    width: 53%;
   }
 
   .lg\:max-w-\[512px\]{
