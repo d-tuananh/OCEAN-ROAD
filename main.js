@@ -12,7 +12,7 @@ if (popup) {
     }, 1000)
   }
 
-  // openPopup()
+  openPopup()
 
   allBtnClosePopup.forEach((i) =>
     i.addEventListener("click", (e) => {
@@ -99,7 +99,7 @@ if (document.querySelector(".slide-auto-play")) {
     },
     loop: true,
     speed: 2500,
-    allowTouchMove: false,
+    pauseOnMouseEnter: true,
   })
 }
 
