@@ -12,7 +12,7 @@ if (popup) {
     }, 1000)
   }
 
-  // openPopup()
+  openPopup()
 
   allBtnClosePopup.forEach((i) =>
     i.addEventListener("click", (e) => {
