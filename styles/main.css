@@ -1276,6 +1276,18 @@ button.danh-muc-sp-active::after{
   background-color: rgb(170 146 89 / var(--tw-bg-opacity));
 }
 
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .fixed{
   position: fixed;
 }
@@ -1573,6 +1585,10 @@ button.danh-muc-sp-active::after{
   height: 100%;
 }
 
+.h-8{
+  height: 2rem;
+}
+
 .max-h-\[10rem\]{
   max-height: 10rem;
 }
@@ -1620,6 +1636,10 @@ button.danh-muc-sp-active::after{
 
 .w-full{
   width: 100%;
+}
+
+.w-8{
+  width: 2rem;
 }
 
 .max-w-\[21\.5rem\]{
@@ -1705,6 +1725,16 @@ button.danh-muc-sp-active::after{
   --tw-scale-x: 0;
   --tw-scale-y: 0;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes spin{
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin{
+  animation: spin 1s linear infinite;
 }
 
 .cursor-pointer{
@@ -2039,6 +2069,10 @@ button.danh-muc-sp-active::after{
 
 .fill-ct-blue{
   fill: #2B5E8A;
+}
+
+.fill-blue-600{
+  fill: #2563eb;
 }
 
 .stroke-ct-blue{
@@ -2452,6 +2486,11 @@ button.danh-muc-sp-active::after{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-200{
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -3361,5 +3400,12 @@ button.danh-muc-sp-active::after{
 
   .\32xl\:text-\[86px\]{
     font-size: 86px;
+  }
+}
+
+@media (prefers-color-scheme: dark){
+  .dark\:text-gray-600{
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99 / var(--tw-text-opacity));
   }
 }
