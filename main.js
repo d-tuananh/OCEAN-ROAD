@@ -242,3 +242,108 @@ if (modalImage) {
     })
   })
 }
+
+const btn_content_chi_tiet_sp = document.querySelector(
+  ".btn-content-chi-tiet-sp"
+)
+const content_chi_tiet_sp = document.querySelector(".content-chi-tiet-sp")
+const danh_muc_sp = [
+  "giới thiệu",
+  "thành phần",
+  "hướng dẫn sử dụng",
+  "hướng dẫn bảo quản",
+  "feedback của người dùng",
+]
+
+if (btn_content_chi_tiet_sp && content_chi_tiet_sp) {
+  danh_muc_sp.forEach((item, index) => {
+    const buttonHTML = `
+    <button title="${item}" onclick="addContentChiTietSp(${index})" ${
+      index === 0 ? 'class="danh-muc-sp-active"' : ""
+    }>${item}</button>
+  `
+    btn_content_chi_tiet_sp.innerHTML += buttonHTML
+  })
+
+  function addContentChiTietSp(index) {
+    btn_content_chi_tiet_sp.querySelectorAll("button").forEach((btn) => {
+      btn.classList.remove("danh-muc-sp-active")
+    })
+    btn_content_chi_tiet_sp
+      .querySelectorAll("button")
+      [index].classList.add("danh-muc-sp-active")
+    if (danh_muc_sp[index] === danh_muc_sp[2]) {
+      content_chi_tiet_sp.innerHTML = `
+    <iframe
+                src="https://www.youtube.com/embed/nJvSOp6OkPM?si=7U8F_AojJeatVQ1o"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                class="w-full sm:w-2/3 lg:w-1/2 aspect-video mx-auto rounded-xl"
+              ></iframe>
+              <p
+                class="text-[12px] sm:text-[16px] text-ct-blue font-medium indent-4"
+              >
+                Công thức từ sữa tươi mang đến những cách sáng tạo để tận dụng
+                sữa tươi ngon và biến nó thành những món ăn ngon miệng. Từ món
+                tráng miệng ngọt ngào cho đến các món ăn sáng bổ dưỡng, sữa tươi
+                là nguyên liệu đa năng và dinh dưỡng giàu dinh dưỡng. Trong bài
+                viết này, chúng tôi sẽ khám phá những công thức từ sữa thơm độc
+                và hấp dẫn mà bạn có thể thực hiện tại nhà.
+              </p>
+              <div class="flex flex-col text-[12px] sm:text-[16px]">
+                <span class="font-bold text-ct-blue"
+                  >1 . Công thức món tráng miệng:</span
+                >
+                <span>
+                  Công thức từ sữa tươi cho món tráng miệng làm nổi bật hương vị
+                  ngon của sữa và tạo ra những món ăn ngon miệng. Đó có thể là
+                  kem sữa tươi mát lạnh vào mùa hè, bánh sữa tươi mềm, panna
+                  cotta sữa tươi thơm ngon hoặc sữa chua sữa đáng yêu. Bài viết
+                  sẽ chia sẻ các công thức chi tiết kèm theo hướng dẫn để bạn có
+                  thể nấu các món tráng miệng thơm ngon và hấp dẫn từ sữa
+                  tươi.</span
+                >
+              </div>
+
+              <div class="flex flex-col text-[12px] sm:text-[16px]">
+                <span class="font-bold text-ct-blue"
+                  >2 . Công thức món ăn sáng:</span
+                >
+                <span
+                  >Sữa tươi cũng là nguyên liệu tuyệt vời để tạo ra những món ăn
+                  sáng đầy dinh dưỡng. Bạn có thể thưởng thức một ly sữa tươi
+                  tươi ngon, hoặc tạo ra các loại sinh tố, sữa chua, bánh mỳ sữa
+                  tươi hay bánh pancake sữa tươi ngon là nh. Bài viết sẽ cung
+                  cấp cho bạn các công thức đơn giản và ngon để bắt đầu ngày mới
+                  với một bữa sáng bổ sung dưỡng chất từ ​​sữa tươi tươi.
+                </span>
+              </div>
+              <div class="flex flex-col text-[12px] sm:text-[16px]">
+                <span class="font-bold text-ct-blue"
+                  >3 . Công thức món ăn khác:</span
+                >
+                <span>
+                  Ngoài món tráng miệng và món ăn sáng, công thức từ sữa tươi
+                  còn đa dạng và phong phú cho nhiều món ăn khác. Đó có thể là
+                  sữa chua sữa tươi trong các món salad của tôi, sữa tươi làm đồ
+                  uống giải khát, hay sữa tươi sử dụng trong các món tráng miệng
+                  truyền thống nh ư bánh flan, pudding hay chuối hấp. Bài viết
+                  sẽ giới thiệu các công thức độc đáo và sáng tạo để bạn có thể
+                  khám phá và thử nghiệm tại nhà.</span
+                >
+              </div>
+    `
+      return
+    }
+    content_chi_tiet_sp.innerHTML = `<div class="content-chi-tiet-sp-item">
+  <p class='uppercase text-[20px] sm:text-[34px] text-center font-bold'>${danh_muc_sp[index]}</p>
+  <li class='list-decimal'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veniam quod, eaque tenetur consequatur doloremque.</li>
+  <li class='list-decimal'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, esse deleniti est sapiente harum repellat!</li>
+  <li class='list-decimal'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sit quia neque facilis rem quo labore officia? Ullam quia nesciunt modi sequi a quisquam assumenda odit officia nobis quod voluptatibus, repudiandae quidem repellat fugiat dolorum, totam molestiae, quibusdam adipisci quos eaque natus voluptas. Magni, pariatur beatae vero unde laudantium ab.</li>
+  `
+  }
+
+  addContentChiTietSp(2)
+}

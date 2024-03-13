@@ -75,10 +75,6 @@
     @apply relative w-full;
   }
 
-  .thong-tin-sp-active {
-    @apply bg-ct-blue relative after:absolute after:block after:inset-x-0 after:bottom-0 after:h-1 after:bg-ct-brown after:translate-y-1/2;
-  }
-
   .form-lien-he label {
     @apply text-[10px] sm:text-[14px] font-bold text-[#454545];
   }
@@ -117,6 +113,13 @@
 
   .footer-content-right ul li {
     @apply mb-[0.9rem] sm:mb-[1.1rem] last:mb-0;
+  }
+
+  .btn-content-chi-tiet-sp button {
+    @apply basis-1/5 py-3 uppercase text-[12px] sm:text-[16px] font-medium text-ct-blue hover:text-white hover:bg-ct-blue hover:relative hover:after:absolute hover:after:block hover:after:inset-x-0 hover:after:bottom-0 hover:after:h-1 hover:after:bg-ct-brown hover:after:translate-y-1/2;
+  }
+  button.danh-muc-sp-active {
+    @apply bg-ct-blue relative after:absolute after:block after:inset-x-0 after:bottom-0 after:h-1 after:bg-ct-brown after:translate-y-1/2 text-white;
   }
 }
 

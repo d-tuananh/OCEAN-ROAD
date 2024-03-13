@@ -1095,26 +1095,6 @@ header i:hover,
   width: 100%;
 }
 
-.thong-tin-sp-active{
-  position: relative;
-  --tw-bg-opacity: 1;
-  background-color: rgb(43 94 138 / var(--tw-bg-opacity));
-}
-
-.thong-tin-sp-active::after{
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  display: block;
-  height: 0.25rem;
-  --tw-translate-y: 50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(170 146 89 / var(--tw-bg-opacity));
-}
-
 .form-lien-he label{
   font-size: 10px;
   font-weight: 700;
@@ -1233,6 +1213,67 @@ header i:hover,
   .footer-content-right ul li{
     margin-bottom: 1.1rem;
   }
+}
+
+.btn-content-chi-tiet-sp button{
+  flex-basis: 20%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(43 94 138 / var(--tw-text-opacity));
+}
+
+.btn-content-chi-tiet-sp button:hover{
+  position: relative;
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 94 138 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.btn-content-chi-tiet-sp button:hover::after{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: block;
+  height: 0.25rem;
+  --tw-translate-y: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(170 146 89 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 640px){
+  .btn-content-chi-tiet-sp button{
+    font-size: 16px;
+  }
+}
+
+button.danh-muc-sp-active{
+  position: relative;
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 94 138 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+button.danh-muc-sp-active::after{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: block;
+  height: 0.25rem;
+  --tw-translate-y: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(170 146 89 / var(--tw-bg-opacity));
 }
 
 .fixed{
@@ -1482,11 +1523,6 @@ header i:hover,
   height: 2rem;
 }
 
-.size-9{
-  width: 2.25rem;
-  height: 2.25rem;
-}
-
 .size-\[25rem\]{
   width: 25rem;
   height: 25rem;
@@ -1611,10 +1647,6 @@ header i:hover,
   flex-basis: 50%;
 }
 
-.basis-1\/5{
-  flex-basis: 20%;
-}
-
 .basis-full{
   flex-basis: 100%;
 }
@@ -1677,6 +1709,10 @@ header i:hover,
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.list-decimal{
+  list-style-type: decimal;
 }
 
 .appearance-none{
@@ -2618,10 +2654,6 @@ header i:hover,
   background-color: rgb(43 94 138 / var(--tw-bg-opacity));
 }
 
-.hover\:relative:hover{
-  position: relative;
-}
-
 .hover\:scale-110:hover{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -2676,44 +2708,6 @@ header i:hover,
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hover\:after\:absolute:hover::after{
-  content: var(--tw-content);
-  position: absolute;
-}
-
-.hover\:after\:inset-x-0:hover::after{
-  content: var(--tw-content);
-  left: 0px;
-  right: 0px;
-}
-
-.hover\:after\:bottom-0:hover::after{
-  content: var(--tw-content);
-  bottom: 0px;
-}
-
-.hover\:after\:block:hover::after{
-  content: var(--tw-content);
-  display: block;
-}
-
-.hover\:after\:h-1:hover::after{
-  content: var(--tw-content);
-  height: 0.25rem;
-}
-
-.hover\:after\:translate-y-1\/2:hover::after{
-  content: var(--tw-content);
-  --tw-translate-y: 50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:after\:bg-ct-brown:hover::after{
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(170 146 89 / var(--tw-bg-opacity));
-}
-
 .group:hover .group-hover\:translate-x-2{
   --tw-translate-x: 0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2763,11 +2757,6 @@ header i:hover,
 
   .sm\:hidden{
     display: none;
-  }
-
-  .sm\:size-10{
-    width: 2.5rem;
-    height: 2.5rem;
   }
 
   .sm\:size-12{
