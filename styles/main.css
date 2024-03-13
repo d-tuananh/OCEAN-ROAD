@@ -1857,6 +1857,18 @@ button.danh-muc-sp-active::after{
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
+.space-y-\[1\.4rem\] > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.4rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.4rem * var(--tw-space-y-reverse));
+}
+
+.space-y-\[1\.45rem\] > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.45rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.45rem * var(--tw-space-y-reverse));
+}
+
 .divide-x > :not([hidden]) ~ :not([hidden]){
   --tw-divide-x-reverse: 0;
   border-right-width: calc(1px * var(--tw-divide-x-reverse));
@@ -2061,10 +2073,6 @@ button.danh-muc-sp-active::after{
   background-position: right;
 }
 
-.bg-top{
-  background-position: top;
-}
-
 .bg-no-repeat{
   background-repeat: no-repeat;
 }
@@ -2191,10 +2199,6 @@ button.danh-muc-sp-active::after{
   padding-bottom: 4%;
 }
 
-.pb-\[7\.5\%\]{
-  padding-bottom: 7.5%;
-}
-
 .pl-1{
   padding-left: 0.25rem;
 }
@@ -2229,10 +2233,6 @@ button.danh-muc-sp-active::after{
 
 .pt-5{
   padding-top: 1.25rem;
-}
-
-.pt-\[11\.3\%\]{
-  padding-top: 11.3%;
 }
 
 .pt-\[132\%\]{
@@ -2271,6 +2271,10 @@ button.danh-muc-sp-active::after{
   padding-top: 51%;
 }
 
+.pt-\[52\.3\%\]{
+  padding-top: 52.3%;
+}
+
 .pt-\[58\%\]{
   padding-top: 58%;
 }
@@ -2281,6 +2285,10 @@ button.danh-muc-sp-active::after{
 
 .pt-\[69\%\]{
   padding-top: 69%;
+}
+
+.pt-\[7\.5\%\]{
+  padding-top: 7.5%;
 }
 
 .pt-\[70\%\]{
@@ -2379,11 +2387,6 @@ button.danh-muc-sp-active::after{
   font-size: 8px;
 }
 
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -2392,6 +2395,11 @@ button.danh-muc-sp-active::after{
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-xs{
@@ -2874,6 +2882,12 @@ button.danh-muc-sp-active::after{
     margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
   }
 
+  .sm\:space-y-\[1\.45rem\] > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.45rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.45rem * var(--tw-space-y-reverse));
+  }
+
   .sm\:overflow-visible{
     overflow: visible;
   }
@@ -2903,6 +2917,10 @@ button.danh-muc-sp-active::after{
 
   .sm\:pt-\[24\.5\%\]{
     padding-top: 24.5%;
+  }
+
+  .sm\:pt-\[45\.5\%\]{
+    padding-top: 45.5%;
   }
 
   .sm\:pt-\[67\.2\%\]{
@@ -3032,10 +3050,6 @@ button.danh-muc-sp-active::after{
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
-  .md\:bg-bottom{
-    background-position: bottom;
   }
 
   .md\:p-5{
