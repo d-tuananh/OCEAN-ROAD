@@ -121,6 +121,10 @@
   button.danh-muc-sp-active {
     @apply bg-ct-blue relative after:absolute after:block after:inset-x-0 after:bottom-0 after:h-1 after:bg-ct-brown after:translate-y-1/2 text-white;
   }
+
+  .image-slide .swiper-slide-thumb-active {
+    @apply border-ct-blue border-2;
+  }
 }
 
 .thong-tin-sp-active {
