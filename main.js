@@ -255,24 +255,25 @@ const danh_muc_sp = [
   "feedback của người dùng",
 ]
 
-danh_muc_sp.forEach((item, index) => {
-  const buttonHTML = `
+if (btn_content_chi_tiet_sp && content_chi_tiet_sp) {
+  danh_muc_sp.forEach((item, index) => {
+    const buttonHTML = `
     <button title="${item}" onclick="addContentChiTietSp(${index})" ${
-    index === 0 ? 'class="danh-muc-sp-active"' : ""
-  }>${item}</button>
+      index === 0 ? 'class="danh-muc-sp-active"' : ""
+    }>${item}</button>
   `
-  btn_content_chi_tiet_sp.innerHTML += buttonHTML
-})
-
-function addContentChiTietSp(index) {
-  btn_content_chi_tiet_sp.querySelectorAll("button").forEach((btn) => {
-    btn.classList.remove("danh-muc-sp-active")
+    btn_content_chi_tiet_sp.innerHTML += buttonHTML
   })
-  btn_content_chi_tiet_sp
-    .querySelectorAll("button")
-    [index].classList.add("danh-muc-sp-active")
-  if (danh_muc_sp[index] === danh_muc_sp[2]) {
-    content_chi_tiet_sp.innerHTML = `
+
+  function addContentChiTietSp(index) {
+    btn_content_chi_tiet_sp.querySelectorAll("button").forEach((btn) => {
+      btn.classList.remove("danh-muc-sp-active")
+    })
+    btn_content_chi_tiet_sp
+      .querySelectorAll("button")
+      [index].classList.add("danh-muc-sp-active")
+    if (danh_muc_sp[index] === danh_muc_sp[2]) {
+      content_chi_tiet_sp.innerHTML = `
     <iframe
                 src="https://www.youtube.com/embed/nJvSOp6OkPM?si=7U8F_AojJeatVQ1o"
                 title="YouTube video player"
@@ -334,14 +335,15 @@ function addContentChiTietSp(index) {
                 >
               </div>
     `
-    return
-  }
-  content_chi_tiet_sp.innerHTML = `<div class="content-chi-tiet-sp-item">
+      return
+    }
+    content_chi_tiet_sp.innerHTML = `<div class="content-chi-tiet-sp-item">
   <p class='uppercase text-[20px] sm:text-[34px] text-center font-bold'>${danh_muc_sp[index]}</p>
   <li class='list-decimal'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veniam quod, eaque tenetur consequatur doloremque.</li>
   <li class='list-decimal'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, esse deleniti est sapiente harum repellat!</li>
   <li class='list-decimal'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sit quia neque facilis rem quo labore officia? Ullam quia nesciunt modi sequi a quisquam assumenda odit officia nobis quod voluptatibus, repudiandae quidem repellat fugiat dolorum, totam molestiae, quibusdam adipisci quos eaque natus voluptas. Magni, pariatur beatae vero unde laudantium ab.</li>
   `
-}
+  }
 
-addContentChiTietSp(2)
+  addContentChiTietSp(2)
+}
