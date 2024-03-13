@@ -110,6 +110,14 @@
   .img__pt > img {
     @apply absolute size-full top-0 left-0 object-cover;
   }
+
+  .footer-content-right ul li a {
+    @apply hover:text-ct-footer text-[12px] font-medium lg:text-[14px] lg:font-normal;
+  }
+
+  .footer-content-right ul li {
+    @apply mb-[0.9rem] sm:mb-[1.1rem] last:mb-0;
+  }
 }
 
 .thong-tin-sp-active {
