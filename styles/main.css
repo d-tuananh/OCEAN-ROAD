@@ -736,7 +736,12 @@ body{
   color: rgb(111 111 111 / var(--tw-text-opacity));
 }
 
+.swiper{
+  overflow: hidden;
+}
+
 section{
+  overflow: hidden;
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
 }
@@ -1855,18 +1860,6 @@ button.danh-muc-sp-active::after{
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-}
-
-.space-y-\[1\.4rem\] > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.4rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.4rem * var(--tw-space-y-reverse));
-}
-
-.space-y-\[1\.45rem\] > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.45rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.45rem * var(--tw-space-y-reverse));
 }
 
 .divide-x > :not([hidden]) ~ :not([hidden]){
@@ -3322,6 +3315,10 @@ button.danh-muc-sp-active::after{
   .xl\:-mx-10{
     margin-left: -2.5rem;
     margin-right: -2.5rem;
+  }
+
+  .xl\:block{
+    display: block;
   }
 
   .xl\:size-24{
