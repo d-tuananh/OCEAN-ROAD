@@ -29,8 +29,11 @@
   body {
     @apply leading-snug font-normal overflow-x-hidden font-BTBeauSans text-[#6F6F6F];
   }
+  footer {
+    @apply overflow-hidden;
+  }
   section {
-    @apply py-7 md:py-10 xl:py-14;
+    @apply py-7 md:py-10 xl:py-14 overflow-hidden;
   }
   button {
     @apply transition-all duration-500 ease-in-out;

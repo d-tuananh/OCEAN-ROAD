@@ -1,144 +1,117 @@
-const popup = document.querySelector(".popup")
-const btnClosePopup = document.querySelectorAll(".btn-close-popup")
+function StartJS() {
+  const popup = document.querySelector(".popup")
+  const btnClosePopup = document.querySelectorAll(".btn-close-popup")
 
-const allBtnClosePopup = [...btnClosePopup]
+  const allBtnClosePopup = [...btnClosePopup]
 
-if (popup) {
-  function openPopup() {
-    setTimeout(() => {
-      popup.classList.remove("hidden")
-      popup.classList.add("flex")
-      document.body.style.overflow = "hidden"
-    }, 1000)
+  if (popup) {
+    function openPopup() {
+      setTimeout(() => {
+        popup.classList.remove("hidden")
+        popup.classList.add("flex")
+        document.body.style.overflow = "hidden"
+      }, 1000)
+    }
+
+    openPopup()
+
+    allBtnClosePopup.forEach((i) =>
+      i.addEventListener("click", (e) => {
+        e.preventDefault()
+        popup.classList.remove("flex")
+        popup.classList.add("hidden")
+        document.body.style.overflow = "auto"
+      })
+    )
   }
 
-  openPopup()
+  window.onscroll = function () {
+    myFunctionSticky()
+    myFunctionMoblieSticky()
+  }
 
-  allBtnClosePopup.forEach((i) =>
+  var navbar = document.querySelector(".sticky-navbar")
+  var sticky = navbar.offsetTop
+
+  function myFunctionSticky() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky")
+    }
+  }
+
+  var navbarMoblie = document.querySelector(".sticky-navbar-moblie")
+  var stickyMoblie = navbarMoblie.offsetTop
+
+  function myFunctionMoblieSticky() {
+    if (window.pageYOffset >= stickyMoblie) {
+      navbarMoblie.classList.add("sticky")
+    } else {
+      navbarMoblie.classList.remove("sticky")
+    }
+  }
+
+  const btnToggle = document.querySelector(".btn-toggle")
+  const btnCloseMenu = document.querySelector(".menu__moblie ul i.fa-times")
+  const bg_over_menu = document.querySelector(".bg-over-menu")
+  const menu_moblie = document.querySelector(".menu__moblie")
+
+  const arrBtnToggleMenuMoblie = [btnToggle, btnCloseMenu, bg_over_menu]
+  arrBtnToggleMenuMoblie.forEach((i) =>
     i.addEventListener("click", (e) => {
       e.preventDefault()
-      popup.classList.remove("flex")
-      popup.classList.add("hidden")
-      document.body.style.overflow = "auto"
+      menu_moblie.classList.toggle("-translate-x-full")
+      bg_over_menu.classList.toggle("hidden")
     })
   )
-}
 
-window.onscroll = function () {
-  myFunctionSticky()
-  myFunctionMoblieSticky()
-}
-
-var navbar = document.querySelector(".sticky-navbar")
-var sticky = navbar.offsetTop
-
-function myFunctionSticky() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky")
+  if (document.querySelector(".banner-slide")) {
+    var banner_slide = new Swiper(".banner-slide", {
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: true,
+      },
+      loop: true,
+      speed: 1000,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return (
+            '<span class="' +
+            className +
+            '">' +
+            '<svg xmlns="http://www.w3.org/2000/svg" width="11" height="13" viewBox="0 0 11 13" fill="none"><path d="M0.117907 10.377C-0.520707 6.22598 1.55953 4.13536 3.3574 3.29124C4.13967 2.92396 4.92411 2.52159 5.56185 1.93838C7.58356 0.0895368 9.92895 -1.03443 10.6179 1.37695C11.6179 4.87695 1.11791 16.877 0.117907 10.377Z" fill="#2B5E8A"/></svg>' +
+            "</span>"
+          )
+        },
+      },
+    })
   }
-}
 
-var navbarMoblie = document.querySelector(".sticky-navbar-moblie")
-var stickyMoblie = navbarMoblie.offsetTop
-
-function myFunctionMoblieSticky() {
-  if (window.pageYOffset >= stickyMoblie) {
-    navbarMoblie.classList.add("sticky")
-  } else {
-    navbarMoblie.classList.remove("sticky")
+  if (document.querySelector(".slide-auto-play")) {
+    var slide_auto_play = new Swiper(".slide-auto-play", {
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      speed: 2500,
+      allowTouchMove: false,
+    })
   }
-}
 
-const btnToggle = document.querySelector(".btn-toggle")
-const btnCloseMenu = document.querySelector(".menu__moblie ul i.fa-times")
-const bg_over_menu = document.querySelector(".bg-over-menu")
-const menu_moblie = document.querySelector(".menu__moblie")
-
-const arrBtnToggleMenuMoblie = [btnToggle, btnCloseMenu, bg_over_menu]
-arrBtnToggleMenuMoblie.forEach((i) =>
-  i.addEventListener("click", (e) => {
-    e.preventDefault()
-    menu_moblie.classList.toggle("-translate-x-full")
-    bg_over_menu.classList.toggle("hidden")
-  })
-)
-
-if (document.querySelector(".banner-slide")) {
-  var banner_slide = new Swiper(".banner-slide", {
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: true,
-    },
-    loop: true,
-    speed: 1000,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return (
-          '<span class="' +
-          className +
-          '">' +
-          '<svg xmlns="http://www.w3.org/2000/svg" width="11" height="13" viewBox="0 0 11 13" fill="none"><path d="M0.117907 10.377C-0.520707 6.22598 1.55953 4.13536 3.3574 3.29124C4.13967 2.92396 4.92411 2.52159 5.56185 1.93838C7.58356 0.0895368 9.92895 -1.03443 10.6179 1.37695C11.6179 4.87695 1.11791 16.877 0.117907 10.377Z" fill="#2B5E8A"/></svg>' +
-          "</span>"
-        )
-      },
-    },
-  })
-}
-
-if (document.querySelector(".slide-auto-play")) {
-  var slide_auto_play = new Swiper(".slide-auto-play", {
-    slidesPerView: "auto",
-    spaceBetween: 30,
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
-    },
-    loop: true,
-    speed: 2500,
-    allowTouchMove: false,
-  })
-}
-
-if (document.querySelector(".logo-brand-auto-play")) {
-  var logo_brand_auto_play = new Swiper(".logo-brand-auto-play", {
-    slidesPerView: 3,
-    loop: true,
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: true,
-    },
-    speed: 1500,
-    breakpoints: {
-      450: {
-        slidesPerView: 4,
-      },
-      1068: {
-        slidesPerView: 5,
-      },
-      1524: {
-        slidesPerView: 7,
-      },
-    },
-    allowTouchMove: false,
-  })
-}
-
-if (document.querySelector(".logo-brand-auto-play-reverse")) {
-  var logo_brand_auto_play_reverse = new Swiper(
-    ".logo-brand-auto-play-reverse",
-    {
+  if (document.querySelector(".logo-brand-auto-play")) {
+    var logo_brand_auto_play = new Swiper(".logo-brand-auto-play", {
       slidesPerView: 3,
       loop: true,
       autoplay: {
         delay: 0,
         disableOnInteraction: true,
-        reverseDirection: true,
       },
-      allowTouchMove: false,
       speed: 1500,
       breakpoints: {
         450: {
@@ -151,129 +124,157 @@ if (document.querySelector(".logo-brand-auto-play-reverse")) {
           slidesPerView: 7,
         },
       },
-    }
-  )
-}
-
-if (document.querySelector(".silde-danh-gia")) {
-  var silde_danh_gia = new Swiper(".silde-danh-gia", {
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return (
-          '<span class="' +
-          className +
-          '">' +
-          '<svg xmlns="http://www.w3.org/2000/svg" width="11" height="13" viewBox="0 0 11 13" fill="none"><path d="M0.117907 10.377C-0.520707 6.22598 1.55953 4.13536 3.3574 3.29124C4.13967 2.92396 4.92411 2.52159 5.56185 1.93838C7.58356 0.0895368 9.92895 -1.03443 10.6179 1.37695C11.6179 4.87695 1.11791 16.877 0.117907 10.377Z" fill="#2B5E8A"/></svg>' +
-          "</span>"
-        )
-      },
-    },
-  })
-}
-
-if (document.querySelector(".slide-thong-tin-huu-ich")) {
-  var slide_thong_tin_huu_ich = new Swiper(".slide-thong-tin-huu-ich", {
-    spaceBetween: 10,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return (
-          '<span class="' +
-          className +
-          '">' +
-          '<svg xmlns="http://www.w3.org/2000/svg" width="11" height="13" viewBox="0 0 11 13" fill="none"><path d="M0.117907 10.377C-0.520707 6.22598 1.55953 4.13536 3.3574 3.29124C4.13967 2.92396 4.92411 2.52159 5.56185 1.93838C7.58356 0.0895368 9.92895 -1.03443 10.6179 1.37695C11.6179 4.87695 1.11791 16.877 0.117907 10.377Z" fill="#2B5E8A"/></svg>' +
-          "</span>"
-        )
-      },
-    },
-    slidesPerView: 1,
-    breakpoints: {
-      450: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-    },
-  })
-}
-
-if (document.querySelector(".slide-cong-thuc-tu-sua")) {
-  var slide_cong_thuc_tu_sua = new Swiper(".slide-cong-thuc-tu-sua", {
-    navigation: {
-      nextEl: ".button-next-slide",
-      prevEl: ".button-prev-slide",
-    },
-    spaceBetween: 30,
-  })
-}
-
-if (document.querySelector(".image-slide")) {
-  var swiper = new Swiper(".image-slide", {
-    spaceBetween: 10,
-    slidesPerView: "auto",
-    freeMode: true,
-    watchSlidesProgress: true,
-  })
-
-  var swiper2 = new Swiper(".image-preview", {
-    spaceBetween: 10,
-    thumbs: {
-      swiper: swiper,
-    },
-  })
-}
-
-// Toggle modal image
-const btnModalClose = document.querySelector(".close-modal-image")
-const modalImage = document.querySelector(".modal-image-chi-tiet-sp")
-const btnModalOpen = document.querySelectorAll(".open-modal-image")
-const imageModal = document.querySelector(".modal-image-chi-tiet-sp img")
-
-if (modalImage) {
-  function onModalImage(url) {
-    imageModal.src = url
+      allowTouchMove: false,
+    })
   }
-  const btnModal = [btnModalClose, ...btnModalOpen]
-  btnModal.forEach((ben) => {
-    ben.addEventListener("click", (e) => {
-      e.preventDefault()
-      modalImage.classList.toggle("scale-0")
+
+  if (document.querySelector(".logo-brand-auto-play-reverse")) {
+    var logo_brand_auto_play_reverse = new Swiper(
+      ".logo-brand-auto-play-reverse",
+      {
+        slidesPerView: 3,
+        loop: true,
+        autoplay: {
+          delay: 0,
+          disableOnInteraction: true,
+          reverseDirection: true,
+        },
+        allowTouchMove: false,
+        speed: 1500,
+        breakpoints: {
+          450: {
+            slidesPerView: 4,
+          },
+          1068: {
+            slidesPerView: 5,
+          },
+          1524: {
+            slidesPerView: 7,
+          },
+        },
+      }
+    )
+  }
+
+  if (document.querySelector(".silde-danh-gia")) {
+    var silde_danh_gia = new Swiper(".silde-danh-gia", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return (
+            '<span class="' +
+            className +
+            '">' +
+            '<svg xmlns="http://www.w3.org/2000/svg" width="11" height="13" viewBox="0 0 11 13" fill="none"><path d="M0.117907 10.377C-0.520707 6.22598 1.55953 4.13536 3.3574 3.29124C4.13967 2.92396 4.92411 2.52159 5.56185 1.93838C7.58356 0.0895368 9.92895 -1.03443 10.6179 1.37695C11.6179 4.87695 1.11791 16.877 0.117907 10.377Z" fill="#2B5E8A"/></svg>' +
+            "</span>"
+          )
+        },
+      },
     })
-  })
-}
+  }
 
-const btn_content_chi_tiet_sp = document.querySelector(
-  ".btn-content-chi-tiet-sp"
-)
-const content_chi_tiet_sp = document.querySelector(".content-chi-tiet-sp")
-const danh_muc_sp = [
-  "giới thiệu",
-  "thành phần",
-  "hướng dẫn sử dụng",
-  "hướng dẫn bảo quản",
-  "feedback của người dùng",
-]
+  if (document.querySelector(".slide-thong-tin-huu-ich")) {
+    var slide_thong_tin_huu_ich = new Swiper(".slide-thong-tin-huu-ich", {
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return (
+            '<span class="' +
+            className +
+            '">' +
+            '<svg xmlns="http://www.w3.org/2000/svg" width="11" height="13" viewBox="0 0 11 13" fill="none"><path d="M0.117907 10.377C-0.520707 6.22598 1.55953 4.13536 3.3574 3.29124C4.13967 2.92396 4.92411 2.52159 5.56185 1.93838C7.58356 0.0895368 9.92895 -1.03443 10.6179 1.37695C11.6179 4.87695 1.11791 16.877 0.117907 10.377Z" fill="#2B5E8A"/></svg>' +
+            "</span>"
+          )
+        },
+      },
+      slidesPerView: 1,
+      breakpoints: {
+        450: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+      },
+    })
+  }
 
-if (btn_content_chi_tiet_sp && content_chi_tiet_sp) {
-  danh_muc_sp.forEach((item, index) => {
-    const buttonHTML = `
+  if (document.querySelector(".slide-cong-thuc-tu-sua")) {
+    var slide_cong_thuc_tu_sua = new Swiper(".slide-cong-thuc-tu-sua", {
+      navigation: {
+        nextEl: ".button-next-slide",
+        prevEl: ".button-prev-slide",
+      },
+      spaceBetween: 30,
+    })
+  }
+
+  if (document.querySelector(".image-slide")) {
+    var swiper = new Swiper(".image-slide", {
+      spaceBetween: 10,
+      slidesPerView: "auto",
+      freeMode: true,
+      watchSlidesProgress: true,
+    })
+
+    var swiper2 = new Swiper(".image-preview", {
+      spaceBetween: 10,
+      thumbs: {
+        swiper: swiper,
+      },
+    })
+  }
+
+  // Toggle modal image
+  const btnModalClose = document.querySelector(".close-modal-image")
+  const modalImage = document.querySelector(".modal-image-chi-tiet-sp")
+  const btnModalOpen = document.querySelectorAll(".open-modal-image")
+  const imageModal = document.querySelector(".modal-image-chi-tiet-sp img")
+
+  if (modalImage) {
+    function onModalImage(url) {
+      imageModal.src = url
+    }
+    const btnModal = [btnModalClose, ...btnModalOpen]
+    btnModal.forEach((ben) => {
+      ben.addEventListener("click", (e) => {
+        e.preventDefault()
+        modalImage.classList.toggle("scale-0")
+      })
+    })
+  }
+
+  const btn_content_chi_tiet_sp = document.querySelector(
+    ".btn-content-chi-tiet-sp"
+  )
+  const content_chi_tiet_sp = document.querySelector(".content-chi-tiet-sp")
+  const danh_muc_sp = [
+    "giới thiệu",
+    "thành phần",
+    "hướng dẫn sử dụng",
+    "hướng dẫn bảo quản",
+    "feedback của người dùng",
+  ]
+
+  if (btn_content_chi_tiet_sp && content_chi_tiet_sp) {
+    danh_muc_sp.forEach((item, index) => {
+      const buttonHTML = `
     <button title="${item}" onclick="addContentChiTietSp(${index})" ${
-      index === 0 ? 'class="danh-muc-sp-active"' : ""
-    }>${item}</button>
+        index === 0 ? 'class="danh-muc-sp-active"' : ""
+      }>${item}</button>
   `
-    btn_content_chi_tiet_sp.innerHTML += buttonHTML
-  })
-
-  function addContentChiTietSp(index) {
-    btn_content_chi_tiet_sp.querySelectorAll("button").forEach((btn) => {
-      btn.classList.remove("danh-muc-sp-active")
+      btn_content_chi_tiet_sp.innerHTML += buttonHTML
     })
-    btn_content_chi_tiet_sp
-      .querySelectorAll("button")
-      [index].classList.add("danh-muc-sp-active")
-    content_chi_tiet_sp.innerHTML = `
+
+    function addContentChiTietSp(index) {
+      btn_content_chi_tiet_sp.querySelectorAll("button").forEach((btn) => {
+        btn.classList.remove("danh-muc-sp-active")
+      })
+      btn_content_chi_tiet_sp
+        .querySelectorAll("button")
+        [index].classList.add("danh-muc-sp-active")
+      content_chi_tiet_sp.innerHTML = `
         <div role="status" class='mx-auto w-fit'>
           <svg aria-hidden="true" class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
@@ -281,9 +282,9 @@ if (btn_content_chi_tiet_sp && content_chi_tiet_sp) {
           </svg>
           <span class="sr-only">Loading...</span>
         </div>`
-    setTimeout(() => {
-      if (danh_muc_sp[index] === danh_muc_sp[2]) {
-        return (content_chi_tiet_sp.innerHTML = `
+      setTimeout(() => {
+        if (danh_muc_sp[index] === danh_muc_sp[2]) {
+          return (content_chi_tiet_sp.innerHTML = `
     <iframe
                 src="https://www.youtube.com/embed/nJvSOp6OkPM?si=7U8F_AojJeatVQ1o"
                 title="YouTube video player"
@@ -345,15 +346,20 @@ if (btn_content_chi_tiet_sp && content_chi_tiet_sp) {
                 >
               </div>
         `)
-      }
-      content_chi_tiet_sp.innerHTML = `<div class="content-chi-tiet-sp-item">
+        }
+        content_chi_tiet_sp.innerHTML = `<div class="content-chi-tiet-sp-item">
   <p class='uppercase text-[20px] sm:text-[34px] text-center font-bold'>${danh_muc_sp[index]}</p>
   <li class='list-decimal'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veniam quod, eaque tenetur consequatur doloremque.</li>
   <li class='list-decimal'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, esse deleniti est sapiente harum repellat!</li>
   <li class='list-decimal'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sit quia neque facilis rem quo labore officia? Ullam quia nesciunt modi sequi a quisquam assumenda odit officia nobis quod voluptatibus, repudiandae quidem repellat fugiat dolorum, totam molestiae, quibusdam adipisci quos eaque natus voluptas. Magni, pariatur beatae vero unde laudantium ab.</li>
           `
-    }, 1500)
-  }
+      }, 1500)
+    }
 
-  addContentChiTietSp(2)
+    addContentChiTietSp(2)
+  }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  StartJS()
+})
