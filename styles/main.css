@@ -1657,6 +1657,10 @@ button.danh-muc-sp-active::after{
   max-width: 21.5rem;
 }
 
+.max-w-\[40\%\]{
+  max-width: 40%;
+}
+
 .max-w-\[500px\]{
   max-width: 500px;
 }
@@ -1668,22 +1672,6 @@ button.danh-muc-sp-active::after{
 .max-w-fit{
   max-width: -moz-fit-content;
   max-width: fit-content;
-}
-
-.max-w-full{
-  max-width: 100%;
-}
-
-.max-w-\[50\%\]{
-  max-width: 50%;
-}
-
-.max-w-\[20\%\]{
-  max-width: 20%;
-}
-
-.max-w-\[40\%\]{
-  max-width: 40%;
 }
 
 .grow{
@@ -2308,10 +2296,6 @@ button.danh-muc-sp-active::after{
   padding-top: 87%;
 }
 
-.pr-\[10\%\]{
-  padding-right: 10%;
-}
-
 .text-center{
   text-align: center;
 }
@@ -2641,6 +2625,12 @@ button.danh-muc-sp-active::after{
   right: 0;
   z-index: 40;
   background-color: #fff;
+}
+
+.slide-auto-play .swiper-wrapper,
+.logo-brand-auto-play .swiper-wrapper,
+.logo-brand-auto-play-reverse .swiper-wrapper {
+  transition-timing-function: linear;
 }
 
 .\*\:mx-auto > *{
@@ -3185,8 +3175,8 @@ button.danh-muc-sp-active::after{
     width: 75%;
   }
 
-  .lg\:w-\[25\%\]{
-    width: 25%;
+  .lg\:w-\[30\%\]{
+    width: 30%;
   }
 
   .lg\:w-\[47\%\]{
@@ -3204,10 +3194,6 @@ button.danh-muc-sp-active::after{
   .lg\:w-fit{
     width: -moz-fit-content;
     width: fit-content;
-  }
-
-  .lg\:w-\[30\%\]{
-    width: 30%;
   }
 
   .lg\:max-w-\[512px\]{
@@ -3404,8 +3390,12 @@ button.danh-muc-sp-active::after{
     margin-left: 7rem;
   }
 
-  .\32xl\:block{
-    display: block;
+  .\32xl\:w-\[calc\(50\%\+117px\)\]{
+    width: calc(50% + 117px);
+  }
+
+  .\32xl\:w-\[calc\(50\%-117px\)\]{
+    width: calc(50% - 117px);
   }
 
   .\32xl\:max-w-\[768px\]{
