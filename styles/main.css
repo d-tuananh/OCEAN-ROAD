@@ -1455,6 +1455,11 @@ button.danh-muc-sp-active::after{
   margin-bottom: auto;
 }
 
+.my-\[2\.3rem\]{
+  margin-top: 2.3rem;
+  margin-bottom: 2.3rem;
+}
+
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -1501,6 +1506,14 @@ button.danh-muc-sp-active::after{
 
 .mt-5{
   margin-top: 1.25rem;
+}
+
+.mb-\[2\.3rem\]{
+  margin-bottom: 2.3rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
 }
 
 .line-clamp-2{
@@ -1728,6 +1741,11 @@ button.danh-muc-sp-active::after{
 
 .translate-y-3{
   --tw-translate-y: 0.75rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-\[55\%\]{
+  --tw-translate-y: -55%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2178,6 +2196,11 @@ button.danh-muc-sp-active::after{
 .py-7{
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
+}
+
+.py-\[6\.4rem\]{
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
 }
 
 .pb-0{
@@ -2932,6 +2955,14 @@ button.danh-muc-sp-active::after{
 
   .sm\:pt-\[90\%\]{
     padding-top: 90%;
+  }
+
+  .sm\:pb-\[6\.3rem\]{
+    padding-bottom: 6.3rem;
+  }
+
+  .sm\:pt-\[5\.2rem\]{
+    padding-top: 5.2rem;
   }
 
   .sm\:text-4xl{
