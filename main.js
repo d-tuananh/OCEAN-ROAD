@@ -72,6 +72,7 @@ function StartJS() {
         delay: 2000,
         disableOnInteraction: true,
       },
+      spaceBetween: 30,
       loop: true,
       speed: 1000,
       pagination: {
@@ -91,15 +92,31 @@ function StartJS() {
   }
 
   if (document.querySelector(".slide-auto-play")) {
-    var slide_auto_play = new Swiper(".slide-auto-play", {
-      slidesPerView: "auto",
+    // var slideAutoPlayElement = document.querySelector(".slide-auto-play")
+    // var slidesWrapper = slideAutoPlayElement.querySelector(".swiper-wrapper")
+
+    // for (var i = 0; i < 7; i++) {
+    //   var existingSlidesCount =
+    //     slidesWrapper.querySelectorAll(".swiper-slide").length
+    //   if (existingSlidesCount >= 7) {
+    //     break
+    //   }
+    //   slidesWrapper.innerHTML +=
+    //     slidesWrapper.querySelectorAll(".swiper-slide")[
+    //       Math.floor(Math.random() * existingSlidesCount)
+    //     ].outerHTML
+    // }
+
+    // Khởi tạo Swiper
+    var slideAutoPlaySwiper = new Swiper(".slide-auto-play", {
+      slidesPerView: 5.5,
       spaceBetween: 30,
       autoplay: {
         delay: 0,
         disableOnInteraction: false,
       },
       loop: true,
-      speed: 2500,
+      speed: 1500,
       allowTouchMove: false,
     })
   }
@@ -158,6 +175,7 @@ function StartJS() {
 
   if (document.querySelector(".silde-danh-gia")) {
     var silde_danh_gia = new Swiper(".silde-danh-gia", {
+      spaceBetween: 30,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
